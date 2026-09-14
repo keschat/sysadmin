@@ -87,10 +87,54 @@ sudo systemctl restart postfix
 
 ## [.](https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html) Postfix masquerading or changing outgoing SMTP email or mail address
 
-Address rewriting allows changing outgoing email ID or the domain name itself. Useful for hiding out internal user names, especially shell users on Linux and Unix boxes. For example:
-» SMTP user/shell user: tom-01
-» EMAIL ID: tom@domain.com
-» Server name (FQDN): server01.hosting.com
+Address rewriting allows changing outgoing email ID or the domain name itself. Useful for hiding out internal user names, especially shell users on Linux and Unix boxes. <br>
+For example: <br>
+» SMTP user/shell user: tom-01 <br>
+» EMAIL ID: tom@domain.com <br>
+» Server name (FQDN): server01.hosting.com <br>
+
+**Postfix masquerading and changing outgoing SMTP email or mail address**
+
+Postfix MTA offers smtp_generic_maps parameter. You can specify lookup tables that replace local mail addresses by valid Internet addresses when mail leaves the machine via SMTP.
+
+Open your main.cf config file using a text editor such as vim command/nano command:
+```bash
+# vi /etc/postfix/main.cf
+```
+Append or uncomment following parameter
+```
+smtp_generic_maps = hash:/etc/postfix/generic
+```
+Save and close the file when using vim. Open /etc/postfix/generic file:
+```bash
+# vi /etc/postfix/generic
+```
+Make sure tom-01@server01.hosting.com change to tom@domain.com as follows:
+```
+tom-01@server01.hosting.com tom@domain.com
+```
+Save and close the file. Create or update generic postfix table using the postmap command:
+```bash
+# postmap /etc/postfix/generic
+```
+Finally restart or reload postfix service:
+```bash
+# /etc/init.d/postfix restart
+## OR ##
+# systemctl restart postfix.service
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
