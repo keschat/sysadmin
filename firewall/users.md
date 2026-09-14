@@ -48,69 +48,45 @@ ssh root@your_server_ip_address
 ```bash
 sudo adduser usernam
 ```
-
 > The `adduser` command provides an interactive way for adding users to the system by prompting user details.
-
 > When you execute the command, a series of events happen. The command creates a user called `cherry` and assigns a UID (User ID) to the user from the UID range of 1000 to 59999. It then creates a new group that corresponds to the username and adds the user to the group. This is also known as the primary group. Next, the command creates a home directory, and copies user-specific configuration files from `/etc/skel` to the home directory.
 
-
-
 To check the groups the user belongs to, run the `groups` command followed by the username.
-
 ```bash
 groups cherry
 ```
-
-
-
-From the output, you can see that the user belongs to two groups:`cherry` group which is the primary group, and `users`, the supplementary group.
-
-
+> From the output, you can see that the user belongs to two groups:`cherry` group which is the primary group, and `users`, the supplementary group.
 
 #### [#](https://www.cherryservers.com/blog/how-to-add-user-to-sudoers-in-ubuntu#step-2-add-a-regular-user-to-the-sudo-group-sudoers-file "Permalink")Step 2: Add a regular user to the sudo group /sudoers file
 
 So far, you have created a regular login user called `cherry`. However, the user is only limited to standard tasks on the system. If you run a privileged task with the `sudo` command, you will be notified that the user is not in the sudoers file, and the command will not be executed
 
-
-
 ###### Adding a regular user to sudo group using `usermod` command
 
-The `usermod` command is a command-line tool used to modify user accounts. It modifies various user attributes including the uid, shell, and login name. You can also use it to change the user’s default group and add a user to an existing group.
-
-
+The `usermod` command is a command-line tool used to modify user accounts. <br>
+It modifies various user attributes including the uid, shell, and login name. You can also use it to change the user’s default group and add a user to an existing group.
 
 To add a user to the sudo group, use the `usermod` syntax as shown below.
-
 ```bash
 sudo usermod -aG sudo username
 ```
-
 _Note_ The command can also take the following format where `a` and `G` options are specified separately using a hyphen.
-
 ```bash
 sudo usermod -a -G sudo username
 ```
-
 _Note_ The `-a` option appends the user to a secondary group while the `-G` option specifies the name of the group that the user is being added to, in this case, `sudo`.
-
-
 
 ###### Adding a regular user to sudo group using `adduser` command
 
 The `adduser` command is typically used to create or add new users to the system. In addition, you can also use it to add an existing user to another group using the following syntax.
-
 ```bash
 sudo adduser username group
 ```
 
-
-
 #### [#](https://www.cherryservers.com/blog/how-to-add-user-to-sudoers-in-ubuntu#step-3-confirm-user-belongs-to-sudo-group "Permalink")Step 3: Confirm user belongs to sudo group
-
 ```bash
 groups username
 ```
-
 _Note_ This time around, you will see that the user belongs to three groups: the two original groups ( `cherry` and `users` ) and `sudo`.
 
 
