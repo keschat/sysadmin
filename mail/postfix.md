@@ -65,8 +65,8 @@ You can change or set the outgoing "From" email address in Postfix by configurin
 sudo nano /etc/postfix/main.cf
 ```
 2. **Add or uncomment the generic maps parameter:**
-```bash
-textsmtp_generic_maps = hash:/etc/postfix/generic
+```text
+smtp_generic_maps = hash:/etc/postfix/generic
 ```
 3. **Edit the mapping file:**
 Open /etc/postfix/generic and map the local system username/address to your desired external email address:
@@ -78,6 +78,7 @@ username@yourserver.com   desired-from@example.com
 Run the following command to update Postfix's lookup table:
 ```bash
 sudo postmap /etc/postfix/generic
+sudo postmap -v /etc/postfix/generic
 ```
 5. **Restart Postfix:**
 Apply the changes by restarting the service:
