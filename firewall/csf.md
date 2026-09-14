@@ -20,7 +20,7 @@
 -->
 
 ConfigServer Security & Firewall
-################################
+***
 
 This suite of scripts provides:
 
