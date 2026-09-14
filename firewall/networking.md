@@ -1,3 +1,20 @@
+## Hosts
+
+```
+hostnamectl 
+```
+
+Change it in / etc/hostname and /etc/hosts. Then restart NetworkManager or reboot.
+
+To change or set the hostname in AlmaLinux 9, you can use the hostnamectl command. Open a terminal and run the following command:
+```
+sudo hostnamectl set-hostname your-new-hostname
+```
+Replace your-new-hostname with the desired hostname. To apply the changes immediately, you might need to restart network services using:
+```bash
+sudo systemctl restart systemd-hostnamed
+```
+
 ## NetworkManager
 
 To restart the connection manager (NetworkManager) in AlmaLinux, 
