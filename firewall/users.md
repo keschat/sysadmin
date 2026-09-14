@@ -1,1 +1,33 @@
+Almalinux see all users
+####
 
+****
+
+### AI Overview
+
+On AlmaLinux, you can see all users through the command line or a graphical interface. Because AlmaLinux is based on RHEL, it uses standard Linux user management files and commands. 
+
+### Using the Command Line
+
+The most common way to list users is by querying the system's password database.
+
+- **List all local users:** The `/etc/passwd` file contains a list of every user account. You can view the full file with:  
+  `cat /etc/passwd`
+- **List only usernames:** To get a clean list of just the usernames without the extra configuration data, use cut:  
+  `cut -d: -f1 /etc/passwd`
+- **List users including network accounts:** If your AlmaLinux system is connected to LDAP or Active Directory, use the [getent command](https://wiki.almalinux.org/beginners/users-and-groups.html) to see both local and remote users:  
+  `getent passwd`
+- **Filter for "Real" (Human) Users:** By default, AlmaLinux assigns User IDs (UID) of 1000 and above to regular users. You can filter the list to hide system accounts using [awk](https://www.cyberciti.biz/faq/linux-list-users-command/):  
+  `awk -F':' '{ if($3 >= 1000 && $3 < 65534) print $1 }' /etc/passwd`
+- **See currently logged-in users:** To see who is active on the system right now, use the [who command](https://www.tecmint.com/check-user-in-linux/):  
+  `who`
+
+### Summary Table of Commands
+
+| Requirement                        | Command                                   |
+| ---------------------------------- | ----------------------------------------- |
+| **All accounts (local)**           | `cat /etc/passwd`                         |
+| **All accounts (local + network)** | `getent passwd`                           |
+| **Usernames only**                 | `compgen -u` or `cut -d: -f1 /etc/passwd` |
+| **Currently active users**         | `w` or `who`                              |
+| **Detailed login history**         | `lastlog`                                 |
