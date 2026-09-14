@@ -1,3 +1,5 @@
+mailx to see messages
+
 Refs:
 - https://reintech.io/blog/configuring-postfix-smtp-authentication-almalinux-9
 
