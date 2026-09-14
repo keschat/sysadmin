@@ -64,35 +64,30 @@ You can change or set the outgoing "From" email address in Postfix by configurin
 ```bash
 sudo nano /etc/postfix/main.cf
 ```
-
 2. **Add or uncomment the generic maps parameter:**
 ```bash
 textsmtp_generic_maps = hash:/etc/postfix/generic
 ```
-
 3. **Edit the mapping file:**
-
 Open /etc/postfix/generic and map the local system username/address to your desired external email address:
 ```bash
 root@yourserver.com     desired-from@example.com
 username@yourserver.com   desired-from@example.com
 ```
-
 4 . **Generate the hash database file:**
-
 Run the following command to update Postfix's lookup table:
 ```bash
 sudo postmap /etc/postfix/generic
 ```
-
 5. **Restart Postfix:**
-
-## <https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html>Postfix masquerading or changing outgoing SMTP email or mail address
-
-
-
 Apply the changes by restarting the service:
 ```bash
 sudo systemctl restart postfix
 ```
+
+## [Ref](https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html) Postfix masquerading or changing outgoing SMTP email or mail address
+
+
+
+
 
