@@ -22,5 +22,33 @@ The most common way to list users is by querying the system's password database.
   `who`
 
 
+### Summary Table of Commands
 
+| Requirement                        | Command                                   |
+| ---------------------------------- | ----------------------------------------- |
+| **All accounts (local)**           | `cat /etc/passwd`                         |
+| **All accounts (local + network)** | `getent passwd`                           |
+| **Usernames only**                 | `compgen -u` or `cut -d: -f1 /etc/passwd` |
+| **Currently active users**         | `w` or `who`                              |
+| **Detailed login history**         | `lastlog`                                 |
+
+
+# Fail2ban
+
+🔹 Install Fail2Ban
+-------------------
+
+dnf install fail2ban -y  
+systemctl enable fail2ban --now
+
+🛡️ Useful Fail2Ban Commands
+
+| Goal                     | Command                                               |
+| ------------------------ | ----------------------------------------------------- |
+| **Check overall status** | `fail2ban-client status`                              |
+| **Check Banned IPs**     | `sudo fail2ban-client status sshd`                    |
+| **Unban an IP**          | `sudo fail2ban-client set sshd unbanip [IP_ADDR ESS]` |
+| **View logs**            | `sudo tail -f /var/log/fail2ban.log`                  |
+
+* * *
   
