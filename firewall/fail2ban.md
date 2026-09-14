@@ -1,6 +1,6 @@
 ## Fail2ban
 
-🔹 Install Fail2Ban
+### 🔹 Install Fail2Ban
 ---
 dnf install fail2ban -y  
 systemctl enable fail2ban --now
