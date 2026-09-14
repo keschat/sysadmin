@@ -65,3 +65,47 @@ sudo firewall-cmd --reload
 ```
 
 If you're still experiencing issues, let me know:Which IMAP software you are using (e.g., Dovecot)If you see any specific errors in the logs (journalctl -u dovecot)I can help you troubleshoot further.
+
+
+## firewalld: allow imap pop3 ports
+
+To open IMAP and POP3 ports in firewalld, use the predefined service names or explicitly add the corresponding TCP ports permanently. 
+[1] (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/deploying_mail_servers/configuring-and-maintaining-a-dovecot-imap-and-pop3-server_deploying-mail-servers), <br>
+[2] (https://oneuptime.com/blog/post/2026-03-04-imap-pop3-dovecot-rhel-9/view)
+
+### Using Predefined Services (Recommended)
+
+firewalld includes built-in service definitions for standard and secure mail protocols:
+
+- **IMAP:** Port 143 (imap) and 993 (imaps / secure IMAP)
+- **POP3:** Port 110 (pop3) and 995 (pop3s / secure POP3)
+[1] (https://docs.rackspace.com/docs/open-ports-in-the-linux-firewall-to-access-pop-and-imap-mail-servers), <br>
+[2] (https://cubepath.com/docs/email-server/dovecot-configuration-for-imap-pop3), <br>
+[3] (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/deploying_mail_servers/configuring-and-maintaining-a-dovecot-imap-and-pop3-server_deploying-mail-servers)
+
+**Run the following commands to allow them permanently in your public zone:** <br>
+[1] (https://oneuptime.com/blog/post/2026-03-04-imap-pop3-dovecot-rhel-9/view), <br>
+[2] (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/deploying_mail_servers/configuring-and-maintaining-a-dovecot-imap-and-pop3-server_deploying-mail-servers)
+
+```bash
+sudo firewall-cmd --permanent --add-service=imap
+sudo firewall-cmd --permanent --add-service=imaps
+sudo firewall-cmd --permanent --add-service=pop3
+sudo firewall-cmd --permanent --add-service=pop3s
+```
+
+### Using Specific Port Numbers (Alternative)
+
+If you prefer opening the individual TCP ports directly instead of using service names: <br>
+[1] (https://oneuptime.com/blog/post/2026-03-04-imap-pop3-dovecot-rhel-9/view)
+
+```bash
+sudo firewall-cmd --permanent --add-port=143/tcp
+sudo firewall-cmd --permanent --add-port=993/tcp
+sudo firewall-cmd --permanent --add-port=110/tcp
+sudo firewall-cmd --permanent --add-port=995/tcp
+```
+
+Apply ChangesReload the firewall to activate the new rules: <br>
+[1] (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/deploying_mail_servers/configuring-and-maintaining-a-dovecot-imap-and-pop3-server_deploying-mail-servers), <br>
+[2] (https://oneuptime.com/blog/post/2026-03-04-imap-pop3-dovecot-rhel-9/view)bashsudo firewall-cmd --reload
