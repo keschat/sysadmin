@@ -107,3 +107,109 @@ You can use the NetworkManager text user interface to set this up graphically: 
    
 #### Verification
 To verify that IPv6 is disabled, use `ip a` to check for inet6 addresses, or try to ping a domain that has both A and AAAA records (like google.com) and verify it only uses IPv4. [](https://blog.evoluso.com/configuring-a-static-ipv4-address-in-almalinux-9/)
+
+# centos how to see dns
+
+****
+
+To see the DNS servers your CentOS system is currently using, you can use several methods depending on your version and environment.
+
+
+
+1. #### The Classic Method (Works Everywhere)
+
+The most direct way to see your configured name servers is by checking the `resolv.conf` file. 
+
+```bash
+cat /etc/resolv.conf
+```
+
+* **What to look for**: Lines starting with `nameserver` (e.g., `nameserver 8.8.8.8`).
+* **Note**: If you see `127.0.0.1` or `127.0.0.53`, your system is using a local caching service (like `systemd-resolved` or `dnsmasq`).
+2. #### Using Network Manager (`nmcli`)
+
+CentOS 7 and 8/9 Stream heavily rely on NetworkManager. This command shows the DNS servers assigned to your active network interfaces. 
+
+```bash
+nmcli dev show | grep DNS
+```
+
+* **Alternative for a specific connection**:
+
+```bash
+nmcli connection show <connection_name> | grep dns
+```
+
+(Replace `<connection_name>` with your actual connection name, which you can find using `nmcli con show`).
+
+
+
+3. #### Using `resolvectl` (CentOS 8/9 Stream)
+
+For newer CentOS versions using `systemd-resolved`, this command provides a clean status of active DNS settings.
+
+```bash
+resolvectl status
+```
+
+* This will list the "Current DNS Server" and backup "DNS Servers" for each interface.
+4. #### Testing with `dig` or `nslookup`
+
+You can verify which server is answering your queries by performing a live lookup. 
+
+
+
+* **Using `dig`**:
+  
+  ```bash
+  dig google.com
+  ```
+  
+  Look at the **SERVER** line at the bottom of the output (e.g., `;; SERVER: 192.168.1.1#53`).
+  
+  
+
+* **Using `nslookup`**:
+  
+  ```bash
+  nslookup google.com
+  ```
+  
+  The "Server" line at the top indicates which DNS server responded.
+  
+  
+
+In the context of your CentOS network settings, **nameserver** and **DNS server** refer to the same thing: the IP address of the server your computer asks to turn a domain name (like `google.com`) into an IP address. 
+
+
+
+However, the terms are used slightly differently depending on where you see them:
+
+
+
+1. #### In Configuration Files (The Label)
+
+Inside Linux configuration files like `/etc/resolv.conf`, **`nameserver`** is the specific keyword required by the system to define a DNS server. 
+
+
+
+* **Example entry:** `nameserver 8.8.8.8`
+
+* In this context, it literally means "This is the IP of a DNS server to use". 
+2. #### General Networking (The Role)
+
+While often used interchangeably, "Name Server" can technically be a broader term: 
+
+
+
+* **DNS Server**: Specifically refers to a server using the **Domain Name System** protocol.
+* **Name Server**: Can refer to any service that translates names to addresses. For example, in very old Windows networking, a "WINS server" was a type of name server but not a DNS server. 
+3. #### Website Management (The Authority)
+
+If you are managing a website, "Nameservers" (often seen as `ns1.example.com`) refers to the **authoritative** servers that hold the master records for your specific domain. 
+
+
+
+
+
+***
