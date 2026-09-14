@@ -87,7 +87,7 @@ sudo postmap /etc/postfix/generic
 
 5. **Restart Postfix:**
 
-## []https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html Postfix masquerading or changing outgoing SMTP email or mail address
+## <https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html>Postfix masquerading or changing outgoing SMTP email or mail address
 
 
 
