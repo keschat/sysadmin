@@ -1,22 +1,3 @@
-###############################################################################
-Copyright (C) 2006-2025 Jonathan Michaelson
-
-https://github.com/waytotheweb/scripts
-
-This program is free software; you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation; either version 3 of the License, or (at your option) any later
-version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
-details.
-
-You should have received a copy of the GNU General Public License along with
-this program; if not, see <https://www.gnu.org/licenses>.
-###############################################################################
-
 ConfigServer Security & Firewall
 ***
 
@@ -36,67 +17,37 @@ as they could or should be.
 This document contains:
 
 1. Introduction
-
 2. csf Principles
-
 3. lfd Principles
-
 4. csf Command Line Options
-
 5. lfd Command Line Options
-
 6. Login Tracking
-
 7. Script Email Alerts
-
 8. Process Tracking
-
 9. Directory Watching
-
 10. Advanced Allow/Deny Filters
-
 11. Multiple Ethernet Devices
-
 12. Installation on a Generic Linux Server
-
 13. A note about FTP Connection Issues
-
 14. Messenger Service (v1, v2 and v3)
-
 15. Block Reporting
-
 16. Port Flood Protection
-
 17. External Pre- and Post- Scripts
-
 18. lfd Clustering
-
 19. Port Knocking
-
 20. Connection Limit Protection
-
 21. Port/IP address Redirection
-
 22. Integrated User Interface Feature
-
 23. IP Block Lists
-
 24. Mitigating issues with syslog/rsyslog logs (RESTRICT_SYSLOG)
-
 25. Exim SMTP AUTH Restriction
-
 26. UI Skinning and Mobile View
-
 27. CloudFlare
-
 28. InterWorx
-
 29. CentOS Web Panel (CWP)
-
 
 1. Introduction
 ###############
-
 
 ConfigServer Firewall (csf)
 ===========================
