@@ -1,5 +1,28 @@
 mailx to see messages
 
+1. Check your current Postfix configuration
+```bash
+sudo postconf myhostname
+sudo postconf myorigin
+sudo postconf smtp_generic_maps
+sudo postconf sender_canonical_maps
+sudo postconf canonical_maps
+
+# Also
+
+sudo postconf | grep -E '^(myhostname|myorigin|smtp_generic_maps|sender_canonical_maps|canonical_maps|relayhost)'
+```
+
+2. If you want local system mail to become system@beez24.net
+The relevant setting is usually:
+```
+myorigin
+```
+Ex:
+```bash
+sudo postconf myorigin=beez24.net
+```
+
 Refs:
 - https://reintech.io/blog/configuring-postfix-smtp-authentication-almalinux-9
 
