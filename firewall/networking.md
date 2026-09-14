@@ -89,21 +89,21 @@ sudo sysctl -p
 4. **Force DNF/YUM to use IPv4**
 If you only need to ensure package updates and downloads use IPv4: [](https://support.cpanel.net/hc/en-us/articles/7021847859095-How-to-force-YUM-DNF-to-use-IPv4#:~:text=Introduction,and%20close%20the%20text%20editor.)
 
-- 1. **Edit the DNF configuration file:**
+a. **Edit the DNF configuration file:**
 ```bash
 sudo vi /etc/dnf/dnf.conf
 ```
-- 2. **Add the following line to the `[main]` section:**
+b. **Add the following line to the `[main]` section:**
 ```text
 ip_resolve=4
 ```
-- 3. **Interactive Configuration (`nmtui`)**
+c. **Interactive Configuration (`nmtui`)**
 You can use the NetworkManager text user interface to set this up graphically: [](https://blog.evoluso.com/configuring-a-static-ipv4-address-in-almalinux-9/)
-a. Run `sudo nmtui`.
-a. Select **Edit a connection**.
-c. Select your connection, press Enter.
-d. Navigate to **IPv6 CONFIGURATION**, change it to **Ignore**.
-e. Save and quit. 
+- Run `sudo nmtui`.
+- Select **Edit a connection**.
+- Select your connection, press Enter.
+- Navigate to **IPv6 CONFIGURATION**, change it to **Ignore**.
+- Save and quit. 
    
-####Verification
+#### Verification
 To verify that IPv6 is disabled, use `ip a` to check for inet6 addresses, or try to ping a domain that has both A and AAAA records (like google.com) and verify it only uses IPv4. [](https://blog.evoluso.com/configuring-a-static-ipv4-address-in-almalinux-9/)
