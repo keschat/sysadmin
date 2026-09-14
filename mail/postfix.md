@@ -85,8 +85,12 @@ Apply the changes by restarting the service:
 sudo systemctl restart postfix
 ```
 
-## [Ref](https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html) Postfix masquerading or changing outgoing SMTP email or mail address
+## [.](https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html) Postfix masquerading or changing outgoing SMTP email or mail address
 
+Address rewriting allows changing outgoing email ID or the domain name itself. Useful for hiding out internal user names, especially shell users on Linux and Unix boxes. For example:
+» SMTP user/shell user: tom-01
+» EMAIL ID: tom@domain.com
+» Server name (FQDN): server01.hosting.com
 
 
 
