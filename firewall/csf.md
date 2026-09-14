@@ -52,21 +52,13 @@ This document contains:
 ConfigServer Firewall (csf)
 ===========================
 
-We have developed an SPI iptables firewall that is straight-forward, easy and
-flexible to configure and secure with extra checks to ensure smooth operation.
-
-csf can be used on any (supported - see the website) generic Linux OS.
-
-The csf installation includes preconfigured configurations and control panel
-UI's for cPanel, DirectAdmin and Webmin
-
 Directory structure:
 
-/etc/csf/           - configuration files 
-/var/lib/csf/       - temporary data files
-/usr/local/csf/bin/ - scripts
-/usr/local/csf/lib/ - perl modules and static data
-/usr/local/csf/tpl/ - email alert templates
+/etc/csf/           - configuration files <br>
+/var/lib/csf/       - temporary data files <br>
+/usr/local/csf/bin/ - scripts <br>
+/usr/local/csf/lib/ - perl modules and static data <br>
+/usr/local/csf/tpl/ - email alert templates <br>
 
 
 Login Failure Daemon (lfd)
