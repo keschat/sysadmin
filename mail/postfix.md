@@ -1,3 +1,6 @@
+Refs:
+- https://reintech.io/blog/configuring-postfix-smtp-authentication-almalinux-9
+
 ### Manual test:
 ```
 echo "Test mail from root" | mail -s "Test Subject" root
