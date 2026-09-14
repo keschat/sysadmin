@@ -13,14 +13,14 @@ sudo postconf canonical_maps
 sudo postconf | grep -E '^(myhostname|myorigin|smtp_generic_maps|sender_canonical_maps|canonical_maps|relayhost)'
 ```
 
-2. If you want local system mail to become system@beez24.net
+2. If you want local system mail to become system@domain.tld
 The relevant setting is usually:
 ```
 myorigin
 ```
 Ex:
 ```bash
-sudo postconf myorigin=beez24.net
+sudo postconf myorigin=domain.tld
 ```
 
 Refs:
@@ -31,17 +31,17 @@ Refs:
 echo "Test mail from root" | mail -s "Test Subject" root
 
 # s-nail
-echo "Hello, this is a test mail" | s-nail -s "Test" destination@example.com
-echo "Hello, this is a test mail" | s-nail -s "Test" colornest@beez24.net
+echo "Hello, this is a test mail" | s-nail -s "Test" dest@example.com
+echo "Hello, this is a test mail" | s-nail -s "Test" dest@example.com
 ```
 
 ### Config:
 
 **mail.rc**
 ```bash
-set from="BillingAdmin <admin@beez24.net>"
-set reply-to="noreply@beez24.net"
-set organization="Beez24"
+set from="BillingAdmin <admin@domain.tld>"
+set reply-to="noreply@domain.tld"
+set organization="Org name"
 ```
 
 **Aliases**
@@ -56,7 +56,7 @@ postfix reload
 **Sender canonical**
 ```bash
 nano /etc/postfix/sender_canonical
-nginx nginx-alerts@beez24.net
+nginx web-alerts@domain.tld
 ```
 
 **Vrtual**
