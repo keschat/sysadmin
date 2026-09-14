@@ -51,4 +51,5 @@ systemctl enable fail2ban --now
 | **View logs**            | `sudo tail -f /var/log/fail2ban.log`                  |
 
 * * *
-  
+
+To check for brute-force attacks on AlmaLinux, monitor `/var/log/secure` or use [journalctl -u sshd](https://www.google.com/search?q=journalctl+-u+sshd&rlz=1C1FKPE_enZA1100ZA1100&oq=almalinux+check+bruteforce+attacks&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDg1NjdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&mstk=AUtExfDNc8orOLxNRPHmUc1Eiw7S6sHxnwgg2bJKjIBQEtnB5WaK45TPfUeNcQY1bSLHx6VpNi5K5VBgQ_O9NUZl7OR65nB3V2BH0N-Jg4KVOxbvwX9eWorJ8c6qe0sQdlN-wVbiFBcoNAYDhwsopBOXiXrHJp1INgcK3PhWL5ntkTXixUK892X9vQP5MWKC2MokVJHVeQ1gxzAcna9yak5_sOvh4pTLAXcwuji4YA8n1jPli1PBS0ksOks2Ibre6EGAEa0nTt8obSJm-olpqmf0rQwxoW5akF51E8SzG9QQVb6Ki_VuaLjX6yQFTGk6zatqgdYdr2mYzFHOJzT7yBFWYwXrLfS8UkUYqDbe9l9HamKx-q49uuTT3mPRXG7SfLuEzlmXbftG7HQMKvXepAM8Iw&csui=3&ved=2ahUKEwi51tTS9v-TAxU09LsIHTBXHR8QgK4QegQIARAB) to identify high volumes of failed login attempts.
