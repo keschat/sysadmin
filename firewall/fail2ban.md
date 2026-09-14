@@ -2,8 +2,10 @@
 
 ### 🔹 Install Fail2Ban
 
+```bash
 dnf install fail2ban -y  
 systemctl enable fail2ban --now
+```
 
 🛡️ Useful Fail2Ban Commands
 
