@@ -50,7 +50,7 @@ sudo ln -s /etc/apache2/sites-available/_YOUR_SITE_ /etc/apache2/sites-enabled
 
 4. Disable the default site if not needed:
 ```bash
-rm cd /etc/apache2/sites-enabled/000-default.conf
+rm /etc/apache2/sites-enabled/000-default.conf
 ```
 
 5. Validate Apache config:
