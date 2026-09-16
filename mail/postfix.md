@@ -4,6 +4,7 @@ mailx to see messages
 >
 >
 
+## Redhat
 ### How to install and configure Postfix
 
 Sendmail and Postfix are the most commonly used implementations of SMTP in most Linux distros. Postfix is an open source mail-transfer agent that was originally developed as an alternative to Sendmail and is usually set up as the default mail server.
@@ -90,9 +91,12 @@ In order to finish the message body and close it, you need to add a single perio
 
 In any regard, check the mail logs for errors. They are located in /var/log/maillog by default, but this location can be changed to another place. As a system administrator, checking error logs is a good habit to have. This practice is great in troubleshooting and gives us insight into identifying and fixing an issue faster. Deciphering mail logs is an important part of admin work as well, as each part of the log lets us know what is important. In my past years, knowing these parts has helped me write scripts for specific requests while only needing to redact or leave out parts of the mail logs.
 
-
-
 ***
+
+## Ubuntu
+### https://ubuntu.com/server/docs/how-to/mail-services/install-postfix/
+
+**Install and configure Postfix **
 
 1. Check your current Postfix configuration
 ```bash
