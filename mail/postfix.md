@@ -256,8 +256,23 @@ echo "Hello, this is a test mail" | s-nail -s "Test" dest@example.com
 
 ### Config:
 
+**Sample .mailrc configuration file for Gmail**
+```txt
+set smtp-use-starttls
+set smtp=smtp://smtp.gmail.com:587
+set smtp-auth=login
+# Change 'xxxxxx' with your username
+set smtp-auth-user=xxxxxx@gmail.com
+# Change 'xxxxxxxxxxxx' with your password
+set smtp-auth-password=xxxxxxxxxxxx
+# Change 'xxxxxxxx' with the name of your Firefox's profile,
+# it is located in the ~/.mozilla/firefox/ directory.
+set nss-config-dir=~/.mozilla/firefox/xxxxxxxx.default
+set ssl-verify=ignore
+```
+
 **mail.rc**
-```bash
+```txt
 set from="BillingAdmin <admin@domain.tld>"
 set reply-to="noreply@domain.tld"
 set organization="Org name"
