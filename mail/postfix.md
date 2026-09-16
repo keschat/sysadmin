@@ -1,5 +1,7 @@
 mailx to see messages
 
+rewriting outgoing sender should be done @ /etc/postfix/generic
+
 # Postfix
 
 ## Configuration
