@@ -38,6 +38,17 @@ Example 3: host with multiple DNS A records.
 Caution: in order to avoid mail delivery loops, you must list all hostnames of the machine, including $myhostname, and localhost.$mydomain.
 </pre>
 
+**What trouble to report to the postmaster**
+
+You should set up a postmaster alias in the aliases(5) table that directs mail to a human person. The postmaster address is required to exist, so that people can report mail delivery problems. While you're updating the aliases(5) table, be sure to direct mail for the super-user to a human person too.
+
+<pre>
+/etc/aliases:
+    postmaster: you
+    root: you
+</pre>
+
+Execute the command "newaliases" after changing the aliases file. Instead of /etc/aliases, your alias file may be located elsewhere. Use the command "postconf alias_maps" to find out.
 
 
 ## Terms
