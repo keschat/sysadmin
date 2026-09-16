@@ -1,10 +1,25 @@
 mailx to see messages
 
->https://www.redhat.com/en/blog/install-configure-postfix
->
->
+# Postfix: Terms
+
+- Virtual Email Mapping
+Imagine your company has generic email addresses like info@company.com or support@company.com. Virtual mapping lets you:
+
+Create these addresses without creating actual user accounts
+Direct emails sent to these addresses to real user inboxes
+
+ - The Postmap Command and "Lookups"
+
+ Before postmap: You have a text file with entries like info@example.com testuser
+The lookup process: When an email arrives, Postfix needs to quickly find who should receive it
+The problem: Searching through a text file line by line is slow
+What postmap does: Creates a special database that works like a phone book for faster lookups
+
+
 
 ## Redhat
+>https://www.redhat.com/en/blog/install-configure-postfix
+
 ### How to install and configure Postfix
 
 Sendmail and Postfix are the most commonly used implementations of SMTP in most Linux distros. Postfix is an open source mail-transfer agent that was originally developed as an alternative to Sendmail and is usually set up as the default mail server.
@@ -94,9 +109,10 @@ In any regard, check the mail logs for errors. They are located in /var/log/mail
 ***
 
 ## Ubuntu
-### https://ubuntu.com/server/docs/how-to/mail-services/install-postfix/
+> https://ubuntu.com/server/docs/how-to/mail-services/install-postfix/
+> https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-20-04
 
-> **Install and configure Postfix**
+### **Install and configure Postfix**
 
 **Install Postfix**
 To install Postfix run the following command:
