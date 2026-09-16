@@ -18,7 +18,7 @@ What postmap does: Creates a special database that works like a phone book for f
 
 
 ## Redhat
->https://www.redhat.com/en/blog/install-configure-postfix
+> https://www.redhat.com/en/blog/install-configure-postfix
 > https://orcacore.com/install-postfix-almalinux-9/
 
 ### How to install and configure Postfix
