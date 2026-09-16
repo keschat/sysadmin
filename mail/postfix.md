@@ -30,6 +30,27 @@ systemctl enable postfix
 **Configuring Postfix**
 
 Config files in /etc/postfix
+The main configuration file for the Postfix service is located at /etc/postfix/main.cf
+
+- myhostname declares the mail server’s hostname. Hostnames normally have prefixes in them, like this:
+```
+myhostname = mail.sinisterriot.com
+```
+
+- mydomain declares the domain that is actually handling mail, like this:
+```
+mydomain = sinisterriot.com
+```
+
+- mail_spool_directory declares the directory where mailbox files are placed, like so:
+```
+mail_spool_directory = /var/mail
+```
+
+- mynetworks declares a list of trusted remote SMTP servers that can relay through the server, like this:
+```
+mynetworks = 127.0.0.0/8, 168.100.189.0/28
+```
 
 
 ***
