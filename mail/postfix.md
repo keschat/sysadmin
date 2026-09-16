@@ -53,6 +53,45 @@ mynetworks = 127.0.0.0/8, 168.100.189.0/28
 ```
 _Note_ The list provided with mynetworks should only contain local network IP addresses, or network/netmask patterns that are separated by commas or whitespace. It’s important to only use local network addresses to avoid unauthorized users using your mail server for malicious activity, resulting in your server and addresses being blacklisted.
 
+**Testing Postfix**
+
+Before putting something into production, testing it in a dev environment is always a good idea.
+
+First, I recommend testing whether you can send an email to a local recipient. If successful, you can proceed to a remote recipient. I prefer to use the telnet command to test my mail server:
+```
+telnet mail.sinisterriot.com 25
+```
+
+Add the HELO command to tell the server which domain you are coming from:
+```
+HELO sinisterriot.com
+```
+
+Next is the sender. This ID can be added with the MAIL FROM command:
+```
+MAIL FROM: somewhere@sinisteriot.com
+```
+
+This entry is followed by the recipient, and you can add more than one by using the RCPT TO command multiple times:
+```txt
+RCPT TO: someone@sinisterriot.com
+```
+
+Finally, we can add the content of the message. To reach the content mode, we add the prefix DATA on a line by itself, followed by the Subject line, and the body message. Listed below is an example:
+```txt
+DATA
+Subject: This is a test message  
+Hello,
+This is a test message
+.
+```
+
+In order to finish the message body and close it, you need to add a single period (.) or dot on a line by itself. Once this process is complete, the server will attempt to send the email with the information you provided. The code response will notify you if the email was successful or not. Once done, use the quit command to close the mailing window.
+
+In any regard, check the mail logs for errors. They are located in /var/log/maillog by default, but this location can be changed to another place. As a system administrator, checking error logs is a good habit to have. This practice is great in troubleshooting and gives us insight into identifying and fixing an issue faster. Deciphering mail logs is an important part of admin work as well, as each part of the log lets us know what is important. In my past years, knowing these parts has helped me write scripts for specific requests while only needing to redact or leave out parts of the mail logs.
+
+
+
 ***
 
 1. Check your current Postfix configuration
