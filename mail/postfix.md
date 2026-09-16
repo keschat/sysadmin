@@ -75,7 +75,7 @@ mail_spool_directory = /var/mail
 ```txt
 mynetworks = 127.0.0.0/8, 168.100.189.0/28
 ```
-    _Note_ The list provided with mynetworks should only contain local network IP addresses, or network/netmask patterns that are separated by commas or whitespace. It’s important to only use local network addresses to avoid unauthorized users using your mail server for malicious activity, resulting in your server and addresses being blacklisted.
+_Note_ The list provided with mynetworks should only contain local network IP addresses, or network/netmask patterns that are separated by commas or whitespace. It’s important to only use local network addresses to avoid unauthorized users using your mail server for malicious activity, resulting in your server and addresses being blacklisted.
 
 **Testing Postfix**
 
