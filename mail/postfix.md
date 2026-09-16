@@ -38,20 +38,20 @@ myhostname = mail.sinisterriot.com
 ```
 
 - mydomain declares the domain that is actually handling mail, like this:
-```
+```txt
 mydomain = sinisterriot.com
 ```
 
 - mail_spool_directory declares the directory where mailbox files are placed, like so:
-```
+```txt
 mail_spool_directory = /var/mail
 ```
 
 - mynetworks declares a list of trusted remote SMTP servers that can relay through the server, like this:
-```
+```txt
 mynetworks = 127.0.0.0/8, 168.100.189.0/28
 ```
-
+_Note_ The list provided with mynetworks should only contain local network IP addresses, or network/netmask patterns that are separated by commas or whitespace. It’s important to only use local network addresses to avoid unauthorized users using your mail server for malicious activity, resulting in your server and addresses being blacklisted.
 
 ***
 
