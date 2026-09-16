@@ -71,10 +71,7 @@ sudo postconf | grep -E '^(myhostname|myorigin|smtp_generic_maps|sender_canonica
 ```
 
 2. If you want local system mail to become system@domain.tld
-The relevant setting is usually:
-```
-myorigin
-```
+The relevant setting is usually: myorigin
 Ex:
 ```bash
 sudo postconf myorigin=domain.tld
