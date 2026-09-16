@@ -33,7 +33,7 @@ Config files in /etc/postfix
 The main configuration file for the Postfix service is located at /etc/postfix/main.cf
 
 - myhostname declares the mail server’s hostname. Hostnames normally have prefixes in them, like this:
-```
+```text
 myhostname = mail.sinisterriot.com
 ```
 
