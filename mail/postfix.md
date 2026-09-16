@@ -21,11 +21,18 @@ rpm -qa | grep postfix
 yum install -y postfix
 ```
 
+After Postfix is installed, you can start the service and enable it to make sure it starts after reboot:
+```bash
+systemctl start postfix
+systemctl enable postfix
+```
+
+**Configuring Postfix**
+
+Config files in /etc/postfix
 
 
-
-
-
+***
 
 1. Check your current Postfix configuration
 ```bash
