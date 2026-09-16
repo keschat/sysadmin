@@ -6,6 +6,7 @@ mailx to see messages
 > https://www.postfix.org/BASIC_CONFIGURATION_README.html
 
 **What domain name to use in outbound mail**
+
 The myorigin parameter specifies the domain that appears in mail that is posted on this machine. The default is to use the local machine name, <u>$myhostname</u>, which defaults to the name of the machine. Unless you are running a really small site, you probably want to change that into $mydomain, which defaults to the parent domain of the machine name.
 
 For the sake of consistency between sender and recipient addresses, myorigin also specifies the domain name that is appended to an unqualified recipient address.
