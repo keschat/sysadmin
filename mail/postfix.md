@@ -59,12 +59,12 @@ The main configuration file for the Postfix service is located at /etc/postfix/m
 
 - myhostname declares the mail server’s hostname. Hostnames normally have prefixes in them, like this:
 ```txt
-myhostname = mail.sinisterriot.com
+myhostname = mail.domain.tld or sub.domain.tld
 ```
 
 - mydomain declares the domain that is actually handling mail, like this:
 ```txt
-mydomain = sinisterriot.com
+mydomain = domain.tld
 ```
 
 - mail_spool_directory declares the directory where mailbox files are placed, like so:
