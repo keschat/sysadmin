@@ -20,6 +20,7 @@ mailx to see messages
 ## Redhat
 > https://www.redhat.com/en/blog/install-configure-postfix <br>
 > https://orcacore.com/install-postfix-almalinux-9/
+> https://reintech.io/blog/configuring-postfix-smtp-authentication-almalinux-9
 
 ### How to install and configure Postfix
 
@@ -55,6 +56,29 @@ systemctl enable postfix
 
 Config files in /etc/postfix
 The main configuration file for the Postfix service is located at /etc/postfix/main.cf
+
+1. Check your current Postfix configuration
+```bash
+sudo postconf myhostname
+sudo postconf myorigin
+sudo postconf smtp_generic_maps
+sudo postconf sender_canonical_maps
+sudo postconf canonical_maps
+
+# Or
+
+sudo postconf | grep -E '^(myhostname|myorigin|smtp_generic_maps|sender_canonical_maps|canonical_maps|relayhost)'
+```
+
+2. If you want local system mail to become system@domain.tld
+The relevant setting is usually:
+```
+myorigin
+```
+Ex:
+```bash
+sudo postconf myorigin=domain.tld
+```
 
 - myhostname declares the mail server’s hostname. Hostnames normally have prefixes in them, like this:
 ```txt
@@ -117,7 +141,7 @@ In any regard, check the mail logs for errors. They are located in /var/log/mail
 ***
 
 ## Ubuntu
-> https://ubuntu.com/server/docs/how-to/mail-services/install-postfix/
+> https://ubuntu.com/server/docs/how-to/mail-services/install-postfix/ <br>
 > https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-20-04
 
 ### **Install and configure Postfix**
@@ -157,38 +181,7 @@ The user interface will be displayed. On each screen, select the following value
 To set the mailbox format, you can either edit the configuration file directly, or use the postconf command. In either case, the configuration parameters will be stored in /etc/postfix/main.cf file. Later if you wish to re-configure a particular parameter, you can either run the command or change it manually in the file.
 
 
-
-
-
-
-
 *** 
-
-1. Check your current Postfix configuration
-```bash
-sudo postconf myhostname
-sudo postconf myorigin
-sudo postconf smtp_generic_maps
-sudo postconf sender_canonical_maps
-sudo postconf canonical_maps
-
-# Also
-
-sudo postconf | grep -E '^(myhostname|myorigin|smtp_generic_maps|sender_canonical_maps|canonical_maps|relayhost)'
-```
-
-2. If you want local system mail to become system@domain.tld
-The relevant setting is usually:
-```
-myorigin
-```
-Ex:
-```bash
-sudo postconf myorigin=domain.tld
-```
-
-Refs:
-- https://reintech.io/blog/configuring-postfix-smtp-authentication-almalinux-9
 
 ### Manual test:
 ```
@@ -243,12 +236,10 @@ smtp_generic_maps = hash:/etc/postfix/generic
 - postmap /etc/postfix/generic
 - postfix reload
 
-
 ## postfix from email address
 
 You can change or set the outgoing "From" email address in Postfix by configuring smtp_generic_maps in your main configuration file. <br>
 [1] (https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html)
-
 
 #### How to Configure smtp_generic_maps
 
