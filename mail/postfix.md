@@ -54,8 +54,16 @@ systemctl enable postfix
 
 **Configuring Postfix**
 
-Config files in /etc/postfix
+By default, Postfix configuration files are in /etc/postfix.
+The two most important files are main.cf and master.cf; these files must be owned by root. Giving someone else write permission to main.cf or master.cf (or to their parent directories) means giving root privileges to that person.
 The main configuration file for the Postfix service is located at /etc/postfix/main.cf
+
+_You specify a configuration parameter as:_
+/etc/postfix/main.cf:
+    parameter = value
+and you use it by putting a "$" character in front of its name:
+/etc/postfix/main.cf:
+    other_parameter = $parameter
 
 1. Check your current Postfix configuration
 ```bash
