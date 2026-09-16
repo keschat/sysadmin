@@ -11,10 +11,11 @@ The myorigin parameter specifies the domain that appears in mail that is posted 
 For the sake of consistency between sender and recipient addresses, myorigin also specifies the domain name that is appended to an unqualified recipient address.
 
 Examples (specify only one of the following):
-    /etc/postfix/main.cf:
-        myorigin = $myhostname (default: send mail as "user@$myhostname")
-        myorigin = $mydomain   (probably desirable: "user@$mydomain")
-
+<pre>
+/etc/postfix/main.cf:
+    myorigin = $myhostname (default: send mail as "user@$myhostname")
+    myorigin = $mydomain   (probably desirable: "user@$mydomain")
+</pre>
 
 
 ## Terms
