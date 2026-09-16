@@ -2,22 +2,20 @@ mailx to see messages
 
 # Postfix
 
-> ## Terms
+## Terms
 
-- Virtual Email Mapping
+- **Virtual Email Mapping**
 Imagine your company has generic email addresses like info@company.com or support@company.com. Virtual mapping lets you:
 
 Create these addresses without creating actual user accounts
 Direct emails sent to these addresses to real user inboxes
 
- - The Postmap Command and "Lookups"
+ - **The Postmap Command and "Lookups"**
 
- Before postmap: You have a text file with entries like info@example.com testuser
-The lookup process: When an email arrives, Postfix needs to quickly find who should receive it
-The problem: Searching through a text file line by line is slow
-What postmap does: Creates a special database that works like a phone book for faster lookups
-
-
+    Before postmap: You have a text file with entries like info@example.com testuser
+    The lookup process: When an email arrives, Postfix needs to quickly find who should receive it
+    The problem: Searching through a text file line by line is slow
+    What postmap does: Creates a special database that works like a phone book for faster lookups
 
 ## Redhat
 > https://www.redhat.com/en/blog/install-configure-postfix <br>
@@ -31,13 +29,12 @@ Sendmail and Postfix are the most commonly used implementations of SMTP in most 
 
 A good habit to have is to check and see if the software is installed on the server already. It’s always helpful to check if something is there before getting to work.
 
-
 ```bash
 # Update System
 # Update your local package index with the following command:
 sudo dnf update -y
 
-# Check for Sendmail
+# Check if sendmail is installed
 rpm -qa | grep sendmail
 
 # If you have Sendmail installed on your server, you need to remove it with the following command:
