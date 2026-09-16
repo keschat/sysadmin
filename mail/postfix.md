@@ -1,6 +1,8 @@
 mailx to see messages
 
-# Postfix: Terms
+# Postfix
+
+> ## Terms
 
 - Virtual Email Mapping
 Imagine your company has generic email addresses like info@company.com or support@company.com. Virtual mapping lets you:
