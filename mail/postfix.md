@@ -59,12 +59,13 @@ The two most important files are main.cf and master.cf; these files must be owne
 The main configuration file for the Postfix service is located at /etc/postfix/main.cf
 
 <pre>
-    _You specify a configuration parameter as:_
-    /etc/postfix/main.cf:
-        parameter = value
-    and you use it by putting a "$" character in front of its name:
-    /etc/postfix/main.cf:
-        other_parameter = $parameter
+_You specify a configuration parameter as:_
+/etc/postfix/main.cf:
+    parameter = value
+    
+and you use it by putting a "$" character in front of its name:
+/etc/postfix/main.cf:
+    other_parameter = $parameter
 </pre>
 
 1. Check your current Postfix configuration
