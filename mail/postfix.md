@@ -96,7 +96,49 @@ In any regard, check the mail logs for errors. They are located in /var/log/mail
 ## Ubuntu
 ### https://ubuntu.com/server/docs/how-to/mail-services/install-postfix/
 
-**Install and configure Postfix **
+> **Install and configure Postfix**
+
+**Install Postfix**
+To install Postfix run the following command:
+```bash
+sudo apt install postfix
+```
+It is OK to accept defaults initially by pressing return for each question. Some of the configuration options will be investigated in greater detail in the configuration stage.
+
+> **Configure Postfix**
+There are four things you should decide before configuring:
+
+- The <Domain> for which you’ll accept email (we’ll use mail.example.com in our example)
+- The network and class range of your mail server (we’ll use 192.168.0.0/24)
+- The username (we’re using steve)
+- Type of mailbox format (mbox is the default, but we’ll use the alternative, Maildir)
+
+To configure postfix, run the following command:
+```bash
+sudo dpkg-reconfigure postfix
+```
+
+The user interface will be displayed. On each screen, select the following values:
+
+- Internet Site
+- mail.example.com
+- steve
+- mail.example.com, localhost.localdomain, localhost
+- No
+- 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 192.168.0.0/24
+- 0
+- +
+- all
+
+To set the mailbox format, you can either edit the configuration file directly, or use the postconf command. In either case, the configuration parameters will be stored in /etc/postfix/main.cf file. Later if you wish to re-configure a particular parameter, you can either run the command or change it manually in the file.
+
+
+
+
+
+
+
+*** 
 
 1. Check your current Postfix configuration
 ```bash
