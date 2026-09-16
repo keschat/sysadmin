@@ -1,5 +1,32 @@
 mailx to see messages
 
+>https://www.redhat.com/en/blog/install-configure-postfix
+>
+>
+
+### How to install and configure Postfix
+
+Sendmail and Postfix are the most commonly used implementations of SMTP in most Linux distros. Postfix is an open source mail-transfer agent that was originally developed as an alternative to Sendmail and is usually set up as the default mail server.
+
+**Installing Postfix**
+
+A good habit to have is to check and see if the software is installed on the server already. It’s always helpful to check if something is there before getting to work.
+
+To check on RPM-based distros, use this command:
+```bash
+rpm -qa | grep postfix
+```
+
+```bash
+yum install -y postfix
+```
+
+
+
+
+
+
+
 1. Check your current Postfix configuration
 ```bash
 sudo postconf myhostname
@@ -152,6 +179,31 @@ Finally restart or reload postfix service:
 ## OR ##
 # systemctl restart postfix.service
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
