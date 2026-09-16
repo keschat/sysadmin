@@ -17,6 +17,27 @@ Examples (specify only one of the following):
     myorigin = $mydomain   (probably desirable: "user@$mydomain")
 </pre>
 
+**What domains to receive mail for**
+<pre>
+IMPORTANT: If your machine is a mail server for its entire domain, you must list $mydomain as well.
+
+Example 1: default setting.
+
+/etc/postfix/main.cf:
+    mydestination = $myhostname localhost.$mydomain localhost
+Example 2: domain-wide mail server.
+
+/etc/postfix/main.cf:
+    mydestination = $myhostname localhost.$mydomain localhost $mydomain
+Example 3: host with multiple DNS A records.
+
+/etc/postfix/main.cf:
+    mydestination = $myhostname localhost.$mydomain localhost 
+        www.$mydomain ftp.$mydomain
+Caution: in order to avoid mail delivery loops, you must list all hostnames of the machine, including $myhostname, and localhost.$mydomain.
+</pre>
+
+
 
 ## Terms
 
