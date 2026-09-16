@@ -19,26 +19,37 @@ What postmap does: Creates a special database that works like a phone book for f
 
 ## Redhat
 >https://www.redhat.com/en/blog/install-configure-postfix
+> https://orcacore.com/install-postfix-almalinux-9/
 
 ### How to install and configure Postfix
 
 Sendmail and Postfix are the most commonly used implementations of SMTP in most Linux distros. Postfix is an open source mail-transfer agent that was originally developed as an alternative to Sendmail and is usually set up as the default mail server.
 
+**Update System**
+
+Update your local package index with the following command:
+```bash
+sudo dnf update -y
+```
+
 **Installing Postfix**
 
 A good habit to have is to check and see if the software is installed on the server already. It’s always helpful to check if something is there before getting to work.
 
-To check on RPM-based distros, use this command:
+Check for Sendmail
 ```bash
+rpm -qa | grep sendmail
+
+# If you have Sendmail installed on your server, you need to remove it with the following command:
+sudo dnf remove sendmail*
+
+# Check if postfix is installed
 rpm -qa | grep postfix
-```
 
-```bash
+# Install if not present
 yum install -y postfix
-```
 
-After Postfix is installed, you can start the service and enable it to make sure it starts after reboot:
-```bash
+# After Postfix is installed, you can start the service and enable it to make sure it starts after reboot:
 systemctl start postfix
 systemctl enable postfix
 ```
