@@ -2,6 +2,22 @@ mailx to see messages
 
 # Postfix
 
+## Configuration
+> https://www.postfix.org/BASIC_CONFIGURATION_README.html
+
+**What domain name to use in outbound mail**
+The myorigin parameter specifies the domain that appears in mail that is posted on this machine. The default is to use the local machine name, <u>$myhostname</u>, which defaults to the name of the machine. Unless you are running a really small site, you probably want to change that into $mydomain, which defaults to the parent domain of the machine name.
+
+For the sake of consistency between sender and recipient addresses, myorigin also specifies the domain name that is appended to an unqualified recipient address.
+
+Examples (specify only one of the following):
+
+/etc/postfix/main.cf:
+    myorigin = $myhostname (default: send mail as "user@$myhostname")
+    myorigin = $mydomain   (probably desirable: "user@$mydomain")
+
+
+
 ## Terms
 
 - **Virtual Email Mapping**
@@ -66,6 +82,9 @@ _You specify a configuration parameter as:_
 and you use it by putting a "$" character in front of its name:
 /etc/postfix/main.cf:
     other_parameter = $parameter
+
+Whenever you make a change to the main.cf or master.cf file, execute the following command as root in order to refresh a running mail system:
+# postfix reload
 </pre>
 
 1. Check your current Postfix configuration
