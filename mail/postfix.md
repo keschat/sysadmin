@@ -2,6 +2,8 @@ mailx to see messages
 
 ## Postfix rewrite mail address ONLY for outgoing/sending e-mail
 
+- https://www.claudiokuenzler.com/blog/164/postfix-rewrite-change-mail-address-for-outgoing-sending-mails
+
 rewriting outgoing sender should be done @ /etc/postfix/generic
 
 The parameter smtp_generic_maps:
