@@ -1,6 +1,7 @@
 mailx to see messages
 
-rewriting outgoing sender should be done @ /etc/postfix/generic
+> Postfix rewrite mail address ONLY for outgoing/sending e-mail
+> rewriting outgoing sender should be done @ /etc/postfix/generic
 
 # Postfix
 
