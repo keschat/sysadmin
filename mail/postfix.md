@@ -4,6 +4,8 @@ mailx to see messages
 
 rewriting outgoing sender should be done @ /etc/postfix/generic
 
+> _Note " When mail is sent to a remote host via SMTP, this replaces  his@localdomain.local by his ISP mail address, replaces her@localdomain.local by her ISP mail address, ...."_
+
 # Postfix
 
 ## Configuration
