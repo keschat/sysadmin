@@ -1,5 +1,4 @@
-**Server admin** 
-
+**Server admin** <br>
 [/docs.glesys.com](https://docs.glesys.com/products/compute/guides-for-server-management/sending-email-from-your-server-using-postfix)
 
 **Email address types** <br>
