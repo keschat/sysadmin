@@ -26,7 +26,7 @@ This is a test message.
 
 3. Press Ctrl + D to submit the email and watch the live SMTP connection details on your screen
 
-4. Now, we will be able to see the SMTP connection details. We can return to our shell with the Ctrl+c key combination.
+4. You should see the details about the SMTP connection. You can return to your shell with Ctrl+c.
 
 _**We can also send an email with Exim from the command line as seen below:**_
 ```bash
