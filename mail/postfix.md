@@ -38,6 +38,16 @@ Postfix inherited some features from older sendmail like milter and aliases. The
     user without domain. Postfix will append $myorigin if append_at_myorigin set yes
 </pre>
 
+> Why do we need /etc/aliases when having the email inside virtual aliases map seems to override it?
+
+As you can see above, alias_maps(/etc/aliases) has some additional features (beside forwarding) like piping to command. In contrast with virtual_alias_maps that just forwards emails.
+
+> What is the purpose of having these 2 separate aliases mapping and when do we decide when to use what?
+
+The alias_maps drawback is that you cannot differentiate if the original recipient has root@example.com or root@example.net. Both will be mapped to root entry in alias_maps. In other words, you can define different forwarding address with virtual_alias_maps.
+
+
+
 ## Postfix rewrite mail address ONLY for outgoing/sending e-mail
 
 - https://www.claudiokuenzler.com/blog/164/postfix-rewrite-change-mail-address-for-outgoing-sending-mails
