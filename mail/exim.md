@@ -1,3 +1,5 @@
+da build exim_conf
+
 ## directadmin exim aliases not working
 
 To fix non-working Exim aliases or forwarders in DirectAdmin, check your Exim logs, rebuild the configuration files via CustomBuild, or verify the domain alias paths. [1] (https://forum.directadmin.com/threads/exim-4-94-update-causes-email-temporary-rejects.61642/)
