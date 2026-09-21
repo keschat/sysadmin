@@ -39,3 +39,4 @@ systemctl restart exim
 _(Alternative: You can also place a .forward file containing your email address inside the /root directory, though editing /etc/aliases is the most reliable method.)_
 
 To create a forward file, make a file named .forward inside this file list the e-mail address you want these e-mails to be sent too. Save in it the /root directory and that's it.
+Easier method but didn't seem to always work.
