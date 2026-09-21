@@ -22,6 +22,22 @@ Postfix inherited some features from older sendmail like milter and aliases. The
     <b>:include:/file/name</b>: include alias from /file/name
 </pre>
 
+**Parameter virtual_alias_maps**
+
+* Used by virtual(5) delivery
+* Always invoked first time before any other address classes. It doesn't care whether the recipient domain was listed in mydestination, virtual_mailbox_domains or other places. It will override the address/alias defined in other places.
+* The lookup input has some format
+<pre>
+    <be>user@domain</be>: it will match user@domain literally
+    <be>user</be>: it will match user@site when site is equal to $myorigin, when site is listed in $mydestination, or when it is     listed in $inet_interfaces or $proxy_interfaces. This functionality overlaps with functionality of the local aliases(5) database.
+    <b>@domain</b>: it will match any email intended for domain regardless of local parts
+</pre>
+* The lookup result must be
+<pre>
+    valid email address
+    user without domain. Postfix will append $myorigin if append_at_myorigin set yes
+</pre>
+
 ## Postfix rewrite mail address ONLY for outgoing/sending e-mail
 
 - https://www.claudiokuenzler.com/blog/164/postfix-rewrite-change-mail-address-for-outgoing-sending-mails
