@@ -2,6 +2,9 @@
 * /etc/aliases file:
 * /etc/postfix/virtual
 
+_Ref: https://hostperl.com/kb/tutorials/configure-mail-aliases-virtual-users-ubuntu-vps-complete-setup_
+Mail aliases redirect messages from one address to another existing user account. Virtual users exist only in the mail system—no corresponding system accounts needed. Both features give you precise control over email routing and delivery on your
+
 ## Brief
 
 **Some background** <br>
