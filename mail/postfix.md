@@ -16,10 +16,10 @@ Postfix inherited some features from older sendmail like milter and aliases. The
 * The lookup input was only local parts from full email addres (e.g myuser from myuser@example.com). It discard domain parts of recipient.
 * The lookup result can contains one or more of the following:
 <pre>
-    **email address**: email will forwarded to email address
-    **/file/name**: email will be appended to /file/name
-    **|command**: mail piped to the command
-    **:include:/file/name**: include alias from /file/name
+    <b>email address</b>: email will forwarded to email address
+    <b>/file/name</b>: email will be appended to /file/name
+    <b>|command</b>: mail piped to the command
+    <b>:include:/file/name</b>: include alias from /file/name
 </pre>
 
 ## Postfix rewrite mail address ONLY for outgoing/sending e-mail
