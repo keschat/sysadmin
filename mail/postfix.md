@@ -1,4 +1,24 @@
-mailx to see messages
+* mailx or s-nail to see messages
+* /etc/aliases file:
+* /etc/postfix/virtual
+
+## Brief
+
+**Some background** <br>
+_Ref: https://serverfault.com/questions/644306/confused-about-alias-maps-and-virtual-alias-maps_
+
+Postfix inherited some features from older sendmail like milter and aliases. The file /etc/aliases is part of aliases inheritance and implemented by alias_maps. On the other side, postfix has virtual_maps/virtual_alias_maps for handle email aliasing. So what's the difference between them?
+
+**Parameter alias_maps**
+
+* Used only for local(8) delivery
+* According to address class in postfix, email will delivery by local(8) if the recipient domain names are listed in the `mydestination`
+* The lookup input was only local parts from full email addres (e.g myuser from myuser@example.com). It discard domain parts of recipient.
+* The lookup result can contains one or more of the following:
+    email address: email will forwarded to email address
+    /file/name: email will be appended to /file/name
+    |command: mail piped to the command
+    :include:/file/name: include alias from /file/name
 
 ## Postfix rewrite mail address ONLY for outgoing/sending e-mail
 
