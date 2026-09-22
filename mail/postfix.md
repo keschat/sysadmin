@@ -1,6 +1,7 @@
 * mailx or s-nail to see messages
 * /etc/aliases file:
 * /etc/postfix/virtual
+* postalias /etc/aliases
 
 _Ref: https://hostperl.com/kb/tutorials/configure-mail-aliases-virtual-users-ubuntu-vps-complete-setup_
 
