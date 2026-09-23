@@ -51,7 +51,7 @@ As you can see above, alias_maps(/etc/aliases) has some additional features (bes
 
 The alias_maps drawback is that you cannot differentiate if the original recipient has root@example.com or root@example.net. Both will be mapped to root entry in alias_maps. In other words, you can define different forwarding address with virtual_alias_maps.
 
-***
+****
 
 
 ## Postfix rewrite mail address ONLY for outgoing/sending e-mail
