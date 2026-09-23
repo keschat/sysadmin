@@ -24,7 +24,7 @@ DirectAdmin generates automated warnings like **"Warning: 200 E-Mails have just 
 DirectAdmin uses **Exim** as its default mail agent. You can track down the exact recipients, timestamps, and subjects using SSH as the root user:
 
 > Ref:
-> https://forum.directadmin.com/threads/email-sending-and-receiving-issue.65649/
+> https://forum.directadmin.com/threads/email-sending-and-receiving-issue.65649/ <br>
 > https://orissawebhosting.in/knowledgebase/log-file-location-in-directadmin/
 
 - **View live or recent email traffic:** Run tail to see emails as they process:
@@ -42,8 +42,8 @@ grep "yourbilling@domain.com" /var/log/exim/mainlog
 exigrep "1sNDnI-000000-XX" /var/log/exim/mainlog
 ```
  > Ref:
- > https://forum.directadmin.com/threads/user-account-emails-not-sending-out.68132/
- > https://forum.directadmin.com/threads/exim-emails-not-resending-after.49223/
+ > https://forum.directadmin.com/threads/user-account-emails-not-sending-out.68132/ <br>
+ > https://forum.directadmin.com/threads/exim-emails-not-resending-after.49223/ <br>
  > https://forum.directadmin.com/threads/new-message-warning-200-e-mails-have-just-been-sent-by-myemail-mydomain-com.61425/
 
 - ### 2. Check the Mail Queue in the DirectAdmin Panel
@@ -58,8 +58,8 @@ If the emails are still processing or are being delayed, they will be sitting in
 3. Look for patterns in sender or recipient addresses. Click on any message to view its headers, which will reveal exactly where it is heading and what content it contains.
 
  > Ref:
- > https://docs.directadmin.com/other-hosting-services/exim/maintaining-email-queue.html
- > https://forum.directadmin.com/threads/new-message-warning-200-e-mails-have-just-been-sent-by-myemail-mydomain-com.61425/
+ > https://docs.directadmin.com/other-hosting-services/exim/maintaining-email-queue.html <br>
+ > https://forum.directadmin.com/threads/new-message-warning-200-e-mails-have-just-been-sent-by-myemail-mydomain-com.61425/ <br>
  > https://bobcares.com/blog/directadmin-mail-queue-administration/
 
 - ### 3. Check the Logs Directly Inside BlestaBlesta maintains internal records of all outgoing correspondence. You can check this from the admin panel to correlate with your server spikes
@@ -73,8 +73,8 @@ Blesta maintains internal records of all outgoing correspondence. You can check 
 2. Go to **Tools** > **Logs**.
 3. Look under the **Email Log** tab. This displays a paginated list of all emails dispatched by the core system or plugins, complete with the recipient's email address, subject line, and delivery status.
  > Ref:
- > https://source-docs.blesta.com/classes/Logs.html
- > https://docs.blesta.com/support/releases/4/470/
+ > https://source-docs.blesta.com/classes/Logs.html <br>
+ > https://docs.blesta.com/support/releases/4/470/ <br>
  > https://docs.supportpal.com/current/Blesta+Information
 
 ## Why is Blesta sending 200 emails?
@@ -87,7 +87,7 @@ Common culprits for a sudden burst of emails from Blesta include:
   > Ref: https://docs.blesta.com/integrations/plugins/mass-mailer/
 - **Email Loop / Verification Spike:** An automated setup configuration rule could be cycling (e.g., automated email verification triggers or stuck ticket notifications in Support Manager).
   > Ref:
-  > https://docs.blesta.com/support/releases/4/4120/
+  > https://docs.blesta.com/support/releases/4/4120/ <br>
   > https://docs.blesta.com/support/releases/4/470/
 
 
