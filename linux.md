@@ -15,7 +15,7 @@ In Linux, the notation `2>/dev/null` redirects and discards all error messages p
  > Ref:
  > https://superuser.com/questions/1179844/what-does-dev-null-21-true-mean-in-linux
  > https://kodekloud.com/blog/what-does-2-dev-null-mean/
-- `>`** (Redirection Operator):** This symbol tells the shell to intercept a data stream and point it somewhere other than your terminal screen.
+- `>` **(Redirection Operator):** This symbol tells the shell to intercept a data stream and point it somewhere other than your terminal screen.
  > Ref:
  > https://kodekloud.com/blog/what-does-2-dev-null-mean/
 - `/dev/null` **(The "Black Hole"):** This is a special, virtual system file often referred to as the Linux black hole or bit bucket. Any data written to /dev/null is immediately discarded and can never be recovered.
