@@ -1,3 +1,59 @@
+## mailx send mail with email and from name
+> Ref: <br/>
+> https://unix.stackexchange.com/questions/755695/how-to-include-a-display-name-when-sending-mail-with-mailx <br/>
+> https://www.binarytides.com/linux-mailx-command/ <br/>
+> https://www.digitalocean.com/community/tutorials/send-email-linux-command-line
+
+AI Overview
+
+To send an email with a custom **"From" name and email address** using `mailx`, you can use the `-r` flag or the `-S from=` variable option.
+> Ref: <br/>
+> https://gist.github.com/aeecf4790f356a47a8df <br/>
+> https://www.binarytides.com/linux-mailx-command/
+
+The exact behavior depends on your system's underlying mailx variant (Heirloom mailx / S-nail vs. BSD mailx).
+> Ref: <br/>
+> https://www.linux.com/training-tutorials/9-mailmailx-command-examples-send-emails-command-line-linux/ <br/>
+> https://www.binarytides.com/linux-mailx-command/
+
+### Method 1: Using the `-S from=` option (Recommended)
+
+This is the most reliable method for modern `mailx` variants like Heirloom `mailx` or `s-nail`. Use the format `"Display Name <email@example.com>"` inside the variable declaration:
+> Ref: <br/>
+> https://unix.stackexchange.com/questions/755695/how-to-include-a-display-name-when-sending-mail-with-mailx <br/>
+> https://manpages.ubuntu.com/manpages/xenial/man1/heirloom-mailx.1.html <br/>
+> https://www.linux.com/training-tutorials/9-mailmailx-command-examples-send-emails-command-line-linux/
+```bash
+echo "This is the email body." | mailx -s "Your Subject" -S from="John Doe <johndoe@example.com>" recipient@example.com
+```
+
+Alternatively, some mailx versions accept a parenthesis syntax:
+
+> Ref: <br/>
+> https://gist.github.com/aeecf4790f356a47a8df
+```bash
+echo "This is the email body." | mailx -s "Your Subject" -S from="johndoe@example.com(John Doe)" recipient@example.com
+```
+
+### Method 2: Using the `-r` option
+
+For standard setups, the `-r` option explicitly sets the sender's details.
+```bash
+echo "This is the email body." | mailx -s "Your Subject" -r "John Doe <johndoe@example.com>" recipient@example.com
+```
+
+### Quick Troubleshooting
+
+- **Name is ignored:** If the recipient only sees the email address and not your text name, your server's Mail Transfer Agent (like Postfix or Sendmail) might be stripping out unauthorized custom headers.
+  > Ref: <br/>
+  > https://unix.stackexchange.com/questions/755695/how-to-include-a-display-name-when-sending-mail-with-mailx <br/>
+  > https://www.linux.com/training-tutorials/9-mailmailx-command-examples-send-emails-command-line-linux/
+- **Permission denied:** If you are trying to forge an external domain (like @gmail.com) without a proper SMTP relay configured, the mail will likely be rejected or marked as spam.
+  > Ref: <br/>
+  > https://www.digitalocean.com/community/tutorials/send-email-linux-command-line
+
+***
+
 # CentOS, Ubuntu
 
 ## How to Test/Send an SMTP Email (sendmail/exim) In the Shell
