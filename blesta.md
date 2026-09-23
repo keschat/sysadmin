@@ -19,9 +19,9 @@ To investigate and find exactly where Blesta is sending these 200 emails on your
 
 DirectAdmin generates automated warnings like **"Warning: 200 E-Mails have just been sent by..."** when a specific user or account hits its daily threshold. Here is how you can track down those emails:
 
-> Ref:
-> https://forum.directadmin.com/threads/cannot-set-mail-limit-over-200-day.68351/
-> https://forum.directadmin.com/threads/new-message-warning-200-e-mails-have-just-been-sent-by-myemail-mydomain-com.61425/
+> Ref: <br>
+> https://forum.directadmin.com/threads/cannot-set-mail-limit-over-200-day.68351/ <br>
+> https://forum.directadmin.com/threads/new-message-warning-200-e-mails-have-just-been-sent-by-myemail-mydomain-com.61425/ <br>
 > https://forum.directadmin.com/threads/account-just-send-100-email-set-to-200.66977/
 
 - ### 1. Check the DirectAdmin Mail Server (Exim Logs)
