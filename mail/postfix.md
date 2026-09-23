@@ -64,7 +64,7 @@ The **Postfix generic map** allows you to alter outgoing email addresses (both h
 
 Here is a step-by-step example of how to configure and use it:
 
-1. **Enable generic maps in `main.cf`**
+1. ### Enable generic maps in `main.cf`
 
 Open your Postfix configuration file (usually /etc/postfix/main.cf) and add or modify the following line to define your lookup table:
 > Ref: <br/>
@@ -79,12 +79,47 @@ _(Note: Some modern Linux distributions use `lmdb`: instead of `hash`:. You can 
 > https://www.postfix.org/STANDARD_CONFIGURATION_README.html <br/>
 > https://www.postfix.org/generic.5.html
 
-2. **Configure the rules in `/etc/postfix/generic`**
+2. ### Configure the rules in `/etc/postfix/generic`
 
 Open or create the /etc/postfix/generic file. The syntax relies on a simple format: **original_address   rewritten_address**.
+> Ref: <br/>
+> https://www.postfix.org/generic.5.html <br/>
+> https://superuser.com/questions/1849071/how-to-apply-postfix-milter-before-smtp-generic-maps-for-dkim-purposes <br/>
+> https://gist.github.com/697d5fe9ddabf1902d13
+```txt
+text# Map specific local users to a public address
+root@localdomain.local       admin@yourcompany.com
+john@localdomain.local       john.doe@yourcompany.com
 
+# Map an entire local domain to a single fallback address
+@localdomain.local           noreply@yourcompany.com
+```
 
+3. ### Generate the database and restart
 
+Whenever you change the map file, you must rebuild the Postfix lookup database using the `postmap` command. After that, reload or restart Postfix to apply the changes.
+> Ref: <br/>
+> https://www.postfix.org/generic.5.html <br/>
+> https://www.cyberciti.biz/tips/howto-postfix-masquerade-change-email-mail-address.html <br/>
+> https://linux.die.net/man/5/generic <br/>
+> https://gist.github.com/697d5fe9ddabf1902d13
+
+Run the following commands in your terminal:
+```
+bash
+sudo postmap /etc/postfix/generic
+sudo systemctl restart postfix
+```
+
+### How to test your mapping
+> Ref: <br/>
+> https://linux.die.net/man/5/generic
+
+You can verify that your generic map is resolving accurately without sending a test email by using `postmap -q`:
+```bash
+postmap -q "john@localdomain.local" hash:/etc/postfix/generic
+```
+**Expected output**: john.doe@yourcompany.com
 
 ****
 
