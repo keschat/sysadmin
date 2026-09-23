@@ -105,8 +105,7 @@ Whenever you change the map file, you must rebuild the Postfix lookup database u
 > https://gist.github.com/697d5fe9ddabf1902d13
 
 Run the following commands in your terminal:
-```
-bash
+```bash
 sudo postmap /etc/postfix/generic
 sudo systemctl restart postfix
 ```
