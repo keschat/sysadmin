@@ -111,10 +111,10 @@ sudo systemctl restart postfix
 ```
 
 ### How to test your mapping
-> Ref: <br/>
-> https://linux.die.net/man/5/generic
 
 You can verify that your generic map is resolving accurately without sending a test email by using `postmap -q`:
+> Ref: <br/>
+> https://linux.die.net/man/5/generic
 ```bash
 postmap -q "john@localdomain.local" hash:/etc/postfix/generic
 ```
