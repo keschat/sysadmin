@@ -2,7 +2,7 @@
 
 AI Overview
 
-2>/dev/null redirects and discards all error messages produced by a command. It acts like a digital filter, preventing errors from cluttering your terminal screen while allowing normal results to display as usual.
+In Linux, the notation `2>/dev/null` redirects and discards all error messages produced by a command. It acts like a digital filter, preventing errors from cluttering your terminal screen while allowing normal results to display as usual.
 
 > Ref:
 > https://askubuntu.com/questions/350208/what-does-2-dev-null-mean
