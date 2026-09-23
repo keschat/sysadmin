@@ -51,8 +51,42 @@ As you can see above, alias_maps(/etc/aliases) has some additional features (bes
 
 The alias_maps drawback is that you cannot differentiate if the original recipient has root@example.com or root@example.net. Both will be mapped to root entry in alias_maps. In other words, you can define different forwarding address with virtual_alias_maps.
 
-****
+***
 
+## Postfix/generic map example
+
+**AI Overview**
+
+The **Postfix generic map** allows you to alter outgoing email addresses (both headers and envelopes) when mail leaves your system via SMTP. This is particularly useful for rewriting invalid internal domains (like .local or local hostnames) into valid public internet email addresses.
+> Ref: <br/>
+> https://linux.die.net/man/5/generic <br/>
+> https://gist.github.com/697d5fe9ddabf1902d13
+
+Here is a step-by-step example of how to configure and use it:
+
+1. **Enable generic maps in `main.cf`**
+
+Open your Postfix configuration file (usually /etc/postfix/main.cf) and add or modify the following line to define your lookup table:
+> Ref: <br/>
+> https://www.postfix.org/generic.5.html
+> https://www.postfix.org/ADDRESS_REWRITING_README.html
+> https://gist.github.com/697d5fe9ddabf1902d13
+```ini
+smtp_generic_maps = hash:/etc/postfix/generic
+```
+_(Note: Some modern Linux distributions use `lmdb`: instead of `hash`:. You can check what your system supports by running `postconf -m`)._
+> Ref: <br/>
+> https://www.postfix.org/STANDARD_CONFIGURATION_README.html <br/>
+> https://www.postfix.org/generic.5.html
+
+2. **Configure the rules in `/etc/postfix/generic`**
+
+Open or create the /etc/postfix/generic file. The syntax relies on a simple format: **original_address   rewritten_address**.
+
+
+
+
+****
 
 ## Postfix rewrite mail address ONLY for outgoing/sending e-mail
 
