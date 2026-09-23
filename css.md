@@ -104,3 +104,41 @@ p {
     font-weight: 400; /* Will automatically trigger Lato-Regular.ttf */
 }
 ```
+
+***
+
+## rel="noopener"
+
+AI Overview
+
+`rel="noopener"` is an HTML attribute value used on links that open in a new tab or window (via `target="_blank"`) to prevent the newly opened page from accessing your original page through the `window.opener` property.
+ > Ref: <br/>
+ > https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/noopener <br/>
+ > https://dev.to/tlakomy/creating-a-safe-external-html-link-whats-the-deal-with-nofollow-noopener-norefferer--5a4i
+
+### Why It Matters
+
+- **Security Protection:** Without it, a malicious external site opened in a new tab can manipulate your original tab's `window.opener.location` property and quietly redirect your users to a fake phishing or malicious login page (a vulnerability known as "reverse tabnabbing").
+   > Ref: <br/>
+   > https://help.ahrefs.com/en/articles/4684931-noreferrer-noopener-nofollow-attributes
+- **Performance/Isolation:** It forces the new browsing context to run in a separate process or isolates it so it cannot tamper with the originating document.
+   > Ref: <br/>
+   > https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/noopener <br/>
+   > https://dev.to/tlakomy/creating-a-safe-external-html-link-whats-the-deal-with-nofollow-noopener-norefferer--5a4i
+- **SEO Impact:** It has zero negative or positive impact on search engine optimization rankings.
+ > Ref: <br/>
+ > https://elementor.com/blog/noopener-noreferrer/ <br/>
+ > https://help.ahrefs.com/en/articles/4684931-noreferrer-noopener-nofollow-attributes  
+
+### How to Use It
+
+Add `rel="noopener"` directly inside an anchor tag that uses `target="_blank"`:
+ > Ref: <br/>
+ > https://www.dofactory.com/html/rel/noopener <br/>
+ > https://help.ahrefs.com/en/articles/4684931-noreferrer-noopener-nofollow-attributes
+```html
+<a href="https://example.com" target="_blank" rel="noopener">External Link</a>
+```
+_(Note: While modern browsers now default to noopener behavior for target="_blank" links, explicitly coding rel="noopener" remains a best practice for legacy browser compatibility)._
+> Ref: <br/>
+> https://blog.openreplay.com/rel-noopener-obsolete-links/
