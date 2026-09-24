@@ -62,7 +62,7 @@ To replicate that exact Telnet command and SMTP command sequence using **Netcat*
 
 **1. The Netcat Command**
 
-Instead of typing telnet, use nc followed by the host and port:
+Instead of typing `telnet`, use `nc` followed by the host and port:
 ```bash
 nc localhost 25
 ```
