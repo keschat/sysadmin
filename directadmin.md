@@ -1,4 +1,4 @@
-# Restart Directadmin
+## Restart Directadmin
 
 You can restart DirectAdmin by running `systemctl restart directadmin` or `service directadmin restart` via SSH as the root user.
 
