@@ -13,7 +13,9 @@
 **AI Overview**        
 
 AI Mode conversation: is telnet still recommended
+
 You said: is telnet still recommendedis telnet still recommended 17 September 2026
+
 No, Telnet is not recommended for remote system administration or data transfer because it sends all information, including passwords and commands, in unencrypted plain text.
 > Ref: <br/>
 > https://www.redhat.com/en/blog/stop-using-telnet-test-port <br/>
