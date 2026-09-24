@@ -1,5 +1,7 @@
 ## almalinux telnet replacement
 
+Visit the [GitHub Website](https://github.com).
+
 **AI Overview**        
 
 Secure alternatives to Telnet on AlmaLinux depend on whether you are doing remote login management or testing network ports.
