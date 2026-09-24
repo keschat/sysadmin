@@ -2,6 +2,7 @@
 
 > Ref: <br/>
 > https://oneuptime.com/blog/post/2026-03-02-how-to-use-the-nc-netcat-command-for-network-testing-on-ubuntu/view
+> https://try.direct/blog/ubuntu-check-open-ports
 > https://www.redhat.com/en/blog/stop-using-telnet-test-port <br/>
 > https://www.emreguclu.io/linux/networking/troubleshooting/2024/10/02/telnet-alternatives-for-port-testing-in-linux.html <br/>
 > https://medium.com/geekculture/linux-useful-tricks-telnet-alternatives-ed9f342149a1 <br/>
