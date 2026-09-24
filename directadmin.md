@@ -1,6 +1,6 @@
 ## Securing DirectAdmin
 
-https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html
+> https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html
 
 ***
 
@@ -52,6 +52,8 @@ _If the setting has been changed successfully, directadmin will exit with code 0
 ***
 
 ## How to change the Return Path for diradmin emails
+
+> https://docs.directadmin.com/directadmin/general-usage/configuring-da.html
 
 Use the new `diradmin_envelope` option, which allows you to override the default "diradmin@host.name.com" in the Return-Path as desired:
 ```bash
