@@ -26,11 +26,11 @@ No, Telnet is not recommended for remote system administration or data transfer 
 - **No Encryption:** Anyone monitoring the network traffic can easily intercept and read your login details.
 - **High Vulnerability:** It exposes systems to malicious eavesdropping and attacks on any network, even local ones.
 
-_**Recommended Alternatives** <br/>
+### Recommended Alternatives 
 - **SSH (Secure Shell):** The modern, secure standard that replaces Telnet by fully encrypting the connection and login session. <br/>
 - **Netcat or Nmap:** Better suited tools for basic network diagnostics or checking if a specific TCP port is open._
 
-_**Where It Might Still Appear** <br/>
+### Where It Might Still Appear 
 - **Legacy Hardware**: Very old network gear, industrial devices, or embedded systems that lack the processing power to run modern encryption.
 - **Quick Port Testing:** Some engineers still use basic commands to test raw socket connections, though safer tools are preferred._
   > Ref: <br/>
