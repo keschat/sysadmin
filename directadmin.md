@@ -1,3 +1,9 @@
+## Securing DirectAdmin
+
+https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html
+
+***
+
 ## Restart Directadmin
 
 You can restart DirectAdmin by running `systemctl restart directadmin` or `service directadmin restart` via SSH as the root user.
