@@ -37,7 +37,8 @@ No, Telnet is not recommended for remote system administration or data transfer 
   > https://www.cloudns.net/blog/telnet-explained-what-is-it-and-how-it-works/
   > https://www.reddit.com/r/explainlikeimfive/comments/2d0r54/eli5what_is_telnet_what_was_it_used_for_why_has/
 
-Secure alternatives to Telnet on AlmaLinux depend on whether you are doing remote login management or testing network ports.
+
+> ### Secure alternatives to Telnet on AlmaLinux depend on whether you are doing remote login management or testing network ports.
 
 ### Remote Login and Management
 
