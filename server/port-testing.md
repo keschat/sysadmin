@@ -7,7 +7,8 @@
 > https://linux.how2shout.com/how-to-install-telnet-on-almalinux-9/ <br/>
 > https://mainvps.net/blog/best-telnet-alternatives-linux/ <br/>
 > https://www.siberoloji.com/setup-network-settings-almalinux/ <br/>
-> https://forums.rockylinux.org/t/rocky-9-and-telnet-missing/6604
+> https://forums.rockylinux.org/t/rocky-9-and-telnet-missing/6604 </br>
+> https://www.xoolive.org/2021/11/02/telnet.html
 
 **AI Overview**        
 
