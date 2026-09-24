@@ -47,7 +47,7 @@ _If the setting has been changed successfully, directadmin will exit with code 0
 
 ## How to change the Return Path for diradmin emails
 
-Use the new diradmin_envelope option, which allows you to override the default "diradmin@host.name.com" in the Return-Path as desired:
+Use the new `diradmin_envelope` option, which allows you to override the default "diradmin@host.name.com" in the Return-Path as desired:
 ```bash
 da config-set diradmin_envelope your@email.com
 systemctl restart directadmin
