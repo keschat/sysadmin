@@ -32,9 +32,9 @@ Blesta doesn't just assign visibility; it controls who gets notified based on st
 ------------------------------
 If you are having trouble getting tickets to route correctly, let me know:
 
-* Which Blesta version are you running (e.g., v5.x or v6.x)?
-* Are tickets arriving via the web portal or through email piping?
-* Are staff members failing to see tickets, or are they just not getting notifications?
+* Which **Blesta version** are you running (e.g., v5.x or v6.x)?
+* Are tickets arriving via the** web portal** or through **email piping**?
+* Are staff members **failing to see** tickets, or are they just **not getting notifications**?
 
 I can help you pinpoint exactly where your settings might be misconfigured!
 
@@ -54,36 +54,37 @@ I can help you pinpoint exactly where your settings might be misconfigured!
 # Q. What are common names for departments and staff groups
 
 In web hosting, IT, and automated billing environments like Blesta, structuring your organization into clear tiers ensures tickets route to the right people immediately.
-The most common names for support departments and staff groups across the industry include:
+The most common names for **support departments** and **staff groups** across the industry include:
 ## Support Departments (Client-Facing)
-These are the public-facing categories clients select when opening a ticket or emailing a specific inbox (e.g., sales@ or billing@).
+These are the public-facing categories clients select when opening a ticket or emailing a specific inbox (e.g., `sales@` or `billing@)`.
 
-* Billing & Accounts: For invoice disputes, payment issues, refunds, and subscription cancellations.
-* Technical Support: The general landing spot for broken services, errors, or troubleshooting.
-* Sales & Pre-Sales: For prospective clients asking about plans, custom quotes, or feature availability.
-* Abuse & Security: A critical department for handling DMCA takedown notices, spam reports, or hacked accounts.
-* Customer Success / Account Management: Typically used for high-value enterprise clients requiring personalized retention care.
+* **Billing & Accounts:** For invoice disputes, payment issues, refunds, and subscription cancellations.
+* **Technical Support:** The general landing spot for broken services, errors, or troubleshooting.
+* **Sales & Pre-Sales:** For prospective clients asking about plans, custom quotes, or feature availability.
+* **Abuse & Security:** A critical department for handling DMCA takedown notices, spam reports, or hacked accounts.
+* **Customer Success / Account Management:** Typically used for high-value enterprise clients requiring personalized retention care.
 
 ## Staff Groups (Internal Roles)
 These are internal operational designations used to group employees by their technical skill set, authority levels, or shifts.
 
-* Tier 1 Support (Frontline): The first line of defense. They handle basic password resets, general questions, and triage tickets before escalating.
-* Tier 2 Support (Administrators): Experienced staff who handle deeper troubleshooting, software configurations, and minor service disruptions.
-* Tier 3 Support (Engineers / Developers): The highest escalation tier. They manage root server access, database fixes, infrastructure issues, and bug patching.
-* Billing Specialists: A staff group locked down specifically to financial data, processing manual transactions or verifying fraud alerts.
-* Super Admins / Management: Executive staff with overriding access to see all tickets, pull metrics, and override staff assignments.
+* **Tier 1 Support (Frontline):** The first line of defense. They handle basic password resets, general questions, and triage tickets before escalating.
+* **Tier 2 Support (Administrators):** Experienced staff who handle deeper troubleshooting, software configurations, and minor service disruptions.
+* **Tier 3 Support (Engineers / Developers):** The highest escalation tier. They manage root server access, database fixes, infrastructure issues, and bug patching.
+* **Billing Specialists:** A staff group locked down specifically to financial data, processing manual transactions or verifying fraud alerts.
+* **Super Admins / Management:** Executive staff with overriding access to see all tickets, pull metrics, and override staff assignments.
 
 ------------------------------
 If you want, tell me:
 
-* What services or products do you sell?
-* How many staff members are on your team?
+* What **services or products** do you sell?
+* How many **staff members** are on your team?
 
-I can suggest a tailored department structure and permission scheme for your exact setup.
+I can suggest a **tailored department structure** and **permission scheme** for your exact setup.
 
 # Q. Hosting products, services include custom web design, 4 staff at the moment
 
-For a small team of 4 staff members managing web hosting and custom web design, the key is to keep things streamlined. If you create too many departments, your clients will get confused, and your team will waste time passing tickets back and forth.
+For a small team of **4 staff members** managing **web hosting and custom web design**, the key is to keep things streamlined. If you create too many departments, your clients will get confused, and your team will waste time passing tickets back and forth.
+
 With 4 people, everyone will likely wear multiple hats, but you still need clear division of labor between your automated hosting services and your labor-intensive design projects.
 Here is the ideal, lean Blesta setup for your team:
 Keep your public options down to just 3 or 4 departments so clients always know exactly which one to pick.
