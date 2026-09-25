@@ -63,10 +63,26 @@ systemctl restart directadmin
 ```
 _By default, this is disabled and relies on your hostname being set up/resolving correctly._
 
+***
+# directadmin set msg_sys=Message System
 
+The `msg_sys=Message` System setting in DirectAdmin defines the sender name ("From" display name) used for automated system notification emails.
 
+> Ref: https://docs.directadmin.com/directadmin/general-usage/all-directadmin-conf-values.html
 
+### How to Change the Setting
 
+1. Open the DirectAdmin configuration file via SSH using a text editor:
+```bash
+nano /usr/local/directadmin/conf/directadmin.conf
+```
 
+2. Locate or add the `msg_sys` variable and change it to your desired name (such as your hosting company or server name):
+```ini
+msg_sys=Your Hosting Company Name
+```
 
-
+3. Save the file and restart DirectAdmin to apply the changes:bashservice directadmin restart
+```bash
+service directadmin restart
+```
