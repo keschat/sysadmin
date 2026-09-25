@@ -29,7 +29,8 @@ nginx@yourhostname.local           web-alerts@yourdomain.com
 
 You have two main strategies for mapping these addresses depending on how granular you want your logging and filtering to be:
 
----Strategy---generic Mapping Example---Best Used For...---Pros & Cons
+| Strategy | generic Mapping Example | Best Used For... | Pros & Cons |
+| --- | --- | --- | --- |
 **Separated Accounts** (Recommended) | root → sysadmin@domain.comapache → www-data@domain.com | Production environments running critical web applications. | **Pros:** Easy to create email filters and identify if a specific web server or system cron is failing. <br/> **Cons:** Requires managing multiple email aliases on your receiving mail server. | Single Catch-All Aliasroot → noreply@domain.comapache → noreply@domain.comStaging environments, simple setups, or when your relay billing tiers charge per unique sender address.Pros: Simple setup; only one external email address needs authorization.Cons: Harder to quickly distinguish system failures from application bugs at a glance.
 
 
