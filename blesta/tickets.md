@@ -4,7 +4,7 @@ In Blesta, support tickets are assigned and routed through its core [Support Man
 
 Here is how tickets find their way to the right staff member:
 ## 1. Department Assignment (The First Layer)
-Every ticket belongs to a specific Support Department (e.g., Billing, Technical Support, Sales). [3] 
+Every ticket belongs to a specific **Support Department** (e.g., Billing, Technical Support, Sales). [3] 
 
 * **Client Selection:** When clients open a ticket via the client portal, they choose which department to submit it to.
 * **Email Piping/IMAP:** If an email is sent to billing@yourdomain.com, Blesta's email parser automatically assigns that incoming ticket to the Billing department.
