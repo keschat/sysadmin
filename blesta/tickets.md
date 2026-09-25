@@ -6,9 +6,9 @@ Here is how tickets find their way to the right staff member:
 ## 1. Department Assignment (The First Layer)
 Every ticket belongs to a specific Support Department (e.g., Billing, Technical Support, Sales). [3] 
 
-* Client Selection: When clients open a ticket via the client portal, they choose which department to submit it to.
-* Email Piping/IMAP: If an email is sent to billing@yourdomain.com, Blesta's email parser automatically assigns that incoming ticket to the Billing department.
-* Staff Access: Staff members can only view, interact with, or be assigned tickets within departments they have explicitly been granted access to. [1, 4, 5, 6] 
+* **Client Selection:** When clients open a ticket via the client portal, they choose which department to submit it to.
+* **Email Piping/IMAP:** If an email is sent to billing@yourdomain.com, Blesta's email parser automatically assigns that incoming ticket to the Billing department.
+* **Staff Access:** Staff members can only view, interact with, or be assigned tickets within departments they have explicitly been granted access to. [1, 4, 5, 6] 
 
 ## 2. Manual and Re-assignment
 Once a ticket is inside a department, any staff member with access to that department can manually manage its assignment: [7] 
