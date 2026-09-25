@@ -178,12 +178,12 @@ Blesta allows you to use dynamic variables (tags) wrapped in curly braces `{}` t
 
 | Tag | What it Displays |
 |---|---|
-| {ticket.code} | The unique ticket hash code (e.g., #A1B2-C3D4). |
-| {ticket.id} | The internal database ID of the ticket. |
-| {ticket.summary} | The subject line or summary of the ticket. |
-| {ticket.department_name} | The department it belongs to (e.g., Web Design & Development). |
-| {client.first_name} | The client's first name. |
-| {update.body} | The message body of the latest ticket reply. |
+| `{ticket.code}` | The unique ticket hash code (e.g., `#A1B2-C3D4`). |
+| `{ticket.id}` | The internal database ID of the ticket. |
+| `{ticket.summary}` | The subject line or summary of the ticket. |
+| `{ticket.department_name}` | The department it belongs to (e.g., Web Design & Development). |
+| `{client.first_name}` | The client's first name. |
+| `{update.body}` | The message body of the latest ticket reply. |
 
 ------------------------------
 ## 3. Recommended Email Layouts
