@@ -430,6 +430,7 @@ Would you like help connecting your **Emergency ticket priority** to an external
 # Q. Emergency ticket priority
 
 To connect **Emergency tickets** directly to chat platforms like **Slack, Discord, or Telegram**, you have two excellent choices depending on your preferred approach: using Blesta’s official [Webhooks Plugin](https://docs.blesta.com/category/plugins/) for native flexibility, or a dedicated Messenger addon for a quick setup. [1, 2] 
+
 Here is how to set up instant alerts for your systems administrators:
 
 ## Method A: The Webhooks Plugin (Native & Flexible)
