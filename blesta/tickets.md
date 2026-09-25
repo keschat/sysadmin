@@ -122,6 +122,7 @@ Would you like help setting up **email piping** so emails sent to `design@yourdo
 In Blesta, restricting sensitive billing data while allowing staff to handle support requests is a critical step for data privacy and security.
 
 Here is exactly how to lock down financial data for your design and support staff while keeping them productive:
+
 ## 1. Separate Staff Groups by Permissions
 To restrict access, you must place your staff into different **Staff Groups** within Blesta, as permissions cannot be set on an individual, per-user basis.
 
