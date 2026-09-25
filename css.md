@@ -296,7 +296,8 @@ SVGs inside buttons or text blocks often need to match the font color. Instead o
 >
 > https://egghead.io/lessons/css-leverage-the-css-keyword-currentcolor-to-ensure-a-svg-stroke-inherits-the-font-color
 
-```css.button {
+```css
+.button {
   color: darkgreen;
 }
 .button:hover {
