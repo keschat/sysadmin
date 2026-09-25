@@ -1,6 +1,6 @@
 # Blesta how tickets are assigned
 
-In Blesta, support tickets are assigned and routed through its core [Support Manager](https://docs.blesta.com/5/integrations/plugins/support-manager) plugin using a combination of departments, staff access levels, automated schedules, and (in Blesta 6.0+) AI plain-English logic. [[1](https://docs.blesta.com/5/integrations/plugins/support-manager),[2](https://www.blesta.com/2026/08/04/blesta-6.0-released/)]
+In Blesta, support tickets are assigned and routed through its core [Support Manager](https://docs.blesta.com/5/integrations/plugins/support-manager) plugin using a combination of departments, staff access levels, automated schedules, and (in Blesta 6.0+) AI plain-English logic. [1, 2]
 
 Here is how tickets find their way to the right staff member:
 ## 1. Department Assignment (The First Layer)
