@@ -34,13 +34,21 @@ You have two main strategies for mapping these addresses depending on how granul
 |**Separated Accounts** (Recommended) | root →  <br/> sysadmin@domain.com <br/> apache → <br/> www-data@domain.com | Production environments running critical web applications. | **Pros:** Easy to create email filters and identify if a specific web server or system cron is failing. <br/> **Cons:** Requires managing multiple email aliases on your receiving mail server. | 
 | **Single Catch-All Alias** | root → <br/> noreply@domain.com <br/> apache → <br/> noreply@domain.com | Staging environments, simple setups, or when your relay billing tiers charge per unique sender address. | **Pros:** Simple setup; only one external email address needs authorization. <br/> **Cons:** Harder to quickly distinguish system failures from application bugs at a glance. |
 
+**How to Apply These Changes**
+To make Postfix actively use these mappings, ensure the following steps are completed on your server:
 
-
-
-
-
-
-
+1. **Enable the generic map in Postfix:** Open `/etc/postfix/main.cf` and ensure this line is active:
+```text
+smtp_generic_maps = hash:/etc/postfix/generic
+```.
+2. **Compile the lookup table:** Every time you edit the `/etc/postfix/generic file`, you must run postmap to generate the .db file:
+```bash
+sudo postmap /etc/postfix/generic
+```
+3. **Reload Postfix:** Reload the service to apply the configuration:
+```bash
+sudo systemctl reload postfix
+```
 
 
 
