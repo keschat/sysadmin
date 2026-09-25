@@ -199,3 +199,63 @@ If you want to use a CDN library without downloading individual files, add the p
 </body>
 </html>
 ```
+
+***
+
+# css make div in center of page vertically
+
+> https://www.freecodecamp.org/news/css-vertical-align-how-to-center-a-div-text-or-an-image-example-code/
+>
+> https://blog.hubspot.com/website/center-div-css
+>
+> https://teamtreehouse.com/community/how-do-i-center-only-one-div-on-a-page-both-horizontally-and-vertically
+
+The most reliable, modern way to **center a div vertically** (and horizontally) on a page is using `CSS Flexbox`.
+
+To make it work, you apply the flex properties to the **parent container** (usually the <body> if you want it centered on the entire page) and ensure that the parent container has a defined height.
+
+> https://stackoverflow.com/questions/12771982/vertically-centering-a-div-in-body
+>
+> https://medium.com/@design.codder12/the-ultimate-guide-to-centering-a-div-in-css-all-methods-explained-c903fcf7e047
+
+### 1. The Flexbox Method (Recommended)
+This approach is highly flexible and works perfectly even if you don't know the exact height of your inner div. [Stack Overflow](https://stackoverflow.com/questions/356809/best-way-to-center-a-div-on-a-page-vertically-and-horizontally)
+```css
+body {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  min-height: 100vh;       /* Takes up 100% of the viewport height */
+  margin: 0;               /* Removes default browser margins */
+}
+```
+
+### 2. The CSS Grid Method (The Shortest Way)
+If you prefer less code, CSS Grid can achieve the exact same result in just a couple of lines on the parent container. [Mimo](https://mimo.org/tutorials/css/how-to-center-a-div-in-css),[Youtube - Kevin Powell](https://www.youtube.com/shorts/RkL7a6If5L8)
+```css
+body {
+  display: grid;
+  place-items: center; /* Centers both vertically and horizontally */
+  min-height: 100vh;
+  margin: 0;
+}
+```
+
+### 3. The New Modern Method (No Flex/Grid Required)
+In modern CSS, you can now use align-content: center directly on regular block elements without changing the display type to flex or grid. [Youtube - Coding2GO](https://www.youtube.com/watch?v=okd8uqC8Jxs), [Youtube - Kevin Powell](https://www.youtube.com/shorts/RkL7a6If5L8)
+```css
+body {
+  align-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+/* If you also want it horizontally centered */
+div {
+  margin-inline: auto; 
+  width: max-content; 
+}
+```
+
+#### Why `min-height: 100vh` is crucial
+By default, a web page's `<body>` element is only as tall as the content inside it. If your div is the only thing on the page, the body height is small, so the div looks like it's at the top. <br/>
+Setting `min-height: 100vh` forces the body to expand to the full height of the user's screen, giving the CSS the vertical space it needs to actually center your element. [Medium](https://medium.com/@design.codder12/the-ultimate-guide-to-centering-a-div-in-css-all-methods-explained-c903fcf7e047), [Stack Overflow](https://stackoverflow.com/questions/12771982/vertically-centering-a-div-in-body)
