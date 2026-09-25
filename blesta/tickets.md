@@ -601,7 +601,7 @@ Blesta comes out of the box with standard hosting statuses like Open, In Progres
 
 To manage your project lifecycle smoothly across your 4 staff members, navigate to **Plugins > Support Manager > Statuses** (or **Settings > Company > Plugins > Support Manager** depending on your exact version) and customize your workflow statuses.
 
-## Recommended Agency Status Setup:
+### Recommended Agency Status Setup:
 
 * **Open:** The default status for newly arrived tickets or hosting alerts that haven't been reviewed yet.
 * **In Progress (or "Designing"):** The staff member has claimed the ticket and is actively working on coding, layout design, or server optimization.
