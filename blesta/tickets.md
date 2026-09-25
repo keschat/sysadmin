@@ -436,17 +436,15 @@ Here is how to set up instant alerts for your systems administrators:
 ## Method A: The Webhooks Plugin (Native & Flexible)
 Blesta features a core **Webhooks** plugin that listens to backend system events (like a ticket opening) and sends data to external URLs. [3]
 
-## 1. Activate the Webhooks Plugin
+### 1. Activate the Webhooks Plugin
 
    1. Navigate to **Settings > Company > Plugins > Available**.
    2. Locate the **Webhooks** plugin and click **Install**. [3] 
 
-## 2. Get Your Chat Webhook URL
+### 2. Get Your Chat Webhook URL
 
-* 
-* **Slack**: Create an app in your workspace, enable **Incoming Webhooks**, and copy the URL.
-* **Discord**: Go to Channel Settings > Integrations > Webhooks > Create Webhook and copy the URL.
-* 
+   * **Slack**: Create an app in your workspace, enable **Incoming Webhooks**, and copy the URL.
+   * **Discord**: Go to Channel Settings > Integrations > Webhooks > Create Webhook and copy the URL.
 
 ## 3. Define the Webhook in Blesta
 
