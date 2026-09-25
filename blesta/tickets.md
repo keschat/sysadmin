@@ -434,7 +434,7 @@ To connect **Emergency tickets** directly to chat platforms like **Slack, Discor
 Here is how to set up instant alerts for your systems administrators:
 
 ## Method A: The Webhooks Plugin (Native & Flexible)
-Blesta features a core Webhooks plugin that listens to backend system events (like a ticket opening) and sends data to external URLs. [3]
+Blesta features a core **Webhooks** plugin that listens to backend system events (like a ticket opening) and sends data to external URLs. [3]
 
 ## 1. Activate the Webhooks Plugin
 
