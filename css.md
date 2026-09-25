@@ -162,26 +162,29 @@ If you need a specific type of icon, tell me:
 
 ## Q. how to include in html
 
-To include an icon in HTML, you can use an <img> tag for downloaded SVG/PNG files or an <i> tag for icon fonts like Font Awesome.
-## Method 1: Using a Downloaded SVG or PNG
-If you downloaded an icon from a site like UXwing or Flaticon, save it to your project folder and use the standard image tag.
+To include an icon in HTML, you can **use an** <img> **tag for downloaded SVG/PNG files or an** <i> **tag for icon fonts like Font Awesome**.
 
+### Method 1: Using a Downloaded SVG or PNG
+If you downloaded an icon from a site like UXwing or Flaticon, save it to your project folder and use the standard image tag.
+```html
 <!-- For an SVG file (Recommended for sharpness) -->
 <img src="icons/ux-design.svg" alt="UX Design Icon" width="24" height="24">
 <!-- For a PNG file -->
 <img src="images/ux-icon.png" alt="UX Icon" width="32" height="32">
+```
 
-## Method 2: Inline SVG (Best for Custom Styling)
-You can paste the raw <svg> code directly into your HTML. This allows you to easily change its color using CSS.
-
+### Method 2: Inline SVG (Best for Custom Styling)
+You can paste the raw `<svg>` code directly into your HTML. This allows you to easily change its color using CSS.
+```html
 <svg class="ux-icon" viewBox="0 0 24 24" width="24" height="24">
   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
 </svg>
+```
+_You can style this in your CSS file using: `.ux-icon { fill: blue; }`_
 
-You can style this in your CSS file using: .ux-icon { fill: blue; }
-## Method 3: Using an Icon Font (Font Awesome)
-If you want to use a CDN library without downloading individual files, add the provider's stylesheet to your <head> and use an italic tag.
-
+### Method 3: Using an Icon Font (Font Awesome)
+If you want to use a CDN library without downloading individual files, add the provider's stylesheet to your `<head>` and use an italic tag.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -195,12 +198,4 @@ If you want to use a CDN library without downloading individual files, add the p
 
 </body>
 </html>
-
-If you want, tell me:
-
-* Which icon platform you downloaded from
-* If you want to change the icon's color or size with CSS
-
-I can write the exact code or styles you need.
-
-
+```
