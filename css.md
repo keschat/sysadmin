@@ -142,3 +142,38 @@ Add `rel="noopener"` directly inside an anchor tag that uses `target="_blank"`:
 _(Note: While modern browsers now default to noopener behavior for target="_blank" links, explicitly coding rel="noopener" remains a best practice for legacy browser compatibility)._
 > Ref: <br/>
 > https://blog.openreplay.com/rel-noopener-obsolete-links/
+
+****
+
+# uxicon
+
+You can find and download free UI/UX design icons in SVG and PNG formats through platforms like [Flaticon](https://www.flaticon.com/free-icons/ux) or [UXing](https://uxwing.com/).
+
+## Where to Find UI/UX Icons
+
+* Flaticon: Offers thousands of vector icons, packs, and customizable styles.
+* UXing: Provides free, high-quality SVG and PNG icons for commercial use with no attribution required.
+* [Symfony UX Icons](https://ux.symfony.com/icons): A developer tool to render over 200,000 SVG icons directly from Twig templates.
+
+If you need a specific type of icon, tell me:
+
+* What format you need (SVG, PNG, font)
+* The style (outline, solid, colored)
+
+## Q. how to include in html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 1. Include Font Awesome in your head -->
+  <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+  <!-- 2. Use the icon anywhere in your body -->
+  <i class="fa-solid fa-compass-drafting"></i>
+
+</body>
+</html>
+
+
