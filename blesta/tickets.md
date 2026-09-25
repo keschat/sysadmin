@@ -54,7 +54,9 @@ I can help you pinpoint exactly where your settings might be misconfigured!
 # Q. What are common names for departments and staff groups
 
 In web hosting, IT, and automated billing environments like Blesta, structuring your organization into clear tiers ensures tickets route to the right people immediately.
+
 The most common names for **support departments** and **staff groups** across the industry include:
+
 ## Support Departments (Client-Facing)
 These are the public-facing categories clients select when opening a ticket or emailing a specific inbox (e.g., `sales@` or `billing@)`.
 
