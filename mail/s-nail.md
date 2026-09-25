@@ -1,5 +1,16 @@
+S-mailx (aka s-nail)
+S-mailx is an active fork of Heirloom mailx which ceased development around 2010. 
+```bash
+$ docker compose exec vw-backup bash
+$ printenv MAIL_SMTP_VARIABLES
+-S 'v15-compat' -S 'mta=smtp://smtp.example.com:587' -S 'smtp-use-starttls' -S 'smtp-auth=login' -S 'user=no-reply@example.com' -S 'password=changeit' -S 'from=no-reply@example.com'
+
+$ mail -S 'v15-compat' -S 'mta=smtp://smtp.example.com:587' -S 'smtp-use-starttls' -S 'smtp-auth=login' -S 'user=no-reply@example.com' -S 'password=changeit' -S 'from=no-reply@example.com test@example.com'
+```
+
 > Ref:
 > https://www.claudiokuenzler.com/blog/1360/where-is-mailx-command-rocky-linux-el-9-s-nail-package
+> https://wiki.sdf.org/doku.php?id=s-mailx
 
 **mailx missing:**
 ```bash
