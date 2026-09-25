@@ -466,8 +466,9 @@ To avoid notification fatigue, restrict alerts so they do not trigger for routin
    4. Check the box **only** for your `Emergency` priority tier, leaving Standard and Low unchecked. [1]
 
 Now, if a server goes down, Blesta will instantaneously push a structured card directly into your team's chat group. [2]
+
 ------------------------------
-Would you like to build out the JSON payload structure for your webhook so the chat notification includes a clickable direct link back to the Blesta admin panel? [7] 
+Would you like to build out the **JSON payload structure** for your webhook so the chat notification includes a clickable direct link back to the Blesta admin panel? [7] 
 
 [1] [https://marketplace.blesta.com](https://marketplace.blesta.com/category/5)
 [2] [https://ohdear.app](https://ohdear.app/features/notifications)
@@ -479,19 +480,24 @@ Would you like to build out the JSON payload structure for your webhook so the c
 
 # Q. Yes
 
-To format your webhook notifications beautifully, you will need to construct a JSON payload. This payload tells Slack or Discord exactly how to display the ticket details, including a direct link back to your Blesta admin panel so your team can respond instantly.
-Here are the optimized JSON payloads for both platforms:
-## 1. The Blesta Callback URL Structure
-Before setting up the payload, locate your exact admin URL prefix. For all payloads below, replace https://yourbillingportal.com with your actual Blesta admin URL.
-The direct link variable to view a specific ticket in Blesta's Support Manager is:
+To format your webhook notifications beautifully, you will need to construct a **JSON payload**. This payload tells Slack or Discord exactly how to display the ticket details, including a direct link back to your Blesta admin panel so your team can respond instantly.
 
+Here are the optimized JSON payloads for both platforms:
+
+## 1. The Blesta Callback URL Structure
+Before setting up the payload, locate your exact admin URL prefix. For all payloads below, replace `https://yourbillingportal.com` with your actual Blesta admin URL.
+
+The direct link variable to view a specific ticket in Blesta's Support Manager is:
+```txt
 https://yourbillingportal.com{ticket.id}/
+```
 
 ------------------------------
 ## 2. For Discord (Rich Embed Template)
 Discord supports rich "Embed" cards with colored sidebars, which are excellent for highlighted Emergency alerts.
-Paste this structure into your Blesta Webhook payload data field:
 
+Paste this structure into your Blesta Webhook payload data field:
+```json
 {
   "username": "Blesta Alert Bot",
   "avatar_url": "https://blesta.com",
@@ -519,13 +525,15 @@ Paste this structure into your Blesta Webhook payload data field:
     }
   ]
 }
+```
+_(Note: `15158332` is the decimal code for bright red, ensuring it jumps out visually in the channel)._
 
-(Note: 15158332 is the decimal code for bright red, ensuring it jumps out visually in the channel).
 ------------------------------
 ## 3. For Slack (Block Kit Template)
 Slack uses a layout framework called "Blocks" to create clean, readable notification feeds.
-Paste this structure into your Blesta Webhook payload data field:
 
+Paste this structure into your Blesta Webhook payload data field:
+```json
 {
   "text": "🚨 Emergency Ticket Opened: {ticket.code}",
   "blocks": [
@@ -561,42 +569,50 @@ Paste this structure into your Blesta Webhook payload data field:
     }
   ]
 }
+```
+_(Note: Setting the button style to `"danger"` colors it red in Slack, matching the emergency protocol)._
 
-(Note: Setting the button style to "danger" colors it red in Slack, matching the emergency protocol).
 ------------------------------
-Would you like to test this payload structure with a dummy ticket submission, or should we transition to configuring Ticket Statuses (like Awaiting Client Feedback) to manage the lifecycle of your web design revisions?
+Would you like to test this payload structure with a **dummy ticket submission**, or should we transition to configuring **Ticket Statuses** (like Awaiting Client Feedback) to manage the lifecycle of your web design revisions?
 
 # Q. dummy ticket submission and configuring Ticket Statuses
 
 To test your new webhook notification and organize your web design workflow, you can perform a test submission and then expand Blesta's default ticket states to match an agency environment.
+
 ## 1. Performing a Dummy Ticket Submission
 Testing ensures your JSON payloads are formatted correctly and that your chat channels receive the alerts instantly.
 
-   1. Log in to your Admin Interface.
-   2. Navigate to Support > Tickets and click Open Ticket in the top right.
+   1. **Log in to your Admin Interface.**
+   2. Navigate to **Support > Tickets** and click **Open Ticket** in the top right.
    3. Select a test client account (or create a dummy client named "Test Client").
-   4. Choose your Support & Hosting Maintenance department.
-   5. Set the Priority explicitly to 🚨 Emergency (System Down).
-   6. Enter a sample subject line like CRITICAL: Database Connection Failure - Server 04 and write a brief description.
-   7. Click Open Ticket.
+   4. Choose your **Support & Hosting Maintenance** department.
+   5. Set the **Priority** explicitly to 🚨 **Emergency (System Down)**.
+   6. Enter a sample subject line like `CRITICAL: Database Connection Failure - Server 04` and write a brief description.
+   7. Click **Open Ticket**.
 
-Check your Slack or Discord channel immediately. If configured correctly, your webhooks should fire instantly, posting your custom red embed card with the clickable link back to Blesta. If it does not appear, verify that your base admin URL matches exactly and check the Blesta logs under Tools > Logs > Webhooks to view any transmission error messages.
+Check your Slack or Discord channel immediately. If configured correctly, your webhooks should fire instantly, posting your custom red embed card with the clickable link back to Blesta. If it does not appear, verify that your base admin URL matches exactly and check the Blesta logs under **Tools > Logs > Webhooks** to view any transmission error messages.
+
 ------------------------------
 ## 2. Configuring Ticket Statuses for Web Design Revisions
 Blesta comes out of the box with standard hosting statuses like Open, In Progress, and Closed. However, custom web design projects require iterative loops where the ball is frequently in the client's court.
-To manage your project lifecycle smoothly across your 4 staff members, navigate to Plugins > Support Manager > Statuses (or Settings > Company > Plugins > Support Manager depending on your exact version) and customize your workflow statuses.
+
+To manage your project lifecycle smoothly across your 4 staff members, navigate to **Plugins > Support Manager > Statuses** (or **Settings > Company > Plugins > Support Manager** depending on your exact version) and customize your workflow statuses.
+
 ## Recommended Agency Status Setup:
 
-* Open: The default status for newly arrived tickets or hosting alerts that haven't been reviewed yet.
-* In Progress (or "Designing"): The staff member has claimed the ticket and is actively working on coding, layout design, or server optimization.
-* Awaiting Client Feedback / Review: Use this when your designer sends over a Figma link or a staging URL. It signals to your internal team that no action is required on your end until the client responds.
-* On Hold (Internal Dependency): Perfect for when a design element is stuck waiting on a third-party asset, API approval, or domain transfer clearance.
-* Closed: The project milestone is complete, or the technical issue is fully resolved.
+* **Open:** The default status for newly arrived tickets or hosting alerts that haven't been reviewed yet.
+* **In Progress (or "Designing"):** The staff member has claimed the ticket and is actively working on coding, layout design, or server optimization.
+* **Awaiting Client Feedback / Review:** Use this when your designer sends over a Figma link or a staging URL. It signals to your internal team that no action is required on your end until the client responds.
+* **On Hold (Internal Dependency):** Perfect for when a design element is stuck waiting on a third-party asset, API approval, or domain transfer clearance.
+* **Closed:** The project milestone is complete, or the technical issue is fully resolved.
 
 ## Pro-Tip: Automated Reminders (The Cron Benefit)
-By leveraging the Awaiting Client Feedback status, you can configure Blesta's automation criteria to systematically ping forgetful design clients. If a ticket sits in this status for more than 3 to 5 business days, Blesta can automatically send a polite reminder email asking them if they've had a chance to review the design mockups, helping keep your project timelines on track without manual follow-up from your designers.
+By leveraging the **Awaiting Client Feedback** status, you can configure Blesta's automation criteria to systematically ping forgetful design clients. If a ticket sits in this status for more than **3 to 5 business days**, Blesta can automatically send a polite reminder email asking them if they've had a chance to review the design mockups, helping keep your project timelines on track without manual follow-up from your designers.
+
 ------------------------------
-Would you like to look at setting up the automated closure rules for stale "Awaiting Feedback" tickets, or should we examine how your 4 staff members can add internal private notes to a ticket that the client will never see?
+Would you like to look at setting up the **automated closure rules** for stale "Awaiting Feedback" tickets, or should we examine how your **4 staff members can add internal private notes** to a ticket that the client will never see?
+
+# Q. Thatll be all
 
 
 
