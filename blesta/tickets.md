@@ -115,7 +115,7 @@ To make this setup highly efficient with 4 people, structure your ticket assignm
 * **Utilize Shift Schedules:** Since hosting requires quick responses, use Blesta’s staff scheduling feature to split your 4 team members across overlapping shifts. This ensures someone is always designated to receive emergency alerts during business hours and slightly beyond.
 
 ------------------------------
-Would you like help setting up How to Distribute the Workload Successfully so emails sent to `design@yourdomain.com` route differently than `support@yourdomain.com`, or should we look into how to **restrict billing data visibility** for specific staff members?
+Would you like help setting up **email piping** so emails sent to `design@yourdomain.com` route differently than `support@yourdomain.com`, or should we look into how to **restrict billing data visibility** for specific staff members?
 
 # Q. Restrict
 
