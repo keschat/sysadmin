@@ -31,7 +31,8 @@ You have two main strategies for mapping these addresses depending on how granul
 
 | Strategy | generic Mapping Example | Best Used For... | Pros & Cons |
 | --- | --- | --- | --- |
-**Separated Accounts** (Recommended) | root → sysadmin@domain.comapache → www-data@domain.com | Production environments running critical web applications. | **Pros:** Easy to create email filters and identify if a specific web server or system cron is failing. <br/> **Cons:** Requires managing multiple email aliases on your receiving mail server. | Single Catch-All Aliasroot → noreply@domain.comapache → noreply@domain.comStaging environments, simple setups, or when your relay billing tiers charge per unique sender address.Pros: Simple setup; only one external email address needs authorization.Cons: Harder to quickly distinguish system failures from application bugs at a glance.
+|**Separated Accounts** (Recommended) | root →  <br/> sysadmin@domain.com <br/> apache → <br/> www-data@domain.com | Production environments running critical web applications. | **Pros:** Easy to create email filters and identify if a specific web server or system cron is failing. <br/> **Cons:** Requires managing multiple email aliases on your receiving mail server. | 
+| **Single Catch-All Alias** | root → <br/> noreply@domain.com <br/> apache → <br/> noreply@domain.com | Staging environments, simple setups, or when your relay billing tiers charge per unique sender address. | **Pros:** Simple setup; only one external email address needs authorization. <br/> **Cons:** Harder to quickly distinguish system failures from application bugs at a glance. |
 
 
 
