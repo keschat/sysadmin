@@ -5,6 +5,10 @@ To check if your IMAP service is working on AlmaLinux, test the local service st
 > https://serverfault.com/questions/317860/how-do-i-find-out-if-my-server-is-running-imap
 > https://serverfault.com/questions/1038895/how-do-you-properly-test-an-imap993-connection-to-determine-whether-implicit-or
 > https://help.salesforce.com/s/articleView?id=001116856&language=fr&type=1
+> https://www.siberoloji.com/install-dovecot-configure-pop-imap-server-almalinux/
+> https://www.linuxbabe.com/redhat/install-dovecot-imap-server-rocky-linux-9-alma-linux-9
+> https://www.mailenable.com/kb/content/article.asp?ID=ME020711
+> https://talk.plesk.com/threads/postfix-issues-with-alma-linux-9-4.375916/
 
 1. ### Check the IMAP Service Status
 Check if your mail server software (such as Dovecot) is running via systemd:
