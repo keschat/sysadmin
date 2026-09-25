@@ -161,7 +161,7 @@ If you need a specific type of icon, tell me:
 
 ## Q. how to include in html
 
-To include an icon in HTML, you can **use an** <img> **tag for downloaded SVG/PNG files or an** <i> **tag for icon fonts like Font Awesome**.
+To include an icon in HTML, you can **use an** `<img>` **tag for downloaded SVG/PNG files or an** `<i>` **tag for icon fonts like Font Awesome**.
 
 ### Method 1: Using a Downloaded SVG or PNG
 If you downloaded an icon from a site like UXwing or Flaticon, save it to your project folder and use the standard image tag.
