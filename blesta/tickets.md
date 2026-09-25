@@ -327,7 +327,7 @@ Predefined responses save your team massive amounts of time. You can set these u
    We will keep you updated right here as soon as it's live!
 ```   
    
-## Category: Support & Hosting
+### Category: Support & Hosting
 
 * **Template Name:** `IP Blacklist / False Positive Block`
 * **Response:**
