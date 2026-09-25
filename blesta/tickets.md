@@ -13,14 +13,14 @@ Every ticket belongs to a specific Support Department (e.g., Billing, Technical 
 ## 2. Manual and Re-assignment
 Once a ticket is inside a department, any staff member with access to that department can manually manage its assignment: [7] 
 
-* Self-Assignment / Escalation: A staff member can pick up an unassigned ticket, change its assigned staff member, or escalate it to another department entirely if it requires a different team's expertise. [3] 
+* **Self-Assignment / Escalation:** A staff member can pick up an unassigned ticket, change its assigned staff member, or **escalate** it to another department entirely if it requires a different team's expertise. [3] 
 
 ## 3. Automated Routing & AI (Blesta 6.0+)
 If you are running Blesta 6.0 or newer, the [Blesta AI](https://www.blesta.com/2026/08/04/blesta-6.0-released/) engine can handle ticket routing automatically based on natural language rules: [2] 
 
-* You can write plain-English guardrails without needing to build complex workflows or scripts.
+* You can write **plain-English guardrails** without needing to build complex workflows or scripts.
 * For example, you can set a rule like: "Assign billing questions to Jane, and abuse reports to John or Dave."
-* The AI will read the incoming ticket contents and adjust the priority or assign staff automatically matching your instructions. [2, 8, 9] 
+* The AI will read the incoming ticket contents and adjust the priority or **assign staff automatically** matching your instructions. [2, 8, 9] 
 
 ## 4. Notification Schedules (Who gets alerted?)
 Blesta doesn't just assign visibility; it controls who gets notified based on strict parameters:
