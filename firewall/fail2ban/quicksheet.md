@@ -102,36 +102,36 @@ _Displays the man page for Fail2ban with details about all Fail2ban commands and
 To integrate TheHive logs with Fail2ban, follow the steps below. Assume TheHive logs are located at `/var/log/thehive/application.log` and Fail2ban configuration files are located in `/etc/fail2ban`.
 
 1. **Step 1**: Create a Filter File
-- Create a filter file in /etc/fail2ban/filter.d named thehive.conf with the following content:
-```txt
-[INCLUDES]
-before = common.conf
+  - Create a filter file in /etc/fail2ban/filter.d named thehive.conf with the following content:
+  ```txt
+  [INCLUDES]
+  before = common.conf
 
-[Definition]
-failregex = ^.*- <HOST> (?:POST \/api\/login|GET .*) .*returned 401.*$
-ignoreregex =
-```
+  [Definition]
+  failregex = ^.*- <HOST> (?:POST \/api\/login|GET .*) .*returned 401.*$
+  ignoreregex =
+  ```
 
 2. **Step 2**: Create a Jail File
 Create a jail file in `/etc/fail2ban/jail.d` named `thehive.local` with the following content:
-```txt
-[thehive]
-enabled = true
-port = 80,443
-filter = thehive
-action = iptables-multiport[name=thehive, port="80,443"]
-logpath = /var/log/thehive/application.log
-maxretry = 5
-bantime = 14400
-findtime = 1200
-```
+  ```txt
+  [thehive]
+  enabled = true
+  port = 80,443
+  filter = thehive
+  action = iptables-multiport[name=thehive, port="80,443"]
+  logpath = /var/log/thehive/application.log
+  maxretry = 5
+  bantime = 14400
+  findtime = 1200
+  ```
 _This configuration will ban any IP address for 4 hours after 5 failed authentication attempts within a 20-minute period._
 
 3. **Step 3**: Reload Fail2ban Configuration
 Reload the Fail2ban configuration to apply the changes:
-```bash
-fail2ban-client reload
-```
+  ```bash
+  fail2ban-client reload
+  ```
 
 ### Review Banned IP Addresses
 Here is a step-by-step guide to reviewing banned IP addresses on Fail2ban:
