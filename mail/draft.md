@@ -40,7 +40,7 @@ To make Postfix actively use these mappings, ensure the following steps are comp
 1. **Enable the generic map in Postfix:** Open `/etc/postfix/main.cf` and ensure this line is active:
 ```text
 smtp_generic_maps = hash:/etc/postfix/generic
-```.
+```
 2. **Compile the lookup table:** Every time you edit the `/etc/postfix/generic file`, you must run postmap to generate the .db file:
 ```bash
 sudo postmap /etc/postfix/generic
