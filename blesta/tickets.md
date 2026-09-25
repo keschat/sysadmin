@@ -216,7 +216,7 @@ The Team
 ### Template: Ticket Staff Reply
 When your team answers a ticket, this email delivers the response directly to the client's inbox.
 
-* **Subject:** Re: [{ticket.code}] {ticket.summary}
+* **Subject:** `Re: [{ticket.code}] {ticket.summary}`
 * **Text / HTML Body:**
 ```txt
 Hi {client.first_name},
