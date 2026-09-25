@@ -446,7 +446,7 @@ Blesta features a core **Webhooks** plugin that listens to backend system events
    * **Slack**: Create an app in your workspace, enable **Incoming Webhooks**, and copy the URL.
    * **Discord**: Go to **Channel Settings > Integrations > Webhooks > Create Webhook** and copy the URL.
 
-## 3. Define the Webhook in Blesta
+### 3. Define the Webhook in Blesta
 
    1. Go to **Settings > Company > Plugins > Webhooks** (or via the link on your dashboard).
    2. Click **Add Webhook**.
