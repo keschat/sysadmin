@@ -99,7 +99,7 @@ _Displays the man page for Fail2ban with details about all Fail2ban commands and
 > Ref:
 > https://docs.strangebee.com/thehive/how-to/fail2ban/
 
-To integrate TheHive logs with Fail2ban, follow the steps below. Assume TheHive logs are located at `/var/log/thehive/application.lo`g and Fail2ban configuration files are located in /`etc/fail2ban`.
+To integrate TheHive logs with Fail2ban, follow the steps below. Assume TheHive logs are located at `/var/log/thehive/application.log` and Fail2ban configuration files are located in /`etc/fail2ban`.
 
 1. **Step 1**: Create a Filter File
 - Create a filter file in /etc/fail2ban/filter.d named thehive.conf with the following content:
