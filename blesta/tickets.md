@@ -609,7 +609,7 @@ To manage your project lifecycle smoothly across your 4 staff members, navigate 
 * **On Hold (Internal Dependency):** Perfect for when a design element is stuck waiting on a third-party asset, API approval, or domain transfer clearance.
 * **Closed:** The project milestone is complete, or the technical issue is fully resolved.
 
-## Pro-Tip: Automated Reminders (The Cron Benefit)
+### Pro-Tip: Automated Reminders (The Cron Benefit)
 By leveraging the **Awaiting Client Feedback** status, you can configure Blesta's automation criteria to systematically ping forgetful design clients. If a ticket sits in this status for more than **3 to 5 business days**, Blesta can automatically send a polite reminder email asking them if they've had a chance to review the design mockups, helping keep your project timelines on track without manual follow-up from your designers.
 
 ------------------------------
