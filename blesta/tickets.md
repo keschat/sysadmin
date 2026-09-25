@@ -85,92 +85,92 @@ I can suggest a **tailored department structure** and **permission scheme** for 
 
 For a small team of **4 staff members** managing **web hosting and custom web design**, the key is to keep things streamlined. If you create too many departments, your clients will get confused, and your team will waste time passing tickets back and forth.
 
-With 4 people, everyone will likely wear multiple hats, but you still need clear division of labor between your automated hosting services and your labor-intensive design projects.
+With 4 people, everyone will likely wear multiple hats, but you still need clear division of labor between your **automated hosting services** and your **labor-intensive design projects**.
+
 Here is the ideal, lean Blesta setup for your team:
-Keep your public options down to just 3 or 4 departments so clients always know exactly which one to pick.
 
-* 
-* Support & Hosting Maintenance: The main landing zone for active hosting clients experiencing downtime, email issues, or control panel troubleshooting.
-* Web Design & Development: A dedicated queue strictly for your custom design projects. This separates ongoing project tasks (like revisions, asset delivery, and feedback) from urgent hosting outages.
-* Billing & Account Access: For payment issues, custom design invoices, upgrades, or domain renewals.
-* Sales & Quotes: For new leads asking about hosting packages or requesting a quote for a custom web design project.
-* 
+## Recommended Public Departments
+Keep your public options down to just **3 or 4 departments** so clients always know exactly which one to pick.
 
-Instead of complex multi-tiered groups, group your team into two primary roles based on their core skill sets. This allows you to route technical tasks to the right minds instantly.
+* **Support & Hosting Maintenance:** The main landing zone for active hosting clients experiencing downtime, email issues, or control panel troubleshooting.
+* **Web Design & Development:** A dedicated queue strictly for your custom design projects. This separates ongoing project tasks (like revisions, asset delivery, and feedback) from urgent hosting outages.
+* **Billing & Account Access:** For payment issues, custom design invoices, upgrades, or domain renewals.
+* **Sales & Quotes:** For new leads asking about hosting packages or requesting a quote for a custom web design project.
+
+## Optimized Staff Groups & Roles (4 Staff)
+Instead of complex multi-tiered groups, group your team into **two primary roles** based on their core skill sets. This allows you to route technical tasks to the right minds instantly.
 
 | Staff Group | Core Focus | Ideal Department Access |
 |---|---|---|
 | System Administrators (1-2 people) | Server uptime, hosting tickets, complex technical issues, and global Blesta billing setup. | Support & Hosting, Billing, Sales |
 | Creative & Frontend Group (2-3 people) | UI/UX design, custom coding, client revisions, and onboarding web design leads. | Web Design & Development, Sales |
 
+## How to Distribute the Workload Successfully
 To make this setup highly efficient with 4 people, structure your ticket assignment rules using these practical steps:
 
-* 
-* Route Web Design Separately: Ensure your creative staff do not get distracted by technical hosting alerts. Lock the Web Design & Development department down so only your designers receive its notifications.
-* Share the Sales Queue: Assign everyone to the Sales & Quotes department. Designers can jump on custom design inquiries, while sysadmins can quickly handle standard hosting pre-sales questions.
-* Utilize Shift Schedules: Since hosting requires quick responses, use Blesta’s staff scheduling feature to split your 4 team members across overlapping shifts. This ensures someone is always designated to receive emergency alerts during business hours and slightly beyond.
-* 
+* **Route Web Design Separately:** Ensure your creative staff do not get distracted by technical hosting alerts. Lock the Web Design & Development department down so only your designers receive its notifications.
+* **Share the Sales Queue:** Assign everyone to the Sales & Quotes department. Designers can jump on custom design inquiries, while sysadmins can quickly handle standard hosting pre-sales questions.
+* **Utilize Shift Schedules:** Since hosting requires quick responses, use Blesta’s staff scheduling feature to split your 4 team members across overlapping shifts. This ensures someone is always designated to receive emergency alerts during business hours and slightly beyond.
 
 ------------------------------
-Would you like help setting up email piping so emails sent to design@yourdomain.com route differently than support@yourdomain.com, or should we look into how to restrict billing data visibility for specific staff members?
+Would you like help setting up How to Distribute the Workload Successfully so emails sent to `design@yourdomain.com` route differently than `support@yourdomain.com`, or should we look into how to **restrict billing data visibility** for specific staff members?
 
 # Q. Restrict
 
 In Blesta, restricting sensitive billing data while allowing staff to handle support requests is a critical step for data privacy and security.
 Here is exactly how to lock down financial data for your design and support staff while keeping them productive:
 ## 1. Separate Staff Groups by Permissions
-To restrict access, you must place your staff into different Staff Groups within Blesta, as permissions cannot be set on an individual, per-user basis.
+To restrict access, you must place your staff into different **Staff Groups** within Blesta, as permissions cannot be set on an individual, per-user basis.
 
-   1. Navigate to Settings > Company > Staff > Staff Groups.
+   1. Navigate to **Settings > Company > Staff > Staff Groups**.
    2. Create or edit a group (e.g., Creative & Frontend Group or Support Staff).
-   3. Under the Permissions tab, you will see a tree of checkboxes matching Blesta's core components.
+   3. Under the **Permissions** tab, you will see a tree of checkboxes matching Blesta's core components.
 
 ## 2. The Key Permissions to Uncheck
-To completely hide financial metrics, invoices, and payment gateways from non-administrative staff, uncheck the following checkboxes for that group:
+To completely hide financial metrics, invoices, and payment gateways from non-administrative staff, **uncheck** the following checkboxes for that group:
 
-* Invoices: Disables the ability to create, view, or void invoices.
-* Transactions: Hides client payment histories, credits, and refunds.
-* Gateways / Payment Methods: Prevents staff from viewing or editing merchant accounts or payment details.
-* Packages / Packages (Billing): (Optional) Uncheck this if you don't want staff seeing the backend pricing structures of your hosting plans.
+* **Invoices**: Disables the ability to create, view, or void invoices.
+* **Transactions:** Hides client payment histories, credits, and refunds.
+* **Gateways / Payment Methods:** Prevents staff from viewing or editing merchant accounts or payment details.
+* **Packages / Packages (Billing):** (Optional) Uncheck this if you don't want staff seeing the backend pricing structures of your hosting plans.
 
 ## 3. Maintaining Support Functionality
-While billing is restricted, your staff still need to help clients. Ensure these permissions remain checked:
+While billing is restricted, your staff still need to help clients. Ensure these permissions remain **checked**:
 
-* Clients: Allow them to see client profiles so they know who they are talking to.
-* Support Manager Plugin: Ensure full access is granted to view, reply to, and assign tickets.
+* **Clients:** Allow them to see client profiles so they know who they are talking to.
+* **Support Manager Plugin:** Ensure full access is granted to view, reply to, and assign tickets.
 
 ## 4. Department-Level Ticket Restrictions
-If a client replies to an invoice, Blesta often automatically creates a ticket in the Billing Department. To prevent non-billing staff from accidentally seeing financial chatter through the support desk:
+If a client replies to an invoice, Blesta often automatically creates a ticket in the **Billing Department**. To prevent non-billing staff from accidentally seeing financial chatter through the support desk:
 
-   1. Go to Plugins > Support Manager > Departments.
-   2. Edit your Billing & Account Access department.
-   3. Scroll to the Staff section and uncheck your designers or general support staff.
+   1. Go to **Plugins > Support Manager > Departments**.
+   2. Edit your **Billing & Account Access** department.
+   3. Scroll to the **Staff** section and **uncheck** your designers or general support staff.
    4. This ensures that even if they are logged into the ticket system, the Billing ticket queue remains entirely invisible to them.
 
 ------------------------------
-Would you like assistance setting up custom access roles for your administrators next, or are you ready to configure the automated ticket email templates for your restricted staff?
+Would you like assistance setting up **custom access roles** for your administrators next, or are you ready to configure the **automated ticket email templates** for your restricted staff?
 
 # Q. configure the automated ticket email templates
 
 Configuring your automated ticket email templates ensures that both your hosting and web design clients get professional, on-brand notifications. Because you are managing a small team of 4 people, setting these up perfectly will help triage requests without manual intervention.
+
 ## 1. Where to Find Ticket Templates
 Ticket templates are handled by the [Support Manager Plugin](https://docs.blesta.com/5/integrations/plugins/support-manager).
 
    1. Log into your Blesta Admin portal.
-   2. Go to Settings > Company > Emails > Email Templates.
-   3. Scroll down to the Plugin Templates section.
+   2. Go to **Settings > Company > Emails > Email Templates**.
+   3. Scroll down to the **Plugin Templates** section.
 
 You will see several core ticket templates available for editing, including:
 
-* 
-* Ticket Received: Sent to the client as an autoreply when a ticket is opened.
-* Ticket Staff Reply: Sent to the client when a staff member posts a response.
-* Ticket Assigned: Sent internally to a staff member when a ticket is routed to them.
-* 
+* **Ticket Received**: Sent to the client as an autoreply when a ticket is opened.
+* **Ticket Staff Reply:** Sent to the client when a staff member posts a response.
+* **Ticket Assigned:** Sent internally to a staff member when a ticket is routed to them.
 
 ------------------------------
 ## 2. Supported Template Tags
-Blesta allows you to use dynamic variables (tags) wrapped in curly braces {} to personalize the content. The most useful tags for support templates are:
+Blesta allows you to use dynamic variables (tags) wrapped in curly braces `{}` to personalize the content. The most useful tags for support templates are:
 
 | Tag | What it Displays |
 |---|---|
@@ -182,14 +182,14 @@ Blesta allows you to use dynamic variables (tags) wrapped in curly braces {} to 
 | {update.body} | The message body of the latest ticket reply. |
 
 ------------------------------
-## 3. Recommended Email Layouts## Template: Ticket Received (Client Autoreply)
+## 3. Recommended Email Layouts
+
+### Template: Ticket Received (Client Autoreply)
 When clients submit design requests or hosting bugs, a clear confirmation sets the right expectation for response times.
 
-* 
-* Subject: [{ticket.code}] Ticket Received: {ticket.summary}
-* Text / HTML Body:
-* 
-
+* **Subject:** `[{ticket.code}] Ticket Received: {ticket.summary}`
+* **Text / HTML Body:**
+```txt
 Hi {client.first_name},
 
 Thank you for reaching out to us. We have successfully received your request, and a ticket has been created in our {ticket.department_name} department.
@@ -208,15 +208,13 @@ You can reply directly to this email to add more information, or view your ticke
 
 Best regards,
 The Team
-
-## Template: Ticket Staff Reply
+```
+### Template: Ticket Staff Reply
 When your team answers a ticket, this email delivers the response directly to the client's inbox.
 
-* 
-* Subject: Re: [{ticket.code}] {ticket.summary}
-* Text / HTML Body:
-* 
-
+* **Subject:** Re: [{ticket.code}] {ticket.summary}
+* **Text / HTML Body:**
+```txt
 Hi {client.first_name},
 
 A member of our team has updated your ticket with the following response:
@@ -229,23 +227,22 @@ To reply, simply respond directly to this email or visit the client portal. Plea
 
 Best regards,
 The Team
-
+```
 ------------------------------
 ## 4. Designing & Formatting (Pro-Tips)
 
-* 
-* Match Your Brand: If you are running Blesta 5.11 or newer, the platform fully supports responsive HTML email templates. Since you offer custom web design, take advantage of this by adding a clean, modern HTML layout.
-* Utilize Blesta AI (v6.0+): If you are using Blesta 6.0+, you can use the built-in [Blesta AI engine](https://www.blesta.com/2026/08/04/blesta-6.0-released/) to automatically draft alternative variations of your HTML structures or polish your copy.
-* 
+* **Match Your Brand:** If you are running Blesta 5.11 or newer, the platform fully supports responsive **HTML email templates**. Since you offer custom web design, take advantage of this by adding a clean, modern HTML layout.
+* **Utilize Blesta AI (v6.0+)**: If you are using Blesta 6.0+, you can use the built-in [Blesta AI engine](https://www.blesta.com/2026/08/04/blesta-6.0-released/) to automatically draft alternative variations of your HTML structures or polish your copy.
 
 ------------------------------
-Would you like help formatting the HTML wrapper code for these emails to give them a premium agency layout, or should we set up Predefined Responses next so your staff can drop saved answers into design or hosting tickets with one click?
+Would you like help formatting the **HTML wrapper code** for these emails to give them a premium agency layout, or should we set up **Predefined Responses** next so your staff can drop saved answers into design or hosting tickets with one click?
 
 # Q. HTML wrapper code and Predefined Responses
 
 Here is a modern, responsive HTML email wrapper tailored for a web design and hosting agency, followed by a set of essential predefined responses for your 4-man team.
+
 ## 1. Modern HTML Email Wrapper
-To apply this globally, go to Settings > Company > Emails > Email Templates and edit your Global Template (or create a custom one). This wrapper ensures your emails look professional on both desktop and mobile devices.
+To apply this globally, go to **Settings > Company > Emails > Email Templates** and edit your **Global Template** (or create a custom one). This wrapper ensures your emails look professional on both desktop and mobile devices.
 ```html
 <!DOCTYPE html>
 <html>
@@ -293,15 +290,17 @@ To apply this globally, go to Settings > Company > Emails > Email Templates and 
 </body>
 </html>
 ```
-Note: Ensure your ticket templates simply contain the text/paragraphs you want to output. Blesta injects that text directly where {email_body} is located.
+_Note: Ensure your ticket templates simply contain the text/paragraphs you want to output. Blesta injects that text directly where `{email_body}` is located._
+
 ------------------------------
 ## 2. Predefined Responses (Canned Replies)
-Predefined responses save your team massive amounts of time. You can set these up by navigating to Support > Predefined Responses. Create separate Categories to keep things organized for your hosting and design staff.
-## Category: Web Design & Development
+Predefined responses save your team massive amounts of time. You can set these up by navigating to **Support > Predefined Responses**. Create separate **Categories** to keep things organized for your hosting and design staff.
 
-* Template Name: Design Phase Kickoff
-* Response:
-   
+### Category: Web Design & Development
+
+* **Template Name:** `Design Phase Kickoff`
+* **Response:**
+```txt
    Hi {client.first_name},
    
    Great news! We are officially ready to kick off the design phase of your project. 
@@ -311,10 +310,10 @@ Predefined responses save your team massive amounts of time. You can set these u
    If you have any last-minute inspiration or design assets to share, please reply directly to this ticket so we can keep everything tracked in one place.
    
    Best regards,
-   
-   * Template Name: Revision Request Acknowledgment
-* Response:
-   
+```   
+* **Template Name:** `Revision Request Acknowledgment`
+* **Response:**
+```txt   
    Hi {client.first_name},
    
    Thank you for sending over your detailed feedback and revision requests. 
@@ -322,22 +321,23 @@ Predefined responses save your team massive amounts of time. You can set these u
    I have handed these specific changes over to your assigned frontend developer/designer. We are jumping right into these adjustments and aim to have the updated staging link ready for your review by [Time/Date].
    
    We will keep you updated right here as soon as it's live!
-   
+```   
    
 ## Category: Support & Hosting
 
-* Template Name: IP Blacklist / False Positive Block
-* Response:
-   
+* **Template Name:** `IP Blacklist / False Positive Block`
+* **Response:**
+```txt  
    Hi {client.first_name},
    
    It looks like your local IP address was temporarily flagged and blocked by our server firewall, likely due to multiple failed login attempts to your email or control panel.
    
    I have successfully unblocked your IP address from the cluster. Please try accessing your website and services again. If you continue to experience a timeout, you can check your current public IP via https://icanhazip.com and reply with it here so we can deeply whitelist it.
+```
    
-   * Template Name: Migration Request Data Needed
-* Response:
-   
+* **Template Name:** `Migration Request Data Needed`
+* **Response:**
+```txt   
    Hi {client.first_name},
    
    We would be happy to migrate your existing website over to our secure hosting infrastructure. To get started seamlessly, could you please provide the following details?
@@ -348,18 +348,20 @@ Predefined responses save your team massive amounts of time. You can set these u
    - Password:
    
    Once we have verified these credentials, our systems administration team will schedule the migration during an off-peak maintenance window to ensure zero downtime for your visitors.
-   
+```   
    
 ------------------------------
-Would you like to build a quick custom onboarding text template for new hosting signups, or should we look into setting up ticket priorities so design tasks don't push critical server alerts down the queue?
+Would you like to build a quick **custom onboarding text template** for new hosting signups, or should we look into setting up **ticket priorities** so design tasks don't push critical server alerts down the queue?
 
 # Q. custom onboarding text template and ticket priorities
 
-Here is how to set up your Custom Onboarding Text Template and configure your Ticket Priorities so your team of 4 can manage project launches and server alerts effectively.
-## 1. Custom Onboarding Text Template
-When a client purchases a hosting package or signs a web design contract, Blesta can automatically send a welcome email. Navigate to Settings > Company > Emails > Email Templates and edit the Welcome Email / Service Creation template.
-Here is a highly professional, text-based onboarding template designed for an agency selling both hosting and custom design:
+Here is how to set up your **Custom Onboarding Text Template** and configure your **Ticket Priorities** so your team of 4 can manage project launches and server alerts effectively.
 
+## 1. Custom Onboarding Text Template
+When a client purchases a hosting package or signs a web design contract, Blesta can automatically send a welcome email. Navigate to **Settings > Company > Emails > Email Templates** and edit the **Welcome Email / Service Creation** template.
+
+Here is a highly professional, text-based onboarding template designed for an agency selling both hosting and custom design:
+```txt
 Subject: Welcome to Our Agency! Important Details Inside
 
 Hi {client.first_name},
@@ -398,67 +400,72 @@ Simply log in at {client_url} to open a ticket, view active invoices, or track p
 
 Welcome aboard,
 The Team
+```
 
 ------------------------------
 ## 2. Setting Up Ticket Priorities
 With a team of 4, keeping your queue organized by urgency prevents designers from getting overwhelmed by technical issues, and ensures system admins drop everything for critical outages.
-To adjust your priorities, navigate to Plugins > Support Manager > Priorities. We recommend editing your default options to match this clean 4-tier system:
-
+To adjust your priorities, navigate to **Plugins > Support Manager > Priorities**. We recommend editing your default options to match this clean 4-tier system:
+```txt
 ├── 🚨 Emergency (System Down)
 ├── ⚠️ High (Hosting Issues / Broken Elements)
 ├── 📅 Standard (Design Revisions / Project Updates)
 └── 💬 Low (General Inquiries / Pre-Sales Quotes)
+```
 
 ## How to Assign Priorities Effectively:
 
-* Emergency (System Down): Reserve this strictly for server-wide outages, massive packet loss, or core merchant gateway failures. Configure Blesta to trigger immediate staff mobile or third-party messenger notifications (like Slack or Telegram) for your System Administrators, regardless of their shift schedules.
-* High (Hosting Issues / Broken Elements): Use this for individual client issues, such as a website throwing a 500 error, an email inbox being blocked, or an accidental IP ban. These require same-day resolution but don't threaten the entire network infrastructure.
-* Standard (Design Revisions / Project Updates): The default tier for all Web Design & Development tasks. Design projects operate on milestone schedules rather than minutes, so keeping them at "Standard" ensures they don't trigger intrusive notifications while the tech team is troubleshooting server stability.
-* Low (General Inquiries / Pre-Sales Quotes): Perfect for feature requests, sales questions, or non-urgent adjustments. Your team can tackle these when the main support and design queues are completely cleared.
+* **Emergency (System Down):** Reserve this strictly for server-wide outages, massive packet loss, or core merchant gateway failures. Configure Blesta to trigger **immediate staff mobile or third-party messenger notifications** (like Slack or Telegram) for your System Administrators, regardless of their shift schedules.
+* **High (Hosting Issues / Broken Elements):** Use this for individual client issues, such as a website throwing a 500 error, an email inbox being blocked, or an accidental IP ban. These require same-day resolution but don't threaten the entire network infrastructure.
+* **Standard (Design Revisions / Project Updates):** The default tier for all Web Design & Development tasks. Design projects operate on milestone schedules rather than minutes, so keeping them at "Standard" ensures they don't trigger intrusive notifications while the tech team is troubleshooting server stability.
+* **Low (General Inquiries / Pre-Sales Quotes):** Perfect for feature requests, sales questions, or non-urgent adjustments. Your team can tackle these when the main support and design queues are completely cleared.
 
 ------------------------------
-Would you like help connecting your Emergency ticket priority to an external notification channel like Slack, Discord, or Telegram so your system admins get alerted instantly, or should we look at setting up Ticket Statuses (like "Awaiting Client Review") to keep design projects moving?
+Would you like help connecting your **Emergency ticket priority** to an external notification channel like **Slack, Discord, or Telegram** so your system admins get alerted instantly, or should we look at setting up **Ticket Statuses** (like "Awaiting Client Review") to keep design projects moving?
 
 # Q. Emergency ticket priority
 
-To connect Emergency tickets directly to chat platforms like Slack, Discord, or Telegram, you have two excellent choices depending on your preferred approach: using Blesta’s official [Webhooks Plugin](https://docs.blesta.com/category/plugins/) for native flexibility, or a dedicated Messenger addon for a quick setup. [1, 2] 
+To connect **Emergency tickets** directly to chat platforms like **Slack, Discord, or Telegram**, you have two excellent choices depending on your preferred approach: using Blesta’s official [Webhooks Plugin](https://docs.blesta.com/category/plugins/) for native flexibility, or a dedicated Messenger addon for a quick setup. [1, 2] 
 Here is how to set up instant alerts for your systems administrators:
+
 ## Method A: The Webhooks Plugin (Native & Flexible)
-Blesta features a core Webhooks plugin that listens to backend system events (like a ticket opening) and sends data to external URLs. [3] 
+Blesta features a core Webhooks plugin that listens to backend system events (like a ticket opening) and sends data to external URLs. [3]
+
 ## 1. Activate the Webhooks Plugin
 
-   1. Navigate to Settings > Company > Plugins > Available.
-   2. Locate the Webhooks plugin and click Install. [3] 
+   1. Navigate to **Settings > Company > Plugins > Available**.
+   2. Locate the **Webhooks** plugin and click **Install**. [3] 
 
 ## 2. Get Your Chat Webhook URL
 
 * 
-* Slack: Create an app in your workspace, enable Incoming Webhooks, and copy the URL.
-* Discord: Go to Channel Settings > Integrations > Webhooks > Create Webhook and copy the URL.
+* **Slack**: Create an app in your workspace, enable **Incoming Webhooks**, and copy the URL.
+* **Discord**: Go to Channel Settings > Integrations > Webhooks > Create Webhook and copy the URL.
 * 
 
 ## 3. Define the Webhook in Blesta
 
-   1. Go to Settings > Company > Plugins > Webhooks (or via the link on your dashboard).
-   2. Click Add Webhook.
-   3. Event: Select SupportManager.ticketAdd (this triggers the webhook whenever a ticket is created).
-   4. URL: Paste your Slack or Discord webhook URL.
-   5. Filters & Logic: You can set a conditional filter rule so it only fires when {ticket.priority} matches your designated emergency value. [4] 
+   1. Go to **Settings > Company > Plugins > Webhooks** (or via the link on your dashboard).
+   2. Click **Add Webhook**.
+   3. **Event:** Select `SupportManager.ticketAdd` (this triggers the webhook whenever a ticket is created).
+   4. **URL:** Paste your Slack or Discord webhook URL.
+   5. **Filters & Logic:** You can set a conditional filter rule so it only fires when `{ticket.priority}` matches your designated `emergency` value. [4] 
 
 ------------------------------
 ## Method B: Using Messenger Integrations (Simplest Way)
 If you prefer a direct plugin option that handles the payload logic automatically, you can utilize Messenger plugins from the [Blesta Add-ons Marketplace](https://marketplace.blesta.com/).
-## 1. Connect the Webhook to the Messenger
-Once you install a compatible messenger addon (such as the popular Simple Discord Messenger or third-party Slack tools), navigate to its plugin configuration menu and paste your chat room webhook URL. [1] 
-## 2. Lock Down to Emergency Priority
+
+### 1. Connect the Webhook to the Messenger
+Once you install a compatible messenger addon (such as the popular _Simple Discord Messenger_ or third-party Slack tools), navigate to its plugin configuration menu and paste your chat room webhook URL. [1] 
+### 2. Lock Down to Emergency Priority
 To avoid notification fatigue, restrict alerts so they do not trigger for routine web design tickets: [5, 6] 
 
-   1. Navigate to Support > Staff.
-   2. Click Edit next to your System Administrator profiles.
-   3. Scroll down to the Ticket Notifications / Messenger Settings section.
-   4. Check the box only for your Emergency priority tier, leaving Standard and Low unchecked. [1] 
+   1. Navigate to **Support > Staff**.
+   2. Click **Edit** next to your System Administrator profiles.
+   3. Scroll down to the **Ticket Notifications / Messenger Settings** section.
+   4. Check the box **only** for your `Emergency` priority tier, leaving Standard and Low unchecked. [1]
 
-Now, if a server goes down, Blesta will instantaneously push a structured card directly into your team's chat group. [2] 
+Now, if a server goes down, Blesta will instantaneously push a structured card directly into your team's chat group. [2]
 ------------------------------
 Would you like to build out the JSON payload structure for your webhook so the chat notification includes a clickable direct link back to the Blesta admin panel? [7] 
 
