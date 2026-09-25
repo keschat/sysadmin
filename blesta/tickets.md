@@ -245,7 +245,7 @@ Would you like help formatting the HTML wrapper code for these emails to give th
 Here is a modern, responsive HTML email wrapper tailored for a web design and hosting agency, followed by a set of essential predefined responses for your 4-man team.
 ## 1. Modern HTML Email Wrapper
 To apply this globally, go to Settings > Company > Emails > Email Templates and edit your Global Template (or create a custom one). This wrapper ensures your emails look professional on both desktop and mobile devices.
-
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -291,7 +291,7 @@ To apply this globally, go to Settings > Company > Emails > Email Templates and 
     </center>
 </body>
 </html>
-
+```
 Note: Ensure your ticket templates simply contain the text/paragraphs you want to output. Blesta injects that text directly where {email_body} is located.
 ------------------------------
 ## 2. Predefined Responses (Canned Replies)
