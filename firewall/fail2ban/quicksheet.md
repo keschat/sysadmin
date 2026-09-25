@@ -62,20 +62,20 @@ sudo fail2ban-client status sshd
 
 **Manually ban an IP address**
 ```bash
-sudo fail2ban-client set <JAIL> banip <IP>
+sudo fail2ban-client set <JAIL> banip <IP-ADDRESS>
 ```
 The specified IP is banned and included in the specified jail. E.g., if you want to ban an IP from connect through SSH:
 ```bash
-sudo fail2ban-client set sshd banip 192.0.2.1
+sudo fail2ban-client set sshd banip <IP-ADDRESS>
 ```
 
 **Manually unban an IP address**
 ```bash
-sudo fail2ban-client set <JAIL> unbanip <IP>
+sudo fail2ban-client set <JAIL> unbanip <IP-ADDRESS>
 ```
 The specified IP in the specified jail is unbanned. E.g., if you want to unban an IP and allow it to connect through SSH:
 ```bash
-sudo fail2ban-client set sshd unbanip 192.0.2.1
+sudo fail2ban-client set sshd unbanip <IP-ADDRESS>
 ```
 
 **Display the current Fail2ban version**
