@@ -1,5 +1,4 @@
 ## Basic commands
-
 > Ref:
 > https://bornoe.org/blog/2023/09/basic-fail2ban-commands/
 
@@ -96,10 +95,9 @@ sudo fail2ban-client --help
 _Displays the man page for Fail2ban with details about all Fail2ban commands and options._
 
 ****
-
-Ref: https://docs.strangebee.com/thehive/how-to/fail2ban/
-
-### Adding TheHive into Fail2ban
+## Adding TheHive into Fail2ban
+> Ref:
+> https://docs.strangebee.com/thehive/how-to/fail2ban/
 
 To integrate TheHive logs with Fail2ban, follow the steps below. Assume TheHive logs are located at `/var/log/thehive/application.lo`g and Fail2ban configuration files are located in /`etc/fail2ban`.
 
