@@ -421,7 +421,7 @@ To adjust your priorities, navigate to **Plugins > Support Manager > Priorities*
 
 * **Emergency (System Down):** Reserve this strictly for server-wide outages, massive packet loss, or core merchant gateway failures. Configure Blesta to trigger **immediate staff mobile or third-party messenger notifications** (like Slack or Telegram) for your System Administrators, regardless of their shift schedules.
 * **High (Hosting Issues / Broken Elements):** Use this for individual client issues, such as a website throwing a 500 error, an email inbox being blocked, or an accidental IP ban. These require same-day resolution but don't threaten the entire network infrastructure.
-* **Standard (Design Revisions / Project Updates):** The default tier for all Web Design & Development tasks. Design projects operate on milestone schedules rather than minutes, so keeping them at "Standard" ensures they don't trigger intrusive notifications while the tech team is troubleshooting server stability.
+* **Standard (Design Revisions / Project Updates):** The default tier for all _Web Design & Development_ tasks. Design projects operate on milestone schedules rather than minutes, so keeping them at "Standard" ensures they don't trigger intrusive notifications while the tech team is troubleshooting server stability.
 * **Low (General Inquiries / Pre-Sales Quotes):** Perfect for feature requests, sales questions, or non-urgent adjustments. Your team can tackle these when the main support and design queues are completely cleared.
 
 ------------------------------
