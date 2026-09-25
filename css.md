@@ -277,7 +277,8 @@ If an element or its parent has a specific `color` applied, `currentColor` will 
 > https://blog.master.dev/using-currentcolor-in-2025/
 >
 > https://www.30secondsofcode.org/css/s/current-color/
-```css.card {
+```css
+.card {
   color: #3b82f6; /* Blue text */
   border: 2px solid currentColor; /* Automatically becomes a 2px blue border */
   background-color: transparent;
