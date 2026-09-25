@@ -170,7 +170,7 @@ You will see several core ticket templates available for editing, including:
 
 * **Ticket Received**: Sent to the client as an autoreply when a ticket is opened.
 * **Ticket Staff Reply:** Sent to the client when a staff member posts a response.
-* **Ticket Assigned:** Sent `internally` to a staff member when a ticket is routed to them.
+* **Ticket Assigned:** Sent _internally_ to a staff member when a ticket is routed to them.
 
 ------------------------------
 ## 2. Supported Template Tags
