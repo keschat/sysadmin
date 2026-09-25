@@ -25,7 +25,7 @@ If you are running Blesta 6.0 or newer, the [Blesta AI](https://www.blesta.com/2
 ## 4. Notification Schedules (Who gets alerted?)
 Blesta doesn't just assign visibility; it controls who gets notified based on strict parameters:
 
-* **Staff Schedules:** In the Support Manager settings under Support > Staff > Edit, each operator has a scheduled start and end time. Staff will only receive ticket notices if the ticket arrives during their active shift. [3, 9, 10] 
+* **Staff Schedules:** In the Support Manager settings under **Support > Staff > Edit**, each operator has a scheduled start and end time. Staff will only receive ticket notices if the ticket arrives during their active shift. [3, 9, 10] 
 * **Priority Matching:** Operators can opt to receive notifications only for certain ticket priorities (e.g., only "Critical" or "Emergency" tickets). [10] 
 * **Notification Preferences:** Through the global admin notification system, staff can choose to receive their assignment notices via email, third-party messengers (like Slack/Telegram), or the internal admin interface. [11, 12] 
 
