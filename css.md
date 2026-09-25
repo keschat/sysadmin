@@ -156,7 +156,6 @@ You can find and download free UI/UX design icons in SVG and PNG formats through
 * [Symfony UX Icons](https://ux.symfony.com/icons): A developer tool to render over 200,000 SVG icons directly from Twig templates.
 
 If you need a specific type of icon, tell me:
-
 * What format you need (SVG, PNG, font)
 * The style (outline, solid, colored)
 
@@ -200,7 +199,7 @@ If you want to use a CDN library without downloading individual files, add the p
 </html>
 ```
 
-****
+***
 
 # css make div in center of page vertically
 
