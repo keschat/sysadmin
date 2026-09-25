@@ -127,7 +127,7 @@ Here is exactly how to lock down financial data for your design and support staf
 To restrict access, you must place your staff into different **Staff Groups** within Blesta, as permissions cannot be set on an individual, per-user basis.
 
    1. Navigate to **Settings > Company > Staff > Staff Groups**.
-   2. Create or edit a group (e.g., Creative & Frontend Group or Support Staff).
+   2. Create or edit a group (e.g., _Creative & Frontend Group or Support Staff_).
    3. Under the **Permissions** tab, you will see a tree of checkboxes matching Blesta's core components.
 
 ## 2. The Key Permissions to Uncheck
