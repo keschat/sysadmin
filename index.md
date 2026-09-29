@@ -62,6 +62,42 @@ Free email address validator [https://verifalia.com/](https://verifalia.com/vali
 
 ***
 
+### Design
+
+[cladd](https://cladd.io/react/foundations/colors/)
+
+[heroUI darkmode](https://heroui.com/en/docs/react/getting-started/dark-mode)
+
+[Generating colors with the CSS oklch() function](https://gomakethings.com/articles/generating-colors-with-the-css-oklch-function/)
+
+34 customer service email templates + best practices [Zendesk blog](https://www.zendesk.com/blog/tools-and-templates/customer-service-email-templates/)
+
+[40 CSS Background Effects to Enhance Your Website](https://prismic.io/blog/css-background-effects)
+
+[Free SVG Backgrounds and Patterns](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)
+
+[fffuel - color tools and free SVG generators for gradients, patterns, textures, shapes & backgrounds](https://www.fffuel.co/)
+
+[32 animated SVG background examples for web design inspiration](https://www.svgator.com/blog/animated-svg-backgrounds-examples/)
+
+Credit Card Payment Logos Collection [svg Repo](https://www.svgrepo.com/collection/credit-card-payment-logos/)
+
+Free Credit Cards Icon Pack. 45 SVG, PNG Icons. [Iconpacks](https://www.iconpacks.net/free-icon-pack/free-credit-cards-icon-pack-232.html)
+
+svg-credit-card-payment-icons [Github](https://github.com/aaronfagan/svg-credit-card-payment-icons)
+
+[Free Icons nucleoapp](https://nucleoapp.com/credit-card-icons)
+
+[40 Best Bootstrap Navbar Templates in 2025 (Updated)](https://www.mockplus.com/blog/post/bootstrap-navbar-template)
+
+[Infinite Marquee Animation using Modern CSS](https://blog.master.dev/infinite-marquee-animation-using-modern-css/)
+
+Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework [Bootsnipp](https://bootsnipp.com/)
+
+The rules behind a design system, not the values [meodai  Design book](https://meodai.github.io/design-book/)
+
+***
+
 ### Emails
 
 Mail server [Archlinux wiki](https://wiki.archlinux.org/title/Mail_server)
@@ -121,6 +157,8 @@ Support Manager [🔗](https://docs.blesta.com/integrations/plugins/support-mana
 Blesta nginx Template [forum.hestiacp](https://forum.hestiacp.com/t/blesta-nginx-template/14708)
 
 blesta config with nginx on ubuntu [Github](https://gist.github.com/sapid/7590993)
+
+Welcome Email For Hosting [Blesta forums](https://www.blesta.com/forums/topic/223-welcome-email-for-hosting/)
 
 Config Changes [🔗](https://docs.blesta.com/getting-started/configs/) 
 
@@ -187,6 +225,8 @@ Complete Guide on how to setup DirectAdmin Reseller & configure WHMCS DirectAdmi
 Automatically Create WordPress on DirectAdmin account creation. [cainhosting community](https://cainhosting.com/community/knowledge-base/automatically-create-wordpress-on-directadmin-account-creation/)
 
 Possible Bug in DA - Global IP not assigned to resellers automatically [🔗](https://forum.directadmin.com/threads/possible-bug-in-da-global-ip-not-assigned-to-resellers-automatically.62399/)
+
+Fix the error: Your IP is blacklisted on DirectAdmin [azdigi.com DA blog](https://azdigi.com/en/blog/webserver-panel/directadmin/fix-the-error-your-ip-is-blacklisted-on-directadmin#:~:text=handle%20this%20error.-,I.,ip_blacklist%20file%2C%20follow%20these%20steps.)
 
 _**Secure DA**_
 
