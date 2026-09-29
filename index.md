@@ -298,6 +298,41 @@ How is Netcup so cheap? [lowendtalk.com](https://lowendtalk.com/discussion/19110
 
 ***
 
+### Payment Gateways
+
+(https://store.magenest.com/blog/payment-gateway-comparison/)
+
 ### Business Guide
 
+Get an employer identification number [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number)
+
+As a non-resident setting up a Wyoming LLC in the U.S., what… [justanswer.com](https://www.justanswer.com/tax/tzcvv-wyoming-llc-setup-non-resident-guidelines.html)
+
+[Wyoming LLC for South African Residents: Full Guide](https://wyomingllc.co/wyoming-llc-south-africa/)
+
 Cheapest Way to Form a Wyoming LLC [wyomingagents](https://www.wyomingagents.com/llc)
+
+Anonymous Wyoming LLC for Non-Residents (2026) [Privacy Solutions](https://www.privacy-solutions.com/company-formation/wyoming-llc/)
+
+[Wyoming Secretary of State](https://sos.wyo.gov/business/startabusiness.aspx)
+
+Start a Wyoming LLC [northwestregisteredagent](https://www.northwestregisteredagent.com/llc/wyoming)
+
+Why Form a Wyoming LLC [Buffalo Registered Agents](https://www.wyregisteredagent.net/wyoming-llc)
+
+How to Form an LLC in Wyoming: A Step-by-Step Guide [yt](https://www.youtube.com/watch?v=ufbzVuMcdhc)
+
+How to Form an LLC in Wyoming: A Step-by-Step Guide [yt](https://www.youtube.com/watch?v=mpqPoJ7Wkhs)
+
+Wyoming LLC: How to Start an LLC in Wyoming (2026 Step-by-Step Guide & Tips!) [yt](https://www.youtube.com/watch?v=2o1MxI437vE)
+
+How to Start an LLC in Wyoming (Without Messing Up) [yt](https://www.youtube.com/watch?v=Qy-rtx56-z4)
+
+[yt]()
+
+
+
+
+
+
+
