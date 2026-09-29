@@ -43,22 +43,21 @@ Config Changes [🔗](https://docs.blesta.com/getting-started/configs/)
 
 ***
 
-## Cloud Linux
+### Cloud Linux
 
 How to Install CloudLinux and CageFS with OpenLiteSpeed and DirectAdmin [vpsbasics.com](https://www.vpsbasics.com/cp/how-to-install-cloudlinux-and-cagefs-with-openlitespeed-and-directadmin/)
 
 How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/server-administration/linux/how-to-use-cloudlinux-cagefs/)
 
-
 ***
 
-## Direct Admin
+### Direct Admin
 
 [Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
 
 ***
 
-## Linux Admin
+### Linux Admin
 
 Howto Series: AlmaLinux Tutorials [Almalinux.org](https://wiki.almalinux.org/series/)
 
@@ -76,7 +75,7 @@ Ncdu – A Powerful NCurses-Based Disk Usage Analyzer for Linux [tecmint.com](ht
 
 ***
 
-## Security and Firewall
+### Security and Firewall
 
 How To Set Up a Firewall Using firewalld on CentOS [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7)
 
@@ -88,7 +87,7 @@ History of IP addresses that accessed a server via ssh [stackexchange](https://u
 
 ***
 
-## SSL
+### SSL
 
 How to Issue Let's Encrypt Wildcard Certificates with Certbot [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-create-let-s-encrypt-wildcard-certificates-with-certbot)
 
@@ -96,13 +95,13 @@ How to Issue Let's Encrypt Wildcard Certificates with Certbot [Digital Ocean](ht
 
 ***
 
-## SSH
+### SSH
 
 How to Use SSH to Connect to a Remote Server (Step-by-Step Guide) [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)
 
 ***
 
-## Networking
+### Networking
 
 IP Addresses, Subnets, and CIDR Notation Explained [Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking)
 
@@ -110,7 +109,7 @@ How to Configure Network Settings and Manage Interfaces on AlmaLinux (Step-by-St
 
 ***
 
-## Nginx
+### Nginx
 
 NginxUI [🔗](https://nginxui.com/)
 
@@ -123,6 +122,8 @@ How to Secure Nginx WeB-Server From HACKERs | Tip [dev.to](https://dev.to/syedas
 How to Configure Nginx with PHP-FPM on RHEL [oneuptime.com/](https://oneuptime.com/blog/post/2026-03-04-configure-nginx-php-fpm-rhel-9/view)
 
 nginx "server_tokens off" does not remove the server header [stakoverflow](https://stackoverflow.com/questions/20247184/nginx-server-tokens-off-does-not-remove-the-server-header)
+
+***
 
 **Logs**
 
@@ -138,7 +139,7 @@ NGINX Logging: The Ultimate Guide and Best Practices [edgedelta.com](https://edg
 
 ***
 
-## Wordpress
+### Wordpress
 
 Disable PHP File Execution in Specific WordPress Folders [🔗](https://wordpress.org/support/topic/disable-php-file-execution-in-specific-wordpress-folders/)
 
@@ -148,6 +149,6 @@ How to Disable PHP Execution in Certain WordPress Directories [🔗](https://www
 
 ***
 
-## Business Guide
+### Business Guide
 
 Cheapest Way to Form a Wyoming LLC [wyomingagents](https://www.wyomingagents.com/llc)
