@@ -123,9 +123,7 @@ How to Configure Nginx with PHP-FPM on RHEL [oneuptime.com/](https://oneuptime.c
 
 nginx "server_tokens off" does not remove the server header [stakoverflow](https://stackoverflow.com/questions/20247184/nginx-server-tokens-off-does-not-remove-the-server-header)
 
-***
-
-**Logs**
+_**Logs**_
 
 Nginx Logging: A Comprehensive Guide [Betterstack.com](https://betterstack.com/community/guides/logging/how-to-view-and-configure-nginx-access-and-error-logs/)
 
