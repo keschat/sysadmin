@@ -37,7 +37,7 @@ Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPane
 
 ***
 
-### Blesta [🔗]
+### Blesta
 
 Blesta Source Documentation [🔗](https://source-docs.blesta.com/)
 
@@ -93,7 +93,7 @@ How to Start an LLC in Wyoming (Without Messing Up) [yt](https://www.youtube.com
 
 ***
 
-### Cloud Linux [🔗]
+### Cloud Linux
 
 How to Install CloudLinux and CageFS with OpenLiteSpeed and DirectAdmin [vpsbasics.com](https://www.vpsbasics.com/cp/how-to-install-cloudlinux-and-cagefs-with-openlitespeed-and-directadmin/)
 
@@ -165,7 +165,7 @@ The rules behind a design system, not the values [meodai  Design book](https://m
 
 ***
 
-### Direct Admin [🔗]
+### Direct Admin
 
 [Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
 
