@@ -4,6 +4,7 @@ Jump to the [Installation Instructions](#installation-instructions).
 
 [Courses](#courses) <br/>
 [Blesta](#blesta) <br/>
+[Direct admin](#direct-admin) <br/>
 [Firewall](#firewall) <br/>
 [SSL](#ssl) <br/>
 [SSH](#ssh) <br/>
@@ -20,11 +21,21 @@ Jump to the [Installation Instructions](#installation-instructions).
 
 The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_sfm_price=0)
 
+***
+
 ## Blesta
 
 Support Manager [🔗](https://docs.blesta.com/integrations/plugins/support-manager/#creating-a-department)
 
 Blesta nginx Template [forum.hestiacp](https://forum.hestiacp.com/t/blesta-nginx-template/14708)
+
+***
+
+## Direct Admin
+
+[Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
+
+***
 
 ## Firewall
 
