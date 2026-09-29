@@ -6,6 +6,7 @@ Jump to the relevant section by clicking on below links:
 [Courses](#courses) <br/>
 [Blesta](#blesta) <br/>
 [Cloud Linux](#cloud-linux) <br/>
+[Fail2ban](#fail2ban) <br/>
 [Direct Admin](#direct-admin) <br/>
 [Linux Admin](#linux-admin) <br/>
 [Security & Firewall](#security-and-firewall) <br/>
@@ -128,6 +129,20 @@ How to Install CloudLinux and CageFS with OpenLiteSpeed and DirectAdmin [vpsbasi
 How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/server-administration/linux/how-to-use-cloudlinux-cagefs/)
 
 How big your swap partition to be [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/115005185325-How-big-your-swap-partition-to-be)
+
+***
+
+### fail2ban
+
+Nginx's limit_req + fail2ban: IP addresses are getting banned yet can still access the site [serverfault.com](https://serverfault.com/questions/1160290/nginxs-limit-req-fail2ban-ip-addresses-are-getting-banned-yet-can-still-acce)
+
+Installing and Configuring Fail2Ban on AlmaLinux 9 [reintech.io blog](https://reintech.io/blog/installing-configuring-fail2ban-almalinux-9)
+
+How to Set Up fail2ban on AlmaLinux, CentOS, Rocky Linux & Fedora: The Complete Server Guide [voxihost.pl tutorials](https://voxihost.pl/blog/setup-fail2ban-centos-rhel/)
+
+Install and Configure Fail2ban on Rocky Linux 10 / AlmaLinux 10 [computingforgeeks.com](https://computingforgeeks.com/install-fail2ban-rocky-almalinux/)
+
+Fail2ban Cockpit filter and jail [Github](https://gist.github.com/pertsevds/723c27f42d2224db0ceaa69aa48d009b?utm_source=chatgpt.com)
 
 ***
 
