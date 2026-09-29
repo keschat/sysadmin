@@ -25,6 +25,8 @@ Jump to the relevant section by clicking on below links:
 
 Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPanel and Dedicated Servers [dev.to](https://dev.to/swapnil-ahmmed-shishir/complete-guide-to-fix-nodejs-apache-passenger-and-deployment-issues-on-cpanel-and-dedicated-380a#:~:text=4.,apps%20to%20run%20through%20Apache.)
 
+***
+
 ### Tools
 
 [whois.ipip.net](https://whois.ipip.net/)
@@ -119,11 +121,13 @@ Config Changes [🔗](https://docs.blesta.com/getting-started/configs/)
 
 ***
 
-### Cloud Linux
+### Cloud Linux [🔗]
 
 How to Install CloudLinux and CageFS with OpenLiteSpeed and DirectAdmin [vpsbasics.com](https://www.vpsbasics.com/cp/how-to-install-cloudlinux-and-cagefs-with-openlitespeed-and-directadmin/)
 
 How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/server-administration/linux/how-to-use-cloudlinux-cagefs/)
+
+How big your swap partition to be [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/115005185325-How-big-your-swap-partition-to-be)
 
 ***
 
@@ -144,6 +148,20 @@ How to enable notifications for account creation in DirectAdmin [plothost.com kb
 Complete Guide on how to setup DirectAdmin Reseller & configure WHMCS DirectAdmin Module [absolutehosting.co.za knowledgebase](https://client.absolutehosting.co.za/knowledgebase/429/Complete-Guide-on-how-to-setup-DirectAdmin-Reseller-and-configure-WHMCS-DirectAdmin-Module.html)
 
 Automatically Create WordPress on DirectAdmin account creation. [cainhosting community](https://cainhosting.com/community/knowledge-base/automatically-create-wordpress-on-directadmin-account-creation/)
+
+Fix MySQL Downtime — Ultimate Guide for CloudLinux MySQL Governor Users [hoganhost.com.ng](https://hoganhost.com.ng/blog/sql/fix-mysql-downtime-ultimate-guide-for-cloudlinux-mysql-governor-users/)
+
+What MySQL Governor limits should be? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/7152405613468-What-MySQL-Governor-limits-should-be)
+
+How to upgrade MySQL/MariaDB with Governor over multiple versions [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/5290073279004-How-to-upgrade-MySQL-MariaDB-with-Governor-over-multiple-versions)
+
+A Step-by-Step Guide to Setting up MySQL Governor on cPanel [vercaa.com](https://vercaa.com/index.php?rp=%2Fknowledgebase%2F174%2FA-Step-by-Step-Guide-to-Setting-up-MySQL-Governor-on-cPanel.html&language=dutch#:~:text=MySQL%20Governor%20can%20be%20installed,instead%20yum%20install%20governor%2Dmysql)
+
+How to authenticate your server for Support Team and use the Secure Access Form? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/6245743410460-How-to-authenticate-your-server-for-Support-Team-and-use-the-Secure-Access-Form)
+
+CloudLinux OS – Reboot your system to update the kernel (kmodlve is not loaded) [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/11476756106780-CloudLinux-OS-Reboot-your-system-to-update-the-kernel-kmodlve-is-not-loaded)
+
+
 
 ***
 
