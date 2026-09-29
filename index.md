@@ -25,19 +25,51 @@ Jump to the relevant section by clicking on below links:
 
 Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPanel and Dedicated Servers [dev.to](https://dev.to/swapnil-ahmmed-shishir/complete-guide-to-fix-nodejs-apache-passenger-and-deployment-issues-on-cpanel-and-dedicated-380a#:~:text=4.,apps%20to%20run%20through%20Apache.)
 
+***
+
 ### Emails
 
-_**Email authenticity**_
+Mail server [Archlinux wiki](https://wiki.archlinux.org/title/Mail_server)
 
-Understanding SPF, DKIM, and DMARC Records [ahosting.net](https://www.ahosting.net/faq/email-setup-and-configuration/understanding-spf-dkim-and-dmarc-records.html)
+_**Utilities**_
+
+DMARC Generator [https://www.zerobounce.net/](https://www.zerobounce.net/dmarc-generator)
+
+_**Email authenticity & List-Unsubscribe**_
+
+Understanding SPF, DKIM, and DMARC Records [ahosting.net faq](https://www.ahosting.net/faq/email-setup-and-configuration/understanding-spf-dkim-and-dmarc-records.html)
 
 Enable DKIM and have Exim SMTP banner use the accounts dedicated IP in DirectAdmin for PHP mail [duntuk.com](https://duntuk.com/change-exim-smtp-banner-directadmin-php-mail)
+
+How to configure DKIM & SPF & DMARC on Sendmail for multiple domains on CentOS 7 [web-workers.ch](https://www.web-workers.ch/index.php/2019/10/21/how-to-configure-dkim-spf-dmarc-on-sendmail-for-multiple-domains-on-centos-7/)
+
+Configuring DKIM for Trend Micro Hosted Email Security [godmarc.com knowledge](https://godmarc.com/knowledge/generate-dkim-for-imvsa-trend-micro#:~:text=From%20the%20Domain%20Name%20drop%2Ddown%20menu%2C%20select,domain%20you%20want%20to%20configure%20DKIM%20for.)
+
+how use DMARC and List-Unsubscribe [mailwizz.com forum](https://forum.mailwizz.com/threads/how-use-dmarc-and-list-unsubscribe.518/)
+
+Add “List-Unsubscribe” header in Exim config [hestiacp forum](https://forum.hestiacp.com/t/add-list-unsubscribe-header-in-exim-config/1004)
+
+Is implementing a list-unsubscribe header mandatory for Gmail and Yahoo and what are the impacts? [suped.com learn](https://www.suped.com/learn/email-deliverability/is-implementing-a-list-unsubscribe-header-mandatory-for-gmail-and-yahoo-and-what-are-the-impacts)
+
+_**Exim Banner & Outgoing IP Address**_
+
+SMTP Banner on Exim sending from account IP [cPanel Community](https://support.cpanel.net/hc/en-us/community/posts/29531746629271-SMTP-Banner-on-Exim-sending-from-account-IP)
+
+How to Configure the Exim Outgoing IP Address [cPanel docs](https://docs.cpanel.net/knowledge-base/email/how-to-configure-the-exim-outgoing-ip-address/)
+
+Exim SMTP banner based on connecting IP (domain) [hestiacp forum](https://forum.hestiacp.com/t/exim-smtp-banner-based-on-connecting-ip-domain/430)
+
+Exim4 Outbound IP address based on web domain IP [hestiacp forum](https://forum.hestiacp.com/t/exim4-outbound-ip-address-based-on-web-domain-ip/188)
+
+***
 
 ### Courses
 
 The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_sfm_price=0)
 
-(glukhov.org)[https://www.glukhov.org/tags/self-hosting/]
+[glukhov.org](https://www.glukhov.org/tags/self-hosting/)
+
+[godmarc.com knowledge](https://godmarc.com/knowledge)
 
 ***
 
@@ -64,6 +96,8 @@ How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/serv
 ### Direct Admin
 
 [Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
+
+[3rd Party Software](https://forum.directadmin.com/forums/3rd-party-software.44/)
 
 ***
 
