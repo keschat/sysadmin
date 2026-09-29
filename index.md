@@ -1,6 +1,8 @@
+## Web links for online guides
+
 Jump to the [Installation Instructions](#installation-instructions).
 
-
+[Blesta](#blesta) <br/>
 [Firewall](#firewall) <br/>
 [SSL](#ssl) <br/>
 [SSH](#ssh) <br/>
@@ -8,9 +10,16 @@ Jump to the [Installation Instructions](#installation-instructions).
 [Nginx](#nginx) <br/>
 [Installation Instructions](#installation-instructions) <br/>
 
+[🔗]
 
 ## Installation Instructions
 (Content goes here...)
+
+## Blesta
+
+Support Manager [🔗](https://docs.blesta.com/integrations/plugins/support-manager/#creating-a-department)
+
+Blesta nginx Template [forum.hestiacp](https://forum.hestiacp.com/t/blesta-nginx-template/14708)
 
 ## Firewall
 
@@ -50,5 +59,7 @@ NGINX Logs Explained: Access and Error Log Guide [Digital Ocean](https://www.dig
 
 Where Are Nginx Logs Stored? Default Paths (Ubuntu, CentOS, Docker) [inventivehq.com](https://inventivehq.com/knowledge-base/devops/where-are-nginx-logs-stored)
 
+Nginx Error Logs: Troubleshooting and Security Guide [last9.io](https://last9.io/blog/nginx-error-logs/)
 
+NGINX Logging: The Ultimate Guide and Best Practices [edgedelta.com](https://edgedelta.com/company/knowledge-center/nginx-logging-guide)
 
