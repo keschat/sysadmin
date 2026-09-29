@@ -2,21 +2,28 @@
 
 Jump to the relevant section by clicking on below links:
 
-[Emails](#emails) <br/>
-[Courses](#courses) <br/>
+[general](#general) <br/>
 [Blesta](#blesta) <br/>
+[Business Guide](#business-guide) <br/>
 [Cloud Linux](#cloud-linux) <br/>
-[Fail2ban](#fail2ban) <br/>
+[Courses](#courses) <br/>
 [Direct Admin](#direct-admin) <br/>
+[Emails](#emails) <br/>
+[Fail2ban](#fail2ban) <br/>
+[Hosting Notes](#hosting-notes) <br/>
 [Linux Admin](#linux-admin) <br/>
-[Security & Firewall](#security-and-firewall) <br/>
-[SSL](#ssl) <br/>
-[SSH](#ssh) <br/>
+[Naming Schemes](#naming-schemes) <br/>
 [Networking](#networking) <br/>
 [Nginx](#nginx) <br/>
-[Wordpress](#wordpress) <br/>
-[Hosting Notes](#hosting-notes) <br/>
-[Business Guide](#business-guide) <br/>
+[Payment gateways](#payment-gateways) <br/>
+[Point of Sales](#point-of-sales) <br/>
+[Security & Firewall](#security-and-firewall) <br/>
+[Spam Assassin](#spam-assassin) <br/>
+[SSH](#ssh) <br/>
+[SSL](#ssl) <br/>
+[Wordpress](#wordpress)
+
+***
 
 [🔗]
 
@@ -28,37 +35,95 @@ Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPane
 
 ***
 
-### Tools
+### Blesta [🔗]
 
-[whois.ipip.net](https://whois.ipip.net/)
+Blesta Source Documentation [🔗](https://source-docs.blesta.com/)
 
-[abuseipdb](https://www.abuseipdb.com/)
+Order System [🔗](https://docs.blesta.com/integrations/plugins/order-system/)
 
-[dnschecker.org](https://dnschecker.org/)
+Support Manager [🔗](https://docs.blesta.com/integrations/plugins/support-manager/#creating-a-department)
 
-[Email and DNS checks mxtoolbox.com](https://mxtoolbox.com/SuperTool.aspx)
+Blesta nginx Template [forum.hestiacp](https://forum.hestiacp.com/t/blesta-nginx-template/14708)
 
-[Email and DNS checks dmarcadvisor.com](https://dmarcadvisor.com/dkim-check/)
+blesta config with nginx on ubuntu [Github](https://gist.github.com/sapid/7590993)
 
-[Swaks - Swiss Army Knife for SMTP](https://www.jetmore.org/john/code/swaks/)
+Welcome Email For Hosting [Blesta forums](https://www.blesta.com/forums/topic/223-welcome-email-for-hosting/)
 
-[mail-tester.com](https://mail-tester.com/)
+Config Changes [🔗](https://docs.blesta.com/getting-started/configs/) 
 
-[DMARC Generator zerobounce.net](https://www.zerobounce.net/dmarc-generator)
+[Module] Internet.bs Domain Registrar Module - R/c 1.0.4 [Blesta forum](https://www.blesta.com/forums/topic/1875-module-internetbs-domain-registrar-module-rc-104/)
 
-[DKIM Generator sidemail.io](https://sidemail.io/tools/dkim-generator/)
+How to install and configure Blesta [bikegremlin.com](https://io.bikegremlin.com/29698/how-to-install-and-configure-blesta/)
 
-[easydmarc.com tools](https://easydmarc.com/tools)
+Debugging / Tools [🔗](https://docs.blesta.com/support/debugging-tools/)
 
-[zoho.com toolkit](https://www.zoho.com/toolkit/)
+[Blesta 3.2-3.5.1] How To Make Static Pages By Modifying Portal Plugin [blesta forums](https://www.blesta.com/forums/topic/2943-blesta-32-351-how-to-make-static-pages-by-modifying-portal-plugin/?tab=comments#comment-21068)
 
-[bimi Radar](https://bimiradar.com/glob)
+***
 
-DNS, EMail, Image tools [BIMI SVG Converter to Tiny-PS](https://www.captaindns.com/en/tools)
+### Business Guide
 
-[Ping and port tests check-host.net](https://check-host.net/)
+Get an employer identification number [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number)
 
-Free email address validator [https://verifalia.com/](https://verifalia.com/validate-email)
+As a non-resident setting up a Wyoming LLC in the U.S., what… [justanswer.com](https://www.justanswer.com/tax/tzcvv-wyoming-llc-setup-non-resident-guidelines.html)
+
+[Wyoming LLC for South African Residents: Full Guide](https://wyomingllc.co/wyoming-llc-south-africa/)
+
+Cheapest Way to Form a Wyoming LLC [wyomingagents](https://www.wyomingagents.com/llc)
+
+Anonymous Wyoming LLC for Non-Residents (2026) [Privacy Solutions](https://www.privacy-solutions.com/company-formation/wyoming-llc/)
+
+[Wyoming Secretary of State](https://sos.wyo.gov/business/startabusiness.aspx)
+
+Start a Wyoming LLC [northwestregisteredagent](https://www.northwestregisteredagent.com/llc/wyoming)
+
+Why Form a Wyoming LLC [Buffalo Registered Agents](https://www.wyregisteredagent.net/wyoming-llc)
+
+How to Form an LLC in Wyoming: A Step-by-Step Guide [yt](https://www.youtube.com/watch?v=ufbzVuMcdhc)
+
+How to Form an LLC in Wyoming: A Step-by-Step Guide [yt](https://www.youtube.com/watch?v=mpqPoJ7Wkhs)
+
+Wyoming LLC: How to Start an LLC in Wyoming (2026 Step-by-Step Guide & Tips!) [yt](https://www.youtube.com/watch?v=2o1MxI437vE)
+
+How to Start an LLC in Wyoming (Without Messing Up) [yt](https://www.youtube.com/watch?v=Qy-rtx56-z4)
+
+[yt]()
+
+***
+
+### Cloud Linux [🔗]
+
+How to Install CloudLinux and CageFS with OpenLiteSpeed and DirectAdmin [vpsbasics.com](https://www.vpsbasics.com/cp/how-to-install-cloudlinux-and-cagefs-with-openlitespeed-and-directadmin/)
+
+How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/server-administration/linux/how-to-use-cloudlinux-cagefs/)
+
+How big your swap partition to be [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/115005185325-How-big-your-swap-partition-to-be)
+
+Fix MySQL Downtime — Ultimate Guide for CloudLinux MySQL Governor Users [hoganhost.com.ng](https://hoganhost.com.ng/blog/sql/fix-mysql-downtime-ultimate-guide-for-cloudlinux-mysql-governor-users/)
+
+What MySQL Governor limits should be? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/7152405613468-What-MySQL-Governor-limits-should-be)
+
+How to upgrade MySQL/MariaDB with Governor over multiple versions [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/5290073279004-How-to-upgrade-MySQL-MariaDB-with-Governor-over-multiple-versions)
+
+A Step-by-Step Guide to Setting up MySQL Governor on cPanel [vercaa.com](https://vercaa.com/index.php?rp=%2Fknowledgebase%2F174%2FA-Step-by-Step-Guide-to-Setting-up-MySQL-Governor-on-cPanel.html&language=dutch#:~:text=MySQL%20Governor%20can%20be%20installed,instead%20yum%20install%20governor%2Dmysql)
+
+How to authenticate your server for Support Team and use the Secure Access Form? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/6245743410460-How-to-authenticate-your-server-for-Support-Team-and-use-the-Secure-Access-Form)
+
+CloudLinux OS – Reboot your system to update the kernel (kmodlve is not loaded) [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/11476756106780-CloudLinux-OS-Reboot-your-system-to-update-the-kernel-kmodlve-is-not-loaded)
+
+Cloud Server: Repair Current Kernel Version (CentOS, AlmaLinux and Rocky Linux) [ionos.com](https://www.ionos.com/help/server-cloud-infrastructure/default-title-1/cloud-server-repair-current-kernel-version-centos-almalinux-and-rocky-linux/)
+
+***
+
+### Courses, Knowledgebase
+
+The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_sfm_price=0)
+
+[glukhov.org](https://www.glukhov.org/tags/self-hosting/)
+
+[godmarc.com knowledge](https://godmarc.com/knowledge)
+
+[bobcares blog](https://bobcares.com/blog/category/directadmin/)
 
 ***
 
@@ -95,6 +160,36 @@ svg-credit-card-payment-icons [Github](https://github.com/aaronfagan/svg-credit-
 Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework [Bootsnipp](https://bootsnipp.com/)
 
 The rules behind a design system, not the values [meodai  Design book](https://meodai.github.io/design-book/)
+
+***
+
+### Direct Admin [🔗]
+
+[Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
+
+[Version 1.50.1 #per-user-user-conf-override-for-max-per-email-send-limit](https://docs.directadmin.com/changelog/version-1.50.1.html#per-user-user-conf-override-for-max-per-email-send-limit)
+
+[Version 1.50.1 #brute-force-monitor-skip-user-distributed-attack-user-count](https://docs.directadmin.com/changelog/version-1.50.1.html#brute-force-monitor-skip-user-distributed-attack-user-count)
+
+[3rd Party Software](https://forum.directadmin.com/forums/3rd-party-software.44/)
+
+How to enable notifications for account creation in DirectAdmin [plothost.com kb](https://www.plothost.com/kb/notifications-account-creation-directadmin/)
+
+Complete Guide on how to setup DirectAdmin Reseller & configure WHMCS DirectAdmin Module [absolutehosting.co.za knowledgebase](https://client.absolutehosting.co.za/knowledgebase/429/Complete-Guide-on-how-to-setup-DirectAdmin-Reseller-and-configure-WHMCS-DirectAdmin-Module.html)
+
+Automatically Create WordPress on DirectAdmin account creation. [cainhosting community](https://cainhosting.com/community/knowledge-base/automatically-create-wordpress-on-directadmin-account-creation/)
+
+Possible Bug in DA - Global IP not assigned to resellers automatically [🔗](https://forum.directadmin.com/threads/possible-bug-in-da-global-ip-not-assigned-to-resellers-automatically.62399/)
+
+Fix the error: Your IP is blacklisted on DirectAdmin [azdigi.com DA blog](https://azdigi.com/en/blog/webserver-panel/directadmin/fix-the-error-your-ip-is-blacklisted-on-directadmin#:~:text=handle%20this%20error.-,I.,ip_blacklist%20file%2C%20follow%20these%20steps.)
+
+_**Secure DA**_
+
+How to Install ConfigServer Firewall (CSF) and Brute Force Monitor (BFM) with DirectAdmin [vpsbasics.com](https://www.vpsbasics.com/cp/how-to-install-configserver-firewall-csf-and-brute-force-monitor-bfm-with-directadmin/)
+
+[How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
+
+Creating a Login Key for a user through CMD_API_LOGIN_KEYS [🔗](https://forum.directadmin.com/threads/creating-a-login-key-for-a-user-through-cmd_api_login_keys.64592/)
 
 ***
 
@@ -136,82 +231,6 @@ How to Change the Outgoing Mail IP in DirectAdmin? [knownhost](https://www.known
 
 ***
 
-### SpamAssassin
-
-How to Set Up SpamAssassin with Postfix on Ubuntu 24.04 [cubepath.com docs](https://cubepath.com/docs/email-server/spamassassin-configuration)
-
-Set Up Postfix Spam Protection: Complete SpamAssassin Guide [hostperl.com tutorials](https://hostperl.com/kb/tutorials/set-up-postfix-spam-protection-complete-spamassassin-guide)
-
-[spamassassin-milter-with-postfix-on-debian-or-ubuntu](https://www.oikik.io/blogs/spamassassin-milter-with-postfix-on-debian-or-ubuntu.html)
-
-How to Enable and Configure SpamAssassin in DirectAdmin? [knownhost kb](https://www.knownhost.com/kb/how-to-enable-and-configure-spamassassin-in-directadmin/)
-
-How to Setup SpamAssassin in DirectAdmin? [cyfuture.cloud kb](https://cyfuture.cloud/kb/directadmin/how-to-setup-spamassassin-in-directadmin)
-
-***
-
-### Courses, Knowledgebase
-
-The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_sfm_price=0)
-
-[glukhov.org](https://www.glukhov.org/tags/self-hosting/)
-
-[godmarc.com knowledge](https://godmarc.com/knowledge)
-
-[bobcares blog](https://bobcares.com/blog/category/directadmin/)
-
-***
-
-### Blesta [🔗]
-
-Blesta Source Documentation [🔗](https://source-docs.blesta.com/)
-
-Order System [🔗](https://docs.blesta.com/integrations/plugins/order-system/)
-
-Support Manager [🔗](https://docs.blesta.com/integrations/plugins/support-manager/#creating-a-department)
-
-Blesta nginx Template [forum.hestiacp](https://forum.hestiacp.com/t/blesta-nginx-template/14708)
-
-blesta config with nginx on ubuntu [Github](https://gist.github.com/sapid/7590993)
-
-Welcome Email For Hosting [Blesta forums](https://www.blesta.com/forums/topic/223-welcome-email-for-hosting/)
-
-Config Changes [🔗](https://docs.blesta.com/getting-started/configs/) 
-
-[Module] Internet.bs Domain Registrar Module - R/c 1.0.4 [Blesta forum](https://www.blesta.com/forums/topic/1875-module-internetbs-domain-registrar-module-rc-104/)
-
-How to install and configure Blesta [bikegremlin.com](https://io.bikegremlin.com/29698/how-to-install-and-configure-blesta/)
-
-Debugging / Tools [🔗](https://docs.blesta.com/support/debugging-tools/)
-
-[Blesta 3.2-3.5.1] How To Make Static Pages By Modifying Portal Plugin [blesta forums](https://www.blesta.com/forums/topic/2943-blesta-32-351-how-to-make-static-pages-by-modifying-portal-plugin/?tab=comments#comment-21068)
-
-***
-
-### Cloud Linux [🔗]
-
-How to Install CloudLinux and CageFS with OpenLiteSpeed and DirectAdmin [vpsbasics.com](https://www.vpsbasics.com/cp/how-to-install-cloudlinux-and-cagefs-with-openlitespeed-and-directadmin/)
-
-How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/server-administration/linux/how-to-use-cloudlinux-cagefs/)
-
-How big your swap partition to be [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/115005185325-How-big-your-swap-partition-to-be)
-
-Fix MySQL Downtime — Ultimate Guide for CloudLinux MySQL Governor Users [hoganhost.com.ng](https://hoganhost.com.ng/blog/sql/fix-mysql-downtime-ultimate-guide-for-cloudlinux-mysql-governor-users/)
-
-What MySQL Governor limits should be? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/7152405613468-What-MySQL-Governor-limits-should-be)
-
-How to upgrade MySQL/MariaDB with Governor over multiple versions [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/5290073279004-How-to-upgrade-MySQL-MariaDB-with-Governor-over-multiple-versions)
-
-A Step-by-Step Guide to Setting up MySQL Governor on cPanel [vercaa.com](https://vercaa.com/index.php?rp=%2Fknowledgebase%2F174%2FA-Step-by-Step-Guide-to-Setting-up-MySQL-Governor-on-cPanel.html&language=dutch#:~:text=MySQL%20Governor%20can%20be%20installed,instead%20yum%20install%20governor%2Dmysql)
-
-How to authenticate your server for Support Team and use the Secure Access Form? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/6245743410460-How-to-authenticate-your-server-for-Support-Team-and-use-the-Secure-Access-Form)
-
-CloudLinux OS – Reboot your system to update the kernel (kmodlve is not loaded) [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/11476756106780-CloudLinux-OS-Reboot-your-system-to-update-the-kernel-kmodlve-is-not-loaded)
-
-Cloud Server: Repair Current Kernel Version (CentOS, AlmaLinux and Rocky Linux) [ionos.com](https://www.ionos.com/help/server-cloud-infrastructure/default-title-1/cloud-server-repair-current-kernel-version-centos-almalinux-and-rocky-linux/)
-
-***
-
 ### fail2ban
 
 Nginx's limit_req + fail2ban: IP addresses are getting banned yet can still access the site [serverfault.com](https://serverfault.com/questions/1160290/nginxs-limit-req-fail2ban-ip-addresses-are-getting-banned-yet-can-still-acce)
@@ -226,33 +245,25 @@ Fail2ban Cockpit filter and jail [Github](https://gist.github.com/pertsevds/723c
 
 ***
 
-### Direct Admin [🔗]
+### Hosting Notes
 
-[Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
+How is Netcup so cheap? [lowendtalk.com](https://lowendtalk.com/discussion/191109/how-is-netcup-so-cheap)
 
-[Version 1.50.1 #per-user-user-conf-override-for-max-per-email-send-limit](https://docs.directadmin.com/changelog/version-1.50.1.html#per-user-user-conf-override-for-max-per-email-send-limit)
+[trustpilot.com Netcup reviews](https://www.trustpilot.com/review/netcup.com?page=2)
 
-[Version 1.50.1 #brute-force-monitor-skip-user-distributed-attack-user-count](https://docs.directadmin.com/changelog/version-1.50.1.html#brute-force-monitor-skip-user-distributed-attack-user-count)
+[lowendspirit.com Review about NetCup?](https://lowendspirit.com/discussion/681/review-about-netcup)
 
-[3rd Party Software](https://forum.directadmin.com/forums/3rd-party-software.44/)
+[hostadvice.com Netcup review](https://hostadvice.com/hosting-company/netcup-reviews/)
 
-How to enable notifications for account creation in DirectAdmin [plothost.com kb](https://www.plothost.com/kb/notifications-account-creation-directadmin/)
+[hostballs.com Netcup Webhosting - Experiences?](https://hostballs.com/t/netcup-webhosting-experiences/3244/13)
 
-Complete Guide on how to setup DirectAdmin Reseller & configure WHMCS DirectAdmin Module [absolutehosting.co.za knowledgebase](https://client.absolutehosting.co.za/knowledgebase/429/Complete-Guide-on-how-to-setup-DirectAdmin-Reseller-and-configure-WHMCS-DirectAdmin-Module.html)
+[Reddit Netcup IP/networking is a mess (Root Server, Manassas USA location)](https://www.reddit.com/r/VPS/comments/1l9emdw/netcup_ipnetworking_is_a_mess_root_server/)
 
-Automatically Create WordPress on DirectAdmin account creation. [cainhosting community](https://cainhosting.com/community/knowledge-base/automatically-create-wordpress-on-directadmin-account-creation/)
+[Reddit https://www.reddit.com/r/VPS/](https://www.reddit.com/r/VPS/)
 
-Possible Bug in DA - Global IP not assigned to resellers automatically [🔗](https://forum.directadmin.com/threads/possible-bug-in-da-global-ip-not-assigned-to-resellers-automatically.62399/)
+[Reddit is netcup server are good?](https://www.reddit.com/r/VPS/comments/1mcy37u/is_netcup_server_are_good/)
 
-Fix the error: Your IP is blacklisted on DirectAdmin [azdigi.com DA blog](https://azdigi.com/en/blog/webserver-panel/directadmin/fix-the-error-your-ip-is-blacklisted-on-directadmin#:~:text=handle%20this%20error.-,I.,ip_blacklist%20file%2C%20follow%20these%20steps.)
-
-_**Secure DA**_
-
-How to Install ConfigServer Firewall (CSF) and Brute Force Monitor (BFM) with DirectAdmin [vpsbasics.com](https://www.vpsbasics.com/cp/how-to-install-configserver-firewall-csf-and-brute-force-monitor-bfm-with-directadmin/)
-
-[How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
-
-Creating a Login Key for a user through CMD_API_LOGIN_KEYS [🔗](https://forum.directadmin.com/threads/creating-a-login-key-for-a-user-through-cmd_api_login_keys.64592/)
+[Reddit Netcup is an amazing hosting provider, great alternative to Hetzner](https://www.reddit.com/r/VPS/comments/1nd1ii7/netcup_is_an_amazing_hosting_provider_great/)
 
 ***
 
@@ -274,54 +285,9 @@ Ncdu – A Powerful NCurses-Based Disk Usage Analyzer for Linux [tecmint.com](ht
 
 ***
 
-### Point of sales
-
-[pixelsfirst Free POS Software For Small Businesess](https://pixelsfirst.co.uk/free-pos-software/)
-
-[timelinedigi POS Software Free Download Full Version](https://timelinedigi.com/blog/pos-software-free-download-full-version)
-
-POS-System [Github](https://github.com/AhmadEleiwa/POS-System)
-
-cpos [Github](https://github.com/Soham109/cpos)
-
-[cpos](Free POS Software for Retail Businesses)
-
-***
 ### Naming schemes
 
 A Proper Server Naming Scheme [MNX](https://mnx.io/blog/a-proper-server-naming-scheme/)
-
-***
-
-### Security and Firewall
-
-[Netcup docs](https://www.netcup.com/en/helpcenter/documentation/server/firewall?utm_source=chatgpt.com)
-
-How To Set Up a Firewall Using firewalld on CentOS [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7)
-
-Set Up a Firewall with UFW on Ubuntu and Debian [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server)
-
-Introduction to firewalld [suse.com](https://documentation.suse.com/sles-sap/16.0/html/SAP-intro-firewalld/index.html)
-
-History of IP addresses that accessed a server via ssh [stackexchange](https://unix.stackexchange.com/questions/123029/history-of-ip-addresses-that-accessed-a-server-via-ssh)
-
-***
-
-### SSL
-
-How to Issue Let's Encrypt Wildcard Certificates with Certbot [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-create-let-s-encrypt-wildcard-certificates-with-certbot)
-
-"Certbot Standalone: Get Let's Encrypt SSL on Ubuntu" [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-20-04)
-
-***
-
-### SSH
-
-How to Use SSH to Connect to a Remote Server (Step-by-Step Guide) [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)
-
-How to Connect to SSH Without a Password [builtin.com articles](https://builtin.com/articles/ssh-without-password#:~:text=How%20to%20login%20with%20SSH,no%20password%20should%20be%20required.)
-
-Use SSH Keys for Login Instead of Passwords [Netcup](https://community.netcup.com/en/tutorials/login-per-ssh-key)
 
 ***
 
@@ -373,6 +339,106 @@ NGINX Logging: The Ultimate Guide and Best Practices [edgedelta.com](https://edg
 
 ***
 
+### Payment Gateways
+
+(https://store.magenest.com/blog/payment-gateway-comparison/)
+
+***
+
+### Point of sales
+
+[pixelsfirst Free POS Software For Small Businesess](https://pixelsfirst.co.uk/free-pos-software/)
+
+[timelinedigi POS Software Free Download Full Version](https://timelinedigi.com/blog/pos-software-free-download-full-version)
+
+POS-System [Github](https://github.com/AhmadEleiwa/POS-System)
+
+cpos [Github](https://github.com/Soham109/cpos)
+
+[cpos](Free POS Software for Retail Businesses)
+
+***
+
+### Security and Firewall
+
+[Netcup docs](https://www.netcup.com/en/helpcenter/documentation/server/firewall?utm_source=chatgpt.com)
+
+How To Set Up a Firewall Using firewalld on CentOS [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7)
+
+Set Up a Firewall with UFW on Ubuntu and Debian [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server)
+
+Introduction to firewalld [suse.com](https://documentation.suse.com/sles-sap/16.0/html/SAP-intro-firewalld/index.html)
+
+History of IP addresses that accessed a server via ssh [stackexchange](https://unix.stackexchange.com/questions/123029/history-of-ip-addresses-that-accessed-a-server-via-ssh)
+
+***
+
+### SpamAssassin
+
+How to Set Up SpamAssassin with Postfix on Ubuntu 24.04 [cubepath.com docs](https://cubepath.com/docs/email-server/spamassassin-configuration)
+
+Set Up Postfix Spam Protection: Complete SpamAssassin Guide [hostperl.com tutorials](https://hostperl.com/kb/tutorials/set-up-postfix-spam-protection-complete-spamassassin-guide)
+
+[spamassassin-milter-with-postfix-on-debian-or-ubuntu](https://www.oikik.io/blogs/spamassassin-milter-with-postfix-on-debian-or-ubuntu.html)
+
+How to Enable and Configure SpamAssassin in DirectAdmin? [knownhost kb](https://www.knownhost.com/kb/how-to-enable-and-configure-spamassassin-in-directadmin/)
+
+How to Setup SpamAssassin in DirectAdmin? [cyfuture.cloud kb](https://cyfuture.cloud/kb/directadmin/how-to-setup-spamassassin-in-directadmin)
+
+***
+
+### SSH
+
+How to Use SSH to Connect to a Remote Server (Step-by-Step Guide) [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)
+
+How to Connect to SSH Without a Password [builtin.com articles](https://builtin.com/articles/ssh-without-password#:~:text=How%20to%20login%20with%20SSH,no%20password%20should%20be%20required.)
+
+Use SSH Keys for Login Instead of Passwords [Netcup](https://community.netcup.com/en/tutorials/login-per-ssh-key)
+
+***
+
+### SSL
+
+How to Issue Let's Encrypt Wildcard Certificates with Certbot [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-create-let-s-encrypt-wildcard-certificates-with-certbot)
+
+"Certbot Standalone: Get Let's Encrypt SSL on Ubuntu" [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-20-04)
+
+***
+
+### Tools
+
+[whois.ipip.net](https://whois.ipip.net/)
+
+[abuseipdb](https://www.abuseipdb.com/)
+
+[dnschecker.org](https://dnschecker.org/)
+
+[Email and DNS checks mxtoolbox.com](https://mxtoolbox.com/SuperTool.aspx)
+
+[Email and DNS checks dmarcadvisor.com](https://dmarcadvisor.com/dkim-check/)
+
+[Swaks - Swiss Army Knife for SMTP](https://www.jetmore.org/john/code/swaks/)
+
+[mail-tester.com](https://mail-tester.com/)
+
+[DMARC Generator zerobounce.net](https://www.zerobounce.net/dmarc-generator)
+
+[DKIM Generator sidemail.io](https://sidemail.io/tools/dkim-generator/)
+
+[easydmarc.com tools](https://easydmarc.com/tools)
+
+[zoho.com toolkit](https://www.zoho.com/toolkit/)
+
+[bimi Radar](https://bimiradar.com/glob)
+
+DNS, EMail, Image tools [BIMI SVG Converter to Tiny-PS](https://www.captaindns.com/en/tools)
+
+[Ping and port tests check-host.net](https://check-host.net/)
+
+Free email address validator [https://verifalia.com/](https://verifalia.com/validate-email)
+
+***
+
 ### Wordpress
 
 Disable PHP File Execution in Specific WordPress Folders [🔗](https://wordpress.org/support/topic/disable-php-file-execution-in-specific-wordpress-folders/)
@@ -382,65 +448,6 @@ Block access to PHP files on your WordPress site with Nginx [🔗](https://bjorn
 How to Disable PHP Execution in Certain WordPress Directories [🔗](https://www.wpbeginner.com/wp-tutorials/how-to-disable-php-execution-in-certain-wordpress-directories/)
 
 How to build an image generation plugin with the WordPress AI Client [wordpress.org](https://developer.wordpress.org/news/2026/05/how-to-build-an-image-generation-plugin-with-the-wordpress-ai-client/)
-
-***
-
-### Hosting Notes
-
-How is Netcup so cheap? [lowendtalk.com](https://lowendtalk.com/discussion/191109/how-is-netcup-so-cheap)
-
-[trustpilot.com Netcup reviews](https://www.trustpilot.com/review/netcup.com?page=2)
-
-[lowendspirit.com Review about NetCup?](https://lowendspirit.com/discussion/681/review-about-netcup)
-
-[hostadvice.com Netcup review](https://hostadvice.com/hosting-company/netcup-reviews/)
-
-[hostballs.com Netcup Webhosting - Experiences?](https://hostballs.com/t/netcup-webhosting-experiences/3244/13)
-
-[Reddit Netcup IP/networking is a mess (Root Server, Manassas USA location)](https://www.reddit.com/r/VPS/comments/1l9emdw/netcup_ipnetworking_is_a_mess_root_server/)
-
-[Reddit https://www.reddit.com/r/VPS/](https://www.reddit.com/r/VPS/)
-
-[Reddit is netcup server are good?](https://www.reddit.com/r/VPS/comments/1mcy37u/is_netcup_server_are_good/)
-
-[Reddit Netcup is an amazing hosting provider, great alternative to Hetzner](https://www.reddit.com/r/VPS/comments/1nd1ii7/netcup_is_an_amazing_hosting_provider_great/)
-
-***
-
-### Payment Gateways
-
-(https://store.magenest.com/blog/payment-gateway-comparison/)
-
-### Business Guide
-
-Get an employer identification number [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number)
-
-As a non-resident setting up a Wyoming LLC in the U.S., what… [justanswer.com](https://www.justanswer.com/tax/tzcvv-wyoming-llc-setup-non-resident-guidelines.html)
-
-[Wyoming LLC for South African Residents: Full Guide](https://wyomingllc.co/wyoming-llc-south-africa/)
-
-Cheapest Way to Form a Wyoming LLC [wyomingagents](https://www.wyomingagents.com/llc)
-
-Anonymous Wyoming LLC for Non-Residents (2026) [Privacy Solutions](https://www.privacy-solutions.com/company-formation/wyoming-llc/)
-
-[Wyoming Secretary of State](https://sos.wyo.gov/business/startabusiness.aspx)
-
-Start a Wyoming LLC [northwestregisteredagent](https://www.northwestregisteredagent.com/llc/wyoming)
-
-Why Form a Wyoming LLC [Buffalo Registered Agents](https://www.wyregisteredagent.net/wyoming-llc)
-
-How to Form an LLC in Wyoming: A Step-by-Step Guide [yt](https://www.youtube.com/watch?v=ufbzVuMcdhc)
-
-How to Form an LLC in Wyoming: A Step-by-Step Guide [yt](https://www.youtube.com/watch?v=mpqPoJ7Wkhs)
-
-Wyoming LLC: How to Start an LLC in Wyoming (2026 Step-by-Step Guide & Tips!) [yt](https://www.youtube.com/watch?v=2o1MxI437vE)
-
-How to Start an LLC in Wyoming (Without Messing Up) [yt](https://www.youtube.com/watch?v=Qy-rtx56-z4)
-
-[yt]()
-
-
-
 
 
 
