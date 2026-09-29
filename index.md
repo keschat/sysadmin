@@ -182,15 +182,19 @@ Fail2ban Cockpit filter and jail [Github](https://gist.github.com/pertsevds/723c
 
 How to enable notifications for account creation in DirectAdmin [plothost.com kb](https://www.plothost.com/kb/notifications-account-creation-directadmin/)
 
-[How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
-
-Creating a Login Key for a user through CMD_API_LOGIN_KEYS [🔗](https://forum.directadmin.com/threads/creating-a-login-key-for-a-user-through-cmd_api_login_keys.64592/)
-
 Complete Guide on how to setup DirectAdmin Reseller & configure WHMCS DirectAdmin Module [absolutehosting.co.za knowledgebase](https://client.absolutehosting.co.za/knowledgebase/429/Complete-Guide-on-how-to-setup-DirectAdmin-Reseller-and-configure-WHMCS-DirectAdmin-Module.html)
 
 Automatically Create WordPress on DirectAdmin account creation. [cainhosting community](https://cainhosting.com/community/knowledge-base/automatically-create-wordpress-on-directadmin-account-creation/)
 
 Possible Bug in DA - Global IP not assigned to resellers automatically [🔗](https://forum.directadmin.com/threads/possible-bug-in-da-global-ip-not-assigned-to-resellers-automatically.62399/)
+
+_**Secure DA**_
+
+How to Install ConfigServer Firewall (CSF) and Brute Force Monitor (BFM) with DirectAdmin [vpsbasics.com](https://www.vpsbasics.com/cp/how-to-install-configserver-firewall-csf-and-brute-force-monitor-bfm-with-directadmin/)
+
+[How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
+
+Creating a Login Key for a user through CMD_API_LOGIN_KEYS [🔗](https://forum.directadmin.com/threads/creating-a-login-key-for-a-user-through-cmd_api_login_keys.64592/)
 
 ***
 
@@ -211,6 +215,20 @@ Monitor your space with NCurses Disk Usage tool — aka NCDU [Medium](https://oz
 Ncdu – A Powerful NCurses-Based Disk Usage Analyzer for Linux [tecmint.com](https://www.tecmint.com/ncdu-a-ncurses-based-disk-usage-analyzer-and-tracker/)
 
 ***
+
+### Point of sales
+
+[pixelsfirst Free POS Software For Small Businesess](https://pixelsfirst.co.uk/free-pos-software/)
+
+[timelinedigi POS Software Free Download Full Version](https://timelinedigi.com/blog/pos-software-free-download-full-version)
+
+POS-System [Github](https://github.com/AhmadEleiwa/POS-System)
+
+cpos [Github](https://github.com/Soham109/cpos)
+
+[cpos](Free POS Software for Retail Businesses)
+
+###
 
 ### Security and Firewall
 
