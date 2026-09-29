@@ -110,15 +110,27 @@ The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_
 
 ***
 
-### Blesta
+### Blesta [🔗]
+
+Blesta Source Documentation [🔗](https://source-docs.blesta.com/)
+
+Order System [🔗](https://docs.blesta.com/integrations/plugins/order-system/)
 
 Support Manager [🔗](https://docs.blesta.com/integrations/plugins/support-manager/#creating-a-department)
 
 Blesta nginx Template [forum.hestiacp](https://forum.hestiacp.com/t/blesta-nginx-template/14708)
 
+blesta config with nginx on ubuntu [Github](https://gist.github.com/sapid/7590993)
+
 Config Changes [🔗](https://docs.blesta.com/getting-started/configs/) 
 
 [Module] Internet.bs Domain Registrar Module - R/c 1.0.4 [Blesta forum](https://www.blesta.com/forums/topic/1875-module-internetbs-domain-registrar-module-rc-104/)
+
+How to install and configure Blesta [bikegremlin.com](https://io.bikegremlin.com/29698/how-to-install-and-configure-blesta/)
+
+Debugging / Tools [🔗](https://docs.blesta.com/support/debugging-tools/)
+
+[Blesta 3.2-3.5.1] How To Make Static Pages By Modifying Portal Plugin [blesta forums](https://www.blesta.com/forums/topic/2943-blesta-32-351-how-to-make-static-pages-by-modifying-portal-plugin/?tab=comments#comment-21068)
 
 ***
 
@@ -129,6 +141,18 @@ How to Install CloudLinux and CageFS with OpenLiteSpeed and DirectAdmin [vpsbasi
 How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/server-administration/linux/how-to-use-cloudlinux-cagefs/)
 
 How big your swap partition to be [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/115005185325-How-big-your-swap-partition-to-be)
+
+Fix MySQL Downtime — Ultimate Guide for CloudLinux MySQL Governor Users [hoganhost.com.ng](https://hoganhost.com.ng/blog/sql/fix-mysql-downtime-ultimate-guide-for-cloudlinux-mysql-governor-users/)
+
+What MySQL Governor limits should be? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/7152405613468-What-MySQL-Governor-limits-should-be)
+
+How to upgrade MySQL/MariaDB with Governor over multiple versions [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/5290073279004-How-to-upgrade-MySQL-MariaDB-with-Governor-over-multiple-versions)
+
+A Step-by-Step Guide to Setting up MySQL Governor on cPanel [vercaa.com](https://vercaa.com/index.php?rp=%2Fknowledgebase%2F174%2FA-Step-by-Step-Guide-to-Setting-up-MySQL-Governor-on-cPanel.html&language=dutch#:~:text=MySQL%20Governor%20can%20be%20installed,instead%20yum%20install%20governor%2Dmysql)
+
+How to authenticate your server for Support Team and use the Secure Access Form? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/6245743410460-How-to-authenticate-your-server-for-Support-Team-and-use-the-Secure-Access-Form)
+
+CloudLinux OS – Reboot your system to update the kernel (kmodlve is not loaded) [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/11476756106780-CloudLinux-OS-Reboot-your-system-to-update-the-kernel-kmodlve-is-not-loaded)
 
 ***
 
@@ -146,7 +170,7 @@ Fail2ban Cockpit filter and jail [Github](https://gist.github.com/pertsevds/723c
 
 ***
 
-### Direct Admin
+### Direct Admin [🔗]
 
 [Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
 
@@ -160,23 +184,13 @@ How to enable notifications for account creation in DirectAdmin [plothost.com kb
 
 [How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
 
+Creating a Login Key for a user through CMD_API_LOGIN_KEYS [🔗](https://forum.directadmin.com/threads/creating-a-login-key-for-a-user-through-cmd_api_login_keys.64592/)
+
 Complete Guide on how to setup DirectAdmin Reseller & configure WHMCS DirectAdmin Module [absolutehosting.co.za knowledgebase](https://client.absolutehosting.co.za/knowledgebase/429/Complete-Guide-on-how-to-setup-DirectAdmin-Reseller-and-configure-WHMCS-DirectAdmin-Module.html)
 
 Automatically Create WordPress on DirectAdmin account creation. [cainhosting community](https://cainhosting.com/community/knowledge-base/automatically-create-wordpress-on-directadmin-account-creation/)
 
-Fix MySQL Downtime — Ultimate Guide for CloudLinux MySQL Governor Users [hoganhost.com.ng](https://hoganhost.com.ng/blog/sql/fix-mysql-downtime-ultimate-guide-for-cloudlinux-mysql-governor-users/)
-
-What MySQL Governor limits should be? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/7152405613468-What-MySQL-Governor-limits-should-be)
-
-How to upgrade MySQL/MariaDB with Governor over multiple versions [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/5290073279004-How-to-upgrade-MySQL-MariaDB-with-Governor-over-multiple-versions)
-
-A Step-by-Step Guide to Setting up MySQL Governor on cPanel [vercaa.com](https://vercaa.com/index.php?rp=%2Fknowledgebase%2F174%2FA-Step-by-Step-Guide-to-Setting-up-MySQL-Governor-on-cPanel.html&language=dutch#:~:text=MySQL%20Governor%20can%20be%20installed,instead%20yum%20install%20governor%2Dmysql)
-
-How to authenticate your server for Support Team and use the Secure Access Form? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/6245743410460-How-to-authenticate-your-server-for-Support-Team-and-use-the-Secure-Access-Form)
-
-CloudLinux OS – Reboot your system to update the kernel (kmodlve is not loaded) [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/11476756106780-CloudLinux-OS-Reboot-your-system-to-update-the-kernel-kmodlve-is-not-loaded)
-
-
+Possible Bug in DA - Global IP not assigned to resellers automatically [🔗](https://forum.directadmin.com/threads/possible-bug-in-da-global-ip-not-assigned-to-resellers-automatically.62399/)
 
 ***
 
