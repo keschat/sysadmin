@@ -25,6 +25,38 @@ Jump to the relevant section by clicking on below links:
 
 Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPanel and Dedicated Servers [dev.to](https://dev.to/swapnil-ahmmed-shishir/complete-guide-to-fix-nodejs-apache-passenger-and-deployment-issues-on-cpanel-and-dedicated-380a#:~:text=4.,apps%20to%20run%20through%20Apache.)
 
+### Tools
+
+[whois.ipip.net](https://whois.ipip.net/)
+
+[abuseipdb](https://www.abuseipdb.com/)
+
+[dnschecker.org](https://dnschecker.org/)
+
+[Email and DNS checks mxtoolbox.com](https://mxtoolbox.com/SuperTool.aspx)
+
+[Email and DNS checks dmarcadvisor.com](https://dmarcadvisor.com/dkim-check/)
+
+[Swaks - Swiss Army Knife for SMTP](https://www.jetmore.org/john/code/swaks/)
+
+[mail-tester.com](https://mail-tester.com/)
+
+[DMARC Generator zerobounce.net](https://www.zerobounce.net/dmarc-generator)
+
+[DKIM Generator sidemail.io](https://sidemail.io/tools/dkim-generator/)
+
+[easydmarc.com tools](https://easydmarc.com/tools)
+
+[zoho.com toolkit](https://www.zoho.com/toolkit/)
+
+[bimi Radar](https://bimiradar.com/glob)
+
+DNS, EMail, Image tools [BIMI SVG Converter to Tiny-PS](https://www.captaindns.com/en/tools)
+
+[Ping and port tests check-host.net](https://check-host.net/)
+
+Free email address validator [https://verifalia.com/](https://verifalia.com/validate-email)
+
 ***
 
 ### Emails
@@ -32,10 +64,6 @@ Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPane
 Mail server [Archlinux wiki](https://wiki.archlinux.org/title/Mail_server)
 
 [Converting emails into tickets (email piping, email to ticket)](https://www.hesk.com/knowledgebase/?article=48)
-
-_**Utilities**_
-
-DMARC Generator [https://www.zerobounce.net/](https://www.zerobounce.net/dmarc-generator)
 
 _**Email authenticity & List-Unsubscribe**_
 
@@ -210,6 +238,8 @@ Disable PHP File Execution in Specific WordPress Folders [🔗](https://wordpres
 Block access to PHP files on your WordPress site with Nginx [🔗](https://bjornjohansen.com/block-access-to-php-files-with-nginx/)
 
 How to Disable PHP Execution in Certain WordPress Directories [🔗](https://www.wpbeginner.com/wp-tutorials/how-to-disable-php-execution-in-certain-wordpress-directories/)
+
+How to build an image generation plugin with the WordPress AI Client [wordpress.org](https://developer.wordpress.org/news/2026/05/how-to-build-an-image-generation-plugin-with-the-wordpress-ai-client/)
 
 ***
 
