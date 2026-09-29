@@ -167,6 +167,8 @@ The rules behind a design system, not the values [meodai  Design book](https://m
 
 ### Direct Admin
 
+[DirectAdmin Site-Helper](https://evo.site-helper.com/)
+
 [Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
 
 [Version 1.50.1 #per-user-user-conf-override-for-max-per-email-send-limit](https://docs.directadmin.com/changelog/version-1.50.1.html#per-user-user-conf-override-for-max-per-email-send-limit)
@@ -201,11 +203,15 @@ Mail server [Archlinux wiki](https://wiki.archlinux.org/title/Mail_server)
 
 [Converting emails into tickets (email piping, email to ticket)](https://www.hesk.com/knowledgebase/?article=48)
 
+Set up SMTP relay with DirectAdmin [snel.com](https://www.snel.com/support/smtp-relay-with-directadmin/)
+
 _**Email authenticity & List-Unsubscribe**_
 
 Understanding SPF, DKIM, and DMARC Records [ahosting.net faq](https://www.ahosting.net/faq/email-setup-and-configuration/understanding-spf-dkim-and-dmarc-records.html)
 
 Enable DKIM and have Exim SMTP banner use the accounts dedicated IP in DirectAdmin for PHP mail [duntuk.com](https://duntuk.com/change-exim-smtp-banner-directadmin-php-mail)
+
+Enabling DKIM with DirectAdmin [knownhost](https://www.knownhost.com/kb/enabling-dkim-with-directadmin/)
 
 How to configure DKIM & SPF & DMARC on Sendmail for multiple domains on CentOS 7 [web-workers.ch](https://www.web-workers.ch/index.php/2019/10/21/how-to-configure-dkim-spf-dmarc-on-sendmail-for-multiple-domains-on-centos-7/)
 
@@ -216,6 +222,8 @@ how use DMARC and List-Unsubscribe [mailwizz.com forum](https://forum.mailwizz.c
 Add “List-Unsubscribe” header in Exim config [hestiacp forum](https://forum.hestiacp.com/t/add-list-unsubscribe-header-in-exim-config/1004)
 
 Is implementing a list-unsubscribe header mandatory for Gmail and Yahoo and what are the impacts? [suped.com learn](https://www.suped.com/learn/email-deliverability/is-implementing-a-list-unsubscribe-header-mandatory-for-gmail-and-yahoo-and-what-are-the-impacts)
+
+We got tired of answering 'where do I host my BIMI logo?' so we built a free tool [reddit](https://www.reddit.com/r/DMARC/comments/1rs57ld/we_got_tired_of_answering_where_do_i_host_my_bimi/)
 
 _**Exim Banner & Outgoing IP Address**_
 
@@ -230,6 +238,14 @@ Exim SMTP banner based on connecting IP (domain) [hestiacp forum](https://forum.
 Exim4 Outbound IP address based on web domain IP [hestiacp forum](https://forum.hestiacp.com/t/exim4-outbound-ip-address-based-on-web-domain-ip/188)
 
 How to Change the Outgoing Mail IP in DirectAdmin? [knownhost](https://www.knownhost.com/kb/how-to-change-the-outgoing-mail-ip-in-directadmin/)
+
+How to change the IP for outgoing mail in DirectAdmin? [hostx.eu kb](https://www.hostx.eu/members/index.php?rp=/knowledgebase/945/How-to-change-the-IP-for-outgoing-mail-in-DirectAdmin.html)
+
+***
+
+### Exim
+
+[Exim.org main conf](https://www.exim.org/exim-html-current/doc/html/spec_html/ch-main_configuration.html)
 
 ***
 
