@@ -6,7 +6,8 @@ Jump to the relevant section by clicking on below links:
 [Blesta](#blesta) <br/>
 [Business Guide](#business-guide) <br/>
 [Cloud Linux](#cloud-linux) <br/>
-[Courses](#courses) <br/>
+[Courses, Knowledgebase](#courses,-knowledgebase) <br/>
+[Design](#design) <br/>
 [Direct Admin](#direct-admin) <br/>
 [Emails](#emails) <br/>
 [Fail2ban](#fail2ban) <br/>
@@ -17,10 +18,11 @@ Jump to the relevant section by clicking on below links:
 [Nginx](#nginx) <br/>
 [Payment gateways](#payment-gateways) <br/>
 [Point of Sales](#point-of-sales) <br/>
-[Security & Firewall](#security-and-firewall) <br/>
-[Spam Assassin](#spam-assassin) <br/>
+[Security & Firewall](#security-&-firewall) <br/>
+[Spam Assassin](#spamassassin) <br/>
 [SSH](#ssh) <br/>
 [SSL](#ssl) <br/>
+[Tools](#tools) <br/>
 [Wordpress](#wordpress)
 
 ***
