@@ -67,7 +67,7 @@ Mastering Grep command in Linux/Unix: A Beginner's Tutorial [Digital Ocean](http
 
 systemd for Administrators [0pointer.de](https://0pointer.de/blog/projects/systemd-for-admins-1.html)
 
-**Disk spaces**
+_**Disk spaces**_
 
 Monitor your space with NCurses Disk Usage tool — aka NCDU [Medium](https://ozgur-kolukisa.medium.com/monitor-your-space-with-ncurses-disk-usage-tool-aka-ncdu-09b186251b7e)
 
