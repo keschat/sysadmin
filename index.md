@@ -101,6 +101,8 @@ How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/serv
 
 [Version 1.50.1 #per-user-user-conf-override-for-max-per-email-send-limit](https://docs.directadmin.com/changelog/version-1.50.1.html#per-user-user-conf-override-for-max-per-email-send-limit)
 
+[Version 1.50.1 #brute-force-monitor-skip-user-distributed-attack-user-count](https://docs.directadmin.com/changelog/version-1.50.1.html#brute-force-monitor-skip-user-distributed-attack-user-count)
+
 [3rd Party Software](https://forum.directadmin.com/forums/3rd-party-software.44/)
 
 [How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
