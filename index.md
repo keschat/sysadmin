@@ -17,13 +17,13 @@ Jump to the relevant section by clicking on below links:
 
 [🔗]
 
-## General
+### General
 
 47 Premium Web Hosting Control Panels: Streamline Server Management, Boost Performance Efficiency! [🔗](https://github.com/mic7811/web-hosting-control-panels)
 
 Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPanel and Dedicated Servers [dev.to](https://dev.to/swapnil-ahmmed-shishir/complete-guide-to-fix-nodejs-apache-passenger-and-deployment-issues-on-cpanel-and-dedicated-380a#:~:text=4.,apps%20to%20run%20through%20Apache.)
 
-## Courses
+### Courses
 
 The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_sfm_price=0)
 
@@ -31,7 +31,7 @@ The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_
 
 ***
 
-## Blesta
+### Blesta
 
 Support Manager [🔗](https://docs.blesta.com/integrations/plugins/support-manager/#creating-a-department)
 
