@@ -99,6 +99,8 @@ How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/serv
 
 [3rd Party Software](https://forum.directadmin.com/forums/3rd-party-software.44/)
 
+[How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
+
 ***
 
 ### Linux Admin
