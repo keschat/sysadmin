@@ -2,6 +2,7 @@
 
 Jump to the [Installation Instructions](#installation-instructions).
 
+[Courses](#courses) <br/>
 [Blesta](#blesta) <br/>
 [Firewall](#firewall) <br/>
 [SSL](#ssl) <br/>
@@ -14,6 +15,10 @@ Jump to the [Installation Instructions](#installation-instructions).
 
 ## Installation Instructions
 (Content goes here...)
+
+## Courses
+
+The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_sfm_price=0)
 
 ## Blesta
 
@@ -52,6 +57,12 @@ IP Addresses, Subnets, and CIDR Notation Explained [Digital Ocean](https://www.d
 ## Nginx
 
 NginxUI [🔗](https://nginxui.com/)
+
+How to Secure Nginx WeB-Server From HACKERs | Tip [dev.to](https://dev.to/syedasadrazadevops/securing-nginx-web-server-from-hackers-attackers-31a2)
+
+How to Configure Nginx with PHP-FPM on RHEL [oneuptime.com/](https://oneuptime.com/blog/post/2026-03-04-configure-nginx-php-fpm-rhel-9/view)
+
+nginx "server_tokens off" does not remove the server header [stakoverflow](https://stackoverflow.com/questions/20247184/nginx-server-tokens-off-does-not-remove-the-server-header)
 
 Nginx Logging: A Comprehensive Guide [Betterstack.com](https://betterstack.com/community/guides/logging/how-to-view-and-configure-nginx-access-and-error-logs/)
 
