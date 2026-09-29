@@ -2,10 +2,11 @@
 
 Jump to the relevant section by clicking on below links:
 
+[Emails](#emails) <br/>
 [Courses](#courses) <br/>
 [Blesta](#blesta) <br/>
-[Cloud linux](#cloud-linux) <br/>
-[Direct admin](#direct-admin) <br/>
+[Cloud Linux](#cloud-linux) <br/>
+[Direct Admin](#direct-admin) <br/>
 [Linux Admin](#linux-admin) <br/>
 [Security & Firewall](#security-and-firewall) <br/>
 [SSL](#ssl) <br/>
@@ -13,6 +14,7 @@ Jump to the relevant section by clicking on below links:
 [Networking](#networking) <br/>
 [Nginx](#nginx) <br/>
 [Wordpress](#wordpress) <br/>
+[Hosting Notes](#hosting-notes) <br/>
 [Business Guide](#business-guide) <br/>
 
 [🔗]
@@ -22,6 +24,14 @@ Jump to the relevant section by clicking on below links:
 47 Premium Web Hosting Control Panels: Streamline Server Management, Boost Performance Efficiency! [🔗](https://github.com/mic7811/web-hosting-control-panels)
 
 Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPanel and Dedicated Servers [dev.to](https://dev.to/swapnil-ahmmed-shishir/complete-guide-to-fix-nodejs-apache-passenger-and-deployment-issues-on-cpanel-and-dedicated-380a#:~:text=4.,apps%20to%20run%20through%20Apache.)
+
+### Emails
+
+_**Email authenticity**_
+
+Understanding SPF, DKIM, and DMARC Records [ahosting.net](https://www.ahosting.net/faq/email-setup-and-configuration/understanding-spf-dkim-and-dmarc-records.html)
+
+Enable DKIM and have Exim SMTP banner use the accounts dedicated IP in DirectAdmin for PHP mail [duntuk.com](https://duntuk.com/change-exim-smtp-banner-directadmin-php-mail)
 
 ### Courses
 
@@ -144,6 +154,28 @@ Disable PHP File Execution in Specific WordPress Folders [🔗](https://wordpres
 Block access to PHP files on your WordPress site with Nginx [🔗](https://bjornjohansen.com/block-access-to-php-files-with-nginx/)
 
 How to Disable PHP Execution in Certain WordPress Directories [🔗](https://www.wpbeginner.com/wp-tutorials/how-to-disable-php-execution-in-certain-wordpress-directories/)
+
+***
+
+### Hosting Notes
+
+How is Netcup so cheap? [lowendtalk.com](https://lowendtalk.com/discussion/191109/how-is-netcup-so-cheap)
+
+[trustpilot.com Netcup reviews](https://www.trustpilot.com/review/netcup.com?page=2)
+
+[lowendspirit.com Review about NetCup?](https://lowendspirit.com/discussion/681/review-about-netcup)
+
+[hostadvice.com Netcup review](https://hostadvice.com/hosting-company/netcup-reviews/)
+
+[hostballs.com Netcup Webhosting - Experiences?](https://hostballs.com/t/netcup-webhosting-experiences/3244/13)
+
+[Reddit Netcup IP/networking is a mess (Root Server, Manassas USA location)](https://www.reddit.com/r/VPS/comments/1l9emdw/netcup_ipnetworking_is_a_mess_root_server/)
+
+[Reddit https://www.reddit.com/r/VPS/](https://www.reddit.com/r/VPS/)
+
+[Reddit is netcup server are good?](https://www.reddit.com/r/VPS/comments/1mcy37u/is_netcup_server_are_good/)
+
+[Reddit Netcup is an amazing hosting provider, great alternative to Hetzner](https://www.reddit.com/r/VPS/comments/1nd1ii7/netcup_is_an_amazing_hosting_provider_great/)
 
 ***
 
