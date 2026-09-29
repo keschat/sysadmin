@@ -42,7 +42,7 @@ IP Addresses, Subnets, and CIDR Notation Explained [Digital Ocean](https://www.d
 
 ## Nginx
 
-NginxUI [{octicons/watchRepo}](https://nginxui.com/)
+NginxUI [🔗](https://nginxui.com/)
 
 Nginx Logging: A Comprehensive Guide [Betterstack.com](https://betterstack.com/community/guides/logging/how-to-view-and-configure-nginx-access-and-error-logs/)
 
