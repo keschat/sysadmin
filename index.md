@@ -2,7 +2,7 @@
 
 Jump to the relevant section by clicking on below links:
 
-[general](#general) <br/>
+[General](#general) <br/>
 [Blesta](#blesta) <br/>
 [Business Guide](#business-guide) <br/>
 [Cloud Linux](#cloud-linux) <br/>
