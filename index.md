@@ -1,13 +1,13 @@
 Jump to the [Installation Instructions](#installation-instructions).
 
-```
-[Firewall](#firewall)
-[SSL](#ssl)
-[Installation Instructions](#installation-instructions)
-[Installation Instructions](#installation-instructions)
-[Installation Instructions](#installation-instructions)
-[Installation Instructions](#installation-instructions)
-```
+
+[Firewall](#firewall) <br/>
+[SSL](#ssl) <br/>
+[Installation Instructions](#installation-instructions) <br/>
+[Installation Instructions](#installation-instructions) <br/>
+[Installation Instructions](#installation-instructions) <br/>
+[Installation Instructions](#installation-instructions) <br/>
+
 
 ## Installation Instructions
 (Content goes here...)
