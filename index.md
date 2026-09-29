@@ -132,6 +132,22 @@ Exim SMTP banner based on connecting IP (domain) [hestiacp forum](https://forum.
 
 Exim4 Outbound IP address based on web domain IP [hestiacp forum](https://forum.hestiacp.com/t/exim4-outbound-ip-address-based-on-web-domain-ip/188)
 
+How to Change the Outgoing Mail IP in DirectAdmin? [knownhost](https://www.knownhost.com/kb/how-to-change-the-outgoing-mail-ip-in-directadmin/)
+
+***
+
+### SpamAssassin
+
+How to Set Up SpamAssassin with Postfix on Ubuntu 24.04 [cubepath.com docs](https://cubepath.com/docs/email-server/spamassassin-configuration)
+
+Set Up Postfix Spam Protection: Complete SpamAssassin Guide [hostperl.com tutorials](https://hostperl.com/kb/tutorials/set-up-postfix-spam-protection-complete-spamassassin-guide)
+
+[spamassassin-milter-with-postfix-on-debian-or-ubuntu](https://www.oikik.io/blogs/spamassassin-milter-with-postfix-on-debian-or-ubuntu.html)
+
+How to Enable and Configure SpamAssassin in DirectAdmin? [knownhost kb](https://www.knownhost.com/kb/how-to-enable-and-configure-spamassassin-in-directadmin/)
+
+How to Setup SpamAssassin in DirectAdmin? [cyfuture.cloud kb](https://cyfuture.cloud/kb/directadmin/how-to-setup-spamassassin-in-directadmin)
+
 ***
 
 ### Courses, Knowledgebase
@@ -191,6 +207,8 @@ A Step-by-Step Guide to Setting up MySQL Governor on cPanel [vercaa.com](https:/
 How to authenticate your server for Support Team and use the Secure Access Form? [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/6245743410460-How-to-authenticate-your-server-for-Support-Team-and-use-the-Secure-Access-Form)
 
 CloudLinux OS – Reboot your system to update the kernel (kmodlve is not loaded) [🔗](https://cloudlinux.zendesk.com/hc/en-us/articles/11476756106780-CloudLinux-OS-Reboot-your-system-to-update-the-kernel-kmodlve-is-not-loaded)
+
+Cloud Server: Repair Current Kernel Version (CentOS, AlmaLinux and Rocky Linux) [ionos.com](https://www.ionos.com/help/server-cloud-infrastructure/default-title-1/cloud-server-repair-current-kernel-version-centos-almalinux-and-rocky-linux/)
 
 ***
 
@@ -268,7 +286,12 @@ cpos [Github](https://github.com/Soham109/cpos)
 
 [cpos](Free POS Software for Retail Businesses)
 
-###
+***
+### Naming schemes
+
+A Proper Server Naming Scheme [MNX](https://mnx.io/blog/a-proper-server-naming-scheme/)
+
+***
 
 ### Security and Firewall
 
@@ -296,13 +319,25 @@ How to Issue Let's Encrypt Wildcard Certificates with Certbot [Digital Ocean](ht
 
 How to Use SSH to Connect to a Remote Server (Step-by-Step Guide) [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)
 
+How to Connect to SSH Without a Password [builtin.com articles](https://builtin.com/articles/ssh-without-password#:~:text=How%20to%20login%20with%20SSH,no%20password%20should%20be%20required.)
+
+Use SSH Keys for Login Instead of Passwords [Netcup](https://community.netcup.com/en/tutorials/login-per-ssh-key)
+
 ***
 
 ### Networking
 
+Choosing the best DNS resolvers for a server [cloudunboxed.net kb](https://portal.cloudunboxed.net/knowledgebase/1/Choosing-the-best-DNS-resolvers-for-a-server.html#:~:text=1.,about%20OpenDNS%20and%20Symantec%20platforms.)
+
 IP Addresses, Subnets, and CIDR Notation Explained [Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking)
 
+DNS Troubleshooting – tools and commands [clouddns.net blog](https://www.cloudns.net/blog/dns-troubleshooting-tools-commands/#:~:text='NSLookup'%20stands%20for%20'Name,any%20type%20of%20DNS%20record.)
+
 How to Configure Network Settings and Manage Interfaces on AlmaLinux (Step-by-Step Guide) [serverspace.io](https://serverspace.io/support/help/configure-network-for-alma-linux/)
+
+Configuring Network Settings [ctera kb](https://kb.ctera.com/docs/configuring-network-settings-26)
+
+Configuring a Static IPv4 Address in AlmaLinux 9 [evoluso.com blog](https://blog.evoluso.com/configuring-a-static-ipv4-address-in-almalinux-9/)
 
 ***
 
@@ -321,6 +356,8 @@ How to Secure Nginx WeB-Server From HACKERs | Tip [dev.to](https://dev.to/syedas
 How to Configure Nginx with PHP-FPM on RHEL [oneuptime.com/](https://oneuptime.com/blog/post/2026-03-04-configure-nginx-php-fpm-rhel-9/view)
 
 nginx "server_tokens off" does not remove the server header [stakoverflow](https://stackoverflow.com/questions/20247184/nginx-server-tokens-off-does-not-remove-the-server-header)
+
+How To Configure Nginx as a Reverse Proxy on Ubuntu [Digital ocean](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-on-ubuntu-22-04)
 
 _**Logs**_
 
