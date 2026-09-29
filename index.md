@@ -31,6 +31,8 @@ Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPane
 
 Mail server [Archlinux wiki](https://wiki.archlinux.org/title/Mail_server)
 
+[Converting emails into tickets (email piping, email to ticket)](https://www.hesk.com/knowledgebase/?article=48)
+
 _**Utilities**_
 
 DMARC Generator [https://www.zerobounce.net/](https://www.zerobounce.net/dmarc-generator)
@@ -52,6 +54,8 @@ Add “List-Unsubscribe” header in Exim config [hestiacp forum](https://forum.
 Is implementing a list-unsubscribe header mandatory for Gmail and Yahoo and what are the impacts? [suped.com learn](https://www.suped.com/learn/email-deliverability/is-implementing-a-list-unsubscribe-header-mandatory-for-gmail-and-yahoo-and-what-are-the-impacts)
 
 _**Exim Banner & Outgoing IP Address**_
+
+How to Set Up Exim to Bind to a Specific IPv4 Address [oneuptime.com blog](https://oneuptime.com/blog/post/2026-03-20-exim-bind-specific-ipv4-address/view)
 
 SMTP Banner on Exim sending from account IP [cPanel Community](https://support.cpanel.net/hc/en-us/community/posts/29531746629271-SMTP-Banner-on-Exim-sending-from-account-IP)
 
@@ -105,6 +109,8 @@ How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/serv
 
 [3rd Party Software](https://forum.directadmin.com/forums/3rd-party-software.44/)
 
+How to enable notifications for account creation in DirectAdmin [plothost.com kb](https://www.plothost.com/kb/notifications-account-creation-directadmin/)
+
 [How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
 
 Complete Guide on how to setup DirectAdmin Reseller & configure WHMCS DirectAdmin Module [absolutehosting.co.za knowledgebase](https://client.absolutehosting.co.za/knowledgebase/429/Complete-Guide-on-how-to-setup-DirectAdmin-Reseller-and-configure-WHMCS-DirectAdmin-Module.html)
@@ -132,6 +138,8 @@ Ncdu – A Powerful NCurses-Based Disk Usage Analyzer for Linux [tecmint.com](ht
 ***
 
 ### Security and Firewall
+
+[Netcup docs](https://www.netcup.com/en/helpcenter/documentation/server/firewall?utm_source=chatgpt.com)
 
 How To Set Up a Firewall Using firewalld on CentOS [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7)
 
@@ -168,6 +176,8 @@ How to Configure Network Settings and Manage Interfaces on AlmaLinux (Step-by-St
 ### Nginx
 
 NginxUI [🔗](https://nginxui.com/)
+
+nginx settings for WordPress. [Github](https://gist.github.com/ilokano/b1480b15972bb2ff5a96)
 
 Secure Nginx Deployment (Almalinux.org)[https://wiki.almalinux.org/series/nginx/NginxSeriesA04P1.html#%F0%9F%8C%9F-introduction]
 
