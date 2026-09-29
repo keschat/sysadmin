@@ -21,6 +21,8 @@ Jump to the relevant section by clicking on below links:
 
 47 Premium Web Hosting Control Panels: Streamline Server Management, Boost Performance Efficiency! [🔗](https://github.com/mic7811/web-hosting-control-panels)
 
+Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPanel and Dedicated Servers [dev.to](https://dev.to/swapnil-ahmmed-shishir/complete-guide-to-fix-nodejs-apache-passenger-and-deployment-issues-on-cpanel-and-dedicated-380a#:~:text=4.,apps%20to%20run%20through%20Apache.)
+
 ## Courses
 
 The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_sfm_price=0)
@@ -35,7 +37,9 @@ Support Manager [🔗](https://docs.blesta.com/integrations/plugins/support-mana
 
 Blesta nginx Template [forum.hestiacp](https://forum.hestiacp.com/t/blesta-nginx-template/14708)
 
-Config Changes [🔗](https://docs.blesta.com/getting-started/configs/)
+Config Changes [🔗](https://docs.blesta.com/getting-started/configs/) 
+
+[Module] Internet.bs Domain Registrar Module - R/c 1.0.4 [Blesta forum](https://www.blesta.com/forums/topic/1875-module-internetbs-domain-registrar-module-rc-104/)
 
 ***
 
@@ -62,9 +66,13 @@ https://github.com/keschat/Linux-Essentials/tree/main [🔗](https://github.com/
 
 Mastering Grep command in Linux/Unix: A Beginner's Tutorial [Digital Ocean](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
 
-### Disk spaces
+systemd for Administrators [0pointer.de](https://0pointer.de/blog/projects/systemd-for-admins-1.html)
+
+**Disk spaces**
 
 Monitor your space with NCurses Disk Usage tool — aka NCDU [Medium](https://ozgur-kolukisa.medium.com/monitor-your-space-with-ncurses-disk-usage-tool-aka-ncdu-09b186251b7e)
+
+Ncdu – A Powerful NCurses-Based Disk Usage Analyzer for Linux [tecmint.com](https://www.tecmint.com/ncdu-a-ncurses-based-disk-usage-analyzer-and-tracker/)
 
 ***
 
@@ -116,7 +124,7 @@ How to Configure Nginx with PHP-FPM on RHEL [oneuptime.com/](https://oneuptime.c
 
 nginx "server_tokens off" does not remove the server header [stakoverflow](https://stackoverflow.com/questions/20247184/nginx-server-tokens-off-does-not-remove-the-server-header)
 
-### Logs
+**Logs**
 
 Nginx Logging: A Comprehensive Guide [Betterstack.com](https://betterstack.com/community/guides/logging/how-to-view-and-configure-nginx-access-and-error-logs/)
 
