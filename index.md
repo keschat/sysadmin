@@ -63,13 +63,15 @@ Exim4 Outbound IP address based on web domain IP [hestiacp forum](https://forum.
 
 ***
 
-### Courses
+### Courses, Knowledgebase
 
 The Linux Foundation [🔗](https://training.linuxfoundation.org/full-catalog/?_sfm_price=0)
 
 [glukhov.org](https://www.glukhov.org/tags/self-hosting/)
 
 [godmarc.com knowledge](https://godmarc.com/knowledge)
+
+[bobcares blog](https://bobcares.com/blog/category/directadmin/)
 
 ***
 
@@ -100,6 +102,10 @@ How to use Cloudlinux CageFS [nexcess.com](https://docs.nexcess.com/hosting/serv
 [3rd Party Software](https://forum.directadmin.com/forums/3rd-party-software.44/)
 
 [How to Monitor & Secure DirectAdmin on Linux Server – Easy Guide] (https://www.youstable.com/blog/how-to-monitor-secure-directadmin-on-linux-server/)
+
+Complete Guide on how to setup DirectAdmin Reseller & configure WHMCS DirectAdmin Module [absolutehosting.co.za knowledgebase](https://client.absolutehosting.co.za/knowledgebase/429/Complete-Guide-on-how-to-setup-DirectAdmin-Reseller-and-configure-WHMCS-DirectAdmin-Module.html)
+
+Automatically Create WordPress on DirectAdmin account creation. [cainhosting community](https://cainhosting.com/community/knowledge-base/automatically-create-wordpress-on-directadmin-account-creation/)
 
 ***
 
