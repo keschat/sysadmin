@@ -205,6 +205,8 @@ Mail server [Archlinux wiki](https://wiki.archlinux.org/title/Mail_server)
 
 Set up SMTP relay with DirectAdmin [snel.com](https://www.snel.com/support/smtp-relay-with-directadmin/)
 
+Should I set up standard email accounts? What are they? [stackexchange](https://webmasters.stackexchange.com/questions/2030/should-i-set-up-standard-email-accounts-what-are-they)
+
 _**Email authenticity & List-Unsubscribe**_
 
 Understanding SPF, DKIM, and DMARC Records [ahosting.net faq](https://www.ahosting.net/faq/email-setup-and-configuration/understanding-spf-dkim-and-dmarc-records.html)
