@@ -37,8 +37,6 @@ Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPane
 
 [How to Use Clonezilla to Back Up and Migrate VPS](https://www.linuxbabe.com/linux-server/use-clonezilla-back-up-migrate-vps)
 
-[How to Remove a Blacklisted IP in DirectAdmin](https://vietseo.com/en/guide-to-removing-an-ip-from-the-blacklist-in-directadmin/)
-
 ***
 
 ### Blesta
@@ -173,7 +171,9 @@ The rules behind a design system, not the values [meodai  Design book](https://m
 
 [DirectAdmin Site-Helper](https://evo.site-helper.com/)
 
-[How to unblock IP in DirectAdmin – The quick way!](https://bobcares.com/blog/how-to-unblock-ip-in-directadmin/)
+How to unblock IP in DirectAdmin – The quick way! [bobcares](https://bobcares.com/blog/how-to-unblock-ip-in-directadmin/)
+
+How to Remove a Blacklisted IP in DirectAdmin [vietseo.com](https://vietseo.com/en/guide-to-removing-an-ip-from-the-blacklist-in-directadmin/)
 
 [Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
 
