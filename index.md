@@ -35,6 +35,8 @@ Jump to the relevant section by clicking on below links:
 
 Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPanel and Dedicated Servers [dev.to](https://dev.to/swapnil-ahmmed-shishir/complete-guide-to-fix-nodejs-apache-passenger-and-deployment-issues-on-cpanel-and-dedicated-380a#:~:text=4.,apps%20to%20run%20through%20Apache.)
 
+[How to Use Clonezilla to Back Up and Migrate VPS](https://www.linuxbabe.com/linux-server/use-clonezilla-back-up-migrate-vps)
+
 ***
 
 ### Blesta
