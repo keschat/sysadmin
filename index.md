@@ -37,6 +37,8 @@ Complete Guide to Fix Node.js, Apache, Passenger, and Deployment Issues on cPane
 
 [How to Use Clonezilla to Back Up and Migrate VPS](https://www.linuxbabe.com/linux-server/use-clonezilla-back-up-migrate-vps)
 
+[How to Remove a Blacklisted IP in DirectAdmin](https://vietseo.com/en/guide-to-removing-an-ip-from-the-blacklist-in-directadmin/)
+
 ***
 
 ### Blesta
