@@ -50,9 +50,9 @@ To show line numbers when using the `grep` command, use the **-n** (or **--line-
 > Linux/Unix: grep Command Show Line Numbers While Displaying Output [cyberciti.biz faq](https://www.cyberciti.biz/faq/unix-linux-grep-show-line-numbers-on-screen/)  <br/>
 > https://www.howtogeek.com/devops/how-to-use-grep-to-display-filenames-line-numbers-before-matching-lines/
 > [askubuntu](https://askubuntu.com/questions/558922/using-grep-to-print-line-numbers)  <br/>
-> Grep Show Line Number & Usage Guide [namehero.com](https://www.namehero.com/blog/grep-show-line-number-usage-guide/)  <br/>
-> Grep Show Lines Before and After [warp.dev](https://www.warp.dev/terminus/grep-lines-before-and-after)
-> How to Use grep to Display Filenames & Line Numbers Before Matching Lines [howtogeek.com] <br/>(https://www.howtogeek.com/devops/how-to-use-grep-to-display-filenames-line-numbers-before-matching-lines/)
+> Grep Show Line Number & Usage Guide [namehero.com](https://www.namehero.com/blog/grep-show-line-number-usage-guide/) <br/>
+> Grep Show Lines Before and After [warp.dev](https://www.warp.dev/terminus/grep-lines-before-and-after) <br/>
+> How to Use grep to Display Filenames & Line Numbers Before Matching Lines [howtogeek.com](https://www.howtogeek.com/devops/how-to-use-grep-to-display-filenames-line-numbers-before-matching-lines/)
 
 **Standard Usage**
 ```bash
@@ -65,8 +65,9 @@ When searching in more than one file, it will display the filename followed by t
 grep -n "pattern" file1.txt file2.txt
 ```
 • **Print ONLY the line numbers (hide the matching text):**
-> Match string and print a line number only using Linux shell [linuxconfig.org](https://linuxconfig.org/match-string-and-print-a-line-number-only-using-linux-shell)
+> Match string and print a line number only using Linux shell [linuxconfig.org](https://linuxconfig.org/match-string-and-print-a-line-number-only-using-linux-shell) <br/>
 > Get line number while using grep [stackoverflow](https://stackoverflow.com/questions/3213748/get-line-number-while-using-grep)
+
 If you only need the specific line numbers where the pattern occurs, pipe the output to the cut command:
 ```bash
 grep -n "pattern" filename | cut -d: -f1
