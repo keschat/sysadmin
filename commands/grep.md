@@ -1,3 +1,64 @@
+## grep command
+
+The grep command (Global Regular Expression Print) is a powerful command-line utility used in Linux, macOS, and Unix systems to search for specific text patterns or regular expressions within files or standard input streams. [1, 2, 3] 
+
+## Basic Syntax
+```bash
+grep [options] "pattern" [file_name]
+```
+------------------------------
+## Common Options & Flags
+
+| Flag | Description | Example |
+|---|---|---|
+| -i | Ignores case sensitivity. | grep -i "error" logfile.txt |
+| -r | Searches recursively through directories. | grep -r "todo" ./src/ |
+| -v | Inverts the match (shows lines without the pattern). | grep -v "success" server.log |
+| -n | Displays the line numbers of the matches. | grep -n "main" index.js |
+| -c | Returns a count of matching lines instead of the text. | grep -c "warning" log.txt |
+| -w | Matches whole words only. | grep -w "cat" animals.txt |
+| -l | Lists only the filenames that contain a match. | grep -l "secret" *.conf |
+
+------------------------------
+## Core Examples
+
+* Search for text in a single file:
+```bash
+grep "failed" login.log
+```
+* Search with context lines (show 3 lines after, before, or around a match):
+```bash
+grep -A 3 "Exception" error.log  # 3 lines After
+grep -B 3 "Exception" error.log  # 3 lines Before
+grep -C 3 "Exception" error.log  # 3 lines Context (Before & After)
+```
+
+``` [1, 4] 
+
+* Using Pipes (|) to filter other command outputs:
+bash ps aux | grep "nginx" [5] 
+
+------------------------------
+## Using Basic Regular Expressions (Regex)
+
+* ^ (Anchor to start of line): Find lines starting with "Error"
+bash grep "^Error" app.log [1, 6] 
+* $ (Anchor to end of line): Find lines ending with "done"
+bash grep "done$" app.log [1, 6] 
+* -E (Extended Regex - Multiple patterns): Find lines with "error" OR "fail" OR "warning"
+bash grep -E "error|fail|warning" system.log [3] 
+
+I can give you tailored examples if you tell me what specific task you are trying to automate or what kind of files you are searching through (e.g., code, logs, CSVs).
+
+[1] [https://www.geeksforgeeks.org](https://www.geeksforgeeks.org/linux-unix/grep-command-in-unixlinux/)
+[2] [https://www.cyberciti.biz](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
+[3] [https://www.digitalocean.com](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
+[4] [https://docs.rackspace.com](https://docs.rackspace.com/docs/use-the-linux-grep-command)
+[5] [https://www.akamai.com](https://www.akamai.com/cloud/guides/how-to-use-grep-command/)
+[6] [https://dev.to](https://dev.to/chielo_chiamaka/grep-command-in-linux-34m5)
+
+***
+
 ## grep text in dir `(ex: /etc)`
 
 > How to use "grep" command to find text including subdirectories [askubuntu](https://askubuntu.com/questions/55325/how-to-use-grep-command-to-find-text-including-subdirectories) <br/>
