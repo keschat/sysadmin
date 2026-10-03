@@ -131,7 +131,6 @@ To show line numbers when using the `grep` command, use the **-n** (or **--line-
 
 > How can I format my grep output to show line numbers at the end of the line, and also the hit count? [stackoverflow](https://stackoverflow.com/questions/3968103/how-can-i-format-my-grep-output-to-show-line-numbers-at-the-end-of-the-line-and) <br/>
 > Linux/Unix: grep Command Show Line Numbers While Displaying Output [cyberciti.biz faq](https://www.cyberciti.biz/faq/unix-linux-grep-show-line-numbers-on-screen/) <br/>
-> https://www.howtogeek.com/devops/how-to-use-grep-to-display-filenames-line-numbers-before-matching-lines/
 > [askubuntu](https://askubuntu.com/questions/558922/using-grep-to-print-line-numbers) <br/>
 > Grep Show Line Number & Usage Guide [namehero.com](https://www.namehero.com/blog/grep-show-line-number-usage-guide/) <br/>
 > Grep Show Lines Before and After [warp.dev](https://www.warp.dev/terminus/grep-lines-before-and-after) <br/>
