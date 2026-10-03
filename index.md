@@ -175,6 +175,8 @@ How to unblock IP in DirectAdmin – The quick way! [bobcares](https://bobcares.
 
 How to Remove a Blacklisted IP in DirectAdmin [vietseo.com](https://vietseo.com/en/guide-to-removing-an-ip-from-the-blacklist-in-directadmin/)
 
+Never use whitelist_domains and whitelist_senders on DirectAdmin servers [help.poralix.com articles](https://help.poralix.com/articles/never-use-whitelist-domains-and-whitelist-senders-on-directadmin-servers)
+
 [Version 1.60.0](https://docs.directadmin.com/changelog/version-1.60.0.html#sub-locations-for-all-script-hooks-hooks-plugins)
 
 [Version 1.50.1 #per-user-user-conf-override-for-max-per-email-send-limit](https://docs.directadmin.com/changelog/version-1.50.1.html#per-user-user-conf-override-for-max-per-email-send-limit)
