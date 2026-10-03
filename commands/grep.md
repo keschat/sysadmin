@@ -57,6 +57,28 @@ I can give you tailored examples if you tell me what specific task you are tryin
 [5] [https://www.akamai.com](https://www.akamai.com/cloud/guides/how-to-use-grep-command/)
 [6] [https://dev.to](https://dev.to/chielo_chiamaka/grep-command-in-linux-34m5)
 
+To skip binary files while searching with grep, you can use the --binary-files=without-match option or the shorter -I (capital i) flag.
+Using these flags tells grep to completely ignore binary matches and pretend they do not contain the search pattern, preventing messy binary data from cluttering your terminal.
+## The Best Flags to Use
+
+* -I (Capital i): Processes a binary file as if it does not contain any matches. This is equivalent to --binary-files=without-match.
+* --exclude-dir: Often used alongside -I when doing recursive searches to completely skip binary-heavy folders (like .git or node_modules).
+
+------------------------------
+## Command Examples
+
+* Search a directory recursively while skipping binary files:
+```bash
+grep -rI "search_pattern" ./src/
+```
+* Search and skip both binary files and specific dependency folders:
+```bash
+grep -rI --exclude-dir={.git,node_modules,bin,obj} "auth_key" .
+```
+* Search a specific wildcard pattern while forcing grep to ignore binaries:
+```bash
+grep -I "database_url" *
+```
 ***
 
 ## grep text in dir `(ex: /etc)`
