@@ -52,6 +52,7 @@ To show line numbers when using the `grep` command, use the **-n** (or **--line-
 > [askubuntu](https://askubuntu.com/questions/558922/using-grep-to-print-line-numbers)  <br/>
 > Grep Show Line Number & Usage Guide [namehero.com](https://www.namehero.com/blog/grep-show-line-number-usage-guide/)  <br/>
 > Grep Show Lines Before and After [warp.dev](https://www.warp.dev/terminus/grep-lines-before-and-after)
+> How to Use grep to Display Filenames & Line Numbers Before Matching Lines [howtogeek.com] <br/>(https://www.howtogeek.com/devops/how-to-use-grep-to-display-filenames-line-numbers-before-matching-lines/)
 
 **Standard Usage**
 ```bash
