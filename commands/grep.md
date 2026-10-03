@@ -65,6 +65,8 @@ When searching in more than one file, it will display the filename followed by t
 grep -n "pattern" file1.txt file2.txt
 ```
 • **Print ONLY the line numbers (hide the matching text):**
+> Match string and print a line number only using Linux shell [linuxconfig.org](https://linuxconfig.org/match-string-and-print-a-line-number-only-using-linux-shell)
+> Get line number while using grep [stackoverflow](https://stackoverflow.com/questions/3213748/get-line-number-while-using-grep)
 If you only need the specific line numbers where the pattern occurs, pipe the output to the cut command:
 ```bash
 grep -n "pattern" filename | cut -d: -f1
