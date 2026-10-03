@@ -1,4 +1,4 @@
-## grep command
+# grep command
 
 The grep command (Global Regular Expression Print) is a powerful command-line utility used in Linux, macOS, and Unix systems to search for specific text patterns or regular expressions within files or standard input streams. [1, 2, 3] 
 
@@ -81,7 +81,7 @@ grep -I "database_url" *
 ```
 ***
 
-## grep text in dir `(ex: /etc)`
+# grep text in dir `(ex: /etc)`
 
 > How to use "grep" command to find text including subdirectories [askubuntu](https://askubuntu.com/questions/55325/how-to-use-grep-command-to-find-text-including-subdirectories) <br/>
 > 14 Grep Command Examples in Linux [linuxtechi.com](https://www.linuxtechi.com/grep-command-examples-in-linux/) <br/>
@@ -125,7 +125,7 @@ Many configuration files inside /etc are restricted to the root user. If you fin
 sudo grep -rn "your_text_here" /etc
 ```
 
-## grep show line numbers
+# grep show line numbers
 
 To show line numbers when using the `grep` command, use the **-n** (or **--line-number**) option. This prefixes each matching line in the output with its corresponding line number from the file.
 
