@@ -43,3 +43,33 @@ sudo grep -rn "your_text_here" /etc
 ```
 
 ## grep show line numbers
+
+To show line numbers when using the `grep` command, use the **-n** (or **--line-number**) option. This prefixes each matching line in the output with its corresponding line number from the file.
+
+> How can I format my grep output to show line numbers at the end of the line, and also the hit count? [stackoverflow](https://stackoverflow.com/questions/3968103/how-can-i-format-my-grep-output-to-show-line-numbers-at-the-end-of-the-line-and)
+> Linux/Unix: grep Command Show Line Numbers While Displaying Output [cyberciti.biz faq](https://www.cyberciti.biz/faq/unix-linux-grep-show-line-numbers-on-screen/)
+> https://www.howtogeek.com/devops/how-to-use-grep-to-display-filenames-line-numbers-before-matching-lines/
+> [askubuntu](https://askubuntu.com/questions/558922/using-grep-to-print-line-numbers)
+> Grep Show Line Number & Usage Guide [namehero.com](https://www.namehero.com/blog/grep-show-line-number-usage-guide/)
+> Grep Show Lines Before and After [warp.dev](https://www.warp.dev/terminus/grep-lines-before-and-after)
+
+**Standard Usage**
+```bash
+grep -n "pattern" filename
+```
+**Useful Variations**
+• **Show line numbers across multiple files:**
+When searching in more than one file, it will display the filename followed by the line number.
+```bash
+grep -n "pattern" file1.txt file2.txt
+```
+• **Print ONLY the line numbers (hide the matching text):**
+If you only need the specific line numbers where the pattern occurs, pipe the output to the cut command:
+```bash
+grep -n "pattern" filename | cut -d: -f1
+```
+• **Combine with color formatting:**
+To make the output easier to read visually on your screen, combine it with the --color flag:
+```bash
+grep -n --color "pattern" filename
+```
