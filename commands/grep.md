@@ -1,11 +1,11 @@
 ## grep text in dir `(ex: /etc)`
 
-> How to use "grep" command to find text including subdirectories [askubuntu](https://askubuntu.com/questions/55325/how-to-use-grep-command-to-find-text-including-subdirectories)
-> 14 Grep Command Examples in Linux [linuxtechi.com](https://www.linuxtechi.com/grep-command-examples-in-linux/)
-> How to use grep command In Linux / UNIX with examples [cyberciti.biz faq](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
-> Grep Command Basics: Text Searching in Linux for Beginners [yt](https://www.youtube.com/watch?v=FpqeWGDsSLc&t=159)
-> Using the grep Command in Linux: Finding Text & Strings in Files [akamai.com guides](https://www.akamai.com/cloud/guides/how-to-use-grep)
-> Manipulating text at the command line with grep [redhat.com blog](https://www.redhat.com/en/blog/manipulating-text-grep)
+> How to use "grep" command to find text including subdirectories [askubuntu](https://askubuntu.com/questions/55325/how-to-use-grep-command-to-find-text-including-subdirectories) <br/>
+> 14 Grep Command Examples in Linux [linuxtechi.com](https://www.linuxtechi.com/grep-command-examples-in-linux/) <br/>
+> How to use grep command In Linux / UNIX with examples [cyberciti.biz faq](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/) <br/>
+> Grep Command Basics: Text Searching in Linux for Beginners [yt](https://www.youtube.com/watch?v=FpqeWGDsSLc&t=159) <br/>
+> Using the grep Command in Linux: Finding Text & Strings in Files [akamai.com guides](https://www.akamai.com/cloud/guides/how-to-use-grep) <br/>
+> Manipulating text at the command line with grep [redhat.com blog](https://www.redhat.com/en/blog/manipulating-text-grep) 
 
 To search for a specific text string inside the /etc directory, you need to use a recursive search because /etc contains many subdirectories.
 
