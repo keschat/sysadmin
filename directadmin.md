@@ -11,6 +11,9 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 
 ***
 
+> Customize-everything https://docs.directadmin.com/custombuild/customize-everything.html
+> Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html
+
 ## Main DirectAdmin configuration file
 
 > https://docs.directadmin.com/directadmin/general-usage/configuring-da.html
