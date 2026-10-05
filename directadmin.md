@@ -11,12 +11,11 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 
 ***
 
+## Customizing
+
 > Customize-everything https://docs.directadmin.com/custombuild/customize-everything.html
 > Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html
-
-## Main DirectAdmin configuration file
-
-> https://docs.directadmin.com/directadmin/general-usage/configuring-da.html
+> Main DirectAdmin configuration file https://docs.directadmin.com/directadmin/general-usage/configuring-da.html
 
 Besides of options listed in the directadmin.conf, the panel itself uses some pre-defined defaults. To list all current configuration options:
 ```bash
