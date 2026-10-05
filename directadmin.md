@@ -13,7 +13,7 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 
 ## Customizing
 
-> Customizing Admin https://docs.directadmin.com/directadmin/customizing-workflow/customizing-admin.html </br?
+> Customizing Admin https://docs.directadmin.com/directadmin/customizing-workflow/customizing-admin.html </br>
 > Customizing Users https://docs.directadmin.com/directadmin/customizing-workflow/customizing-users.html <br/>
 > Customize-everything https://docs.directadmin.com/custombuild/customize-everything.html </br>
 > Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html </br>
