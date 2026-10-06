@@ -1,6 +1,6 @@
 ## Securing DirectAdmin
 
-- https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html <br/>
+- Securing DirectAdmin https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html <br/>
 - https://docs.directadmin.com/webservices/ssl/service-ssls-and-le.html <br/>
 - How can I disable telnet https://forum.directadmin.com/threads/how-can-i-disable-telnet.23632/
 
@@ -20,6 +20,7 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 
 ## Customizing
 
+- Directories and locations https://docs.directadmin.com/directadmin/general-usage/directories-and-locations.html
 - Customizing Admin https://docs.directadmin.com/directadmin/customizing-workflow/customizing-admin.html </br>
 - Customizing Users https://docs.directadmin.com/directadmin/customizing-workflow/customizing-users.html <br/>
 - Customize-everything https://docs.directadmin.com/custombuild/customize-everything.html </br>
@@ -98,3 +99,10 @@ msg_sys=Your Hosting Company Name
 ```bash
 service directadmin restart
 ```
+
+***
+
+## Troubleshooting Exim
+
+- https://docs.directadmin.com/other-hosting-services/exim/troubleshooting.html
+
