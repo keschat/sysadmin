@@ -1,7 +1,8 @@
 ## Securing DirectAdmin
 
 > https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html <br/>
-> https://docs.directadmin.com/webservices/ssl/service-ssls-and-le.html
+> https://docs.directadmin.com/webservices/ssl/service-ssls-and-le.html <br/>
+> How can I disable telnet https://forum.directadmin.com/threads/how-can-i-disable-telnet.23632/
 
 ***
 
