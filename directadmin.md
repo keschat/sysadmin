@@ -1,3 +1,7 @@
+## Moving DA and general structure
+
+- Move site and domain of admin to an other account [DA forum](https://forum.directadmin.com/threads/move-site-and-domain-of-admin-to-an-other-account.57228/)
+
 ## Securing DirectAdmin
 
 - Securing DirectAdmin https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html <br/>
