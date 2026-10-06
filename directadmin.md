@@ -1,8 +1,8 @@
 ## Securing DirectAdmin
 
-> https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html <br/>
-> https://docs.directadmin.com/webservices/ssl/service-ssls-and-le.html <br/>
-> How can I disable telnet https://forum.directadmin.com/threads/how-can-i-disable-telnet.23632/
+- https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html <br/>
+- https://docs.directadmin.com/webservices/ssl/service-ssls-and-le.html <br/>
+- How can I disable telnet https://forum.directadmin.com/threads/how-can-i-disable-telnet.23632/
 
 ***
 
@@ -14,18 +14,18 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 
 ## Mail Accounts
 
-> System mail accounts https://forum.directadmin.com/threads/system-mail-accounts-returning-550-no-such-recipient-here.59446/
+- System mail accounts https://forum.directadmin.com/threads/system-mail-accounts-returning-550-no-such-recipient-here.59446/
 
 ***
 
 ## Customizing
 
-. Customizing Admin https://docs.directadmin.com/directadmin/customizing-workflow/customizing-admin.html </br>
-. Customizing Users https://docs.directadmin.com/directadmin/customizing-workflow/customizing-users.html <br/>
-. Customize-everything https://docs.directadmin.com/custombuild/customize-everything.html </br>
-. Pre-defined options installation, also directadmin.conf possible? And other questions https://forum.directadmin.com/threads/pre-defined-options-installation-also-directadmin-conf-possible-and-other-questions.68921/<br/>
-. Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html </br>
-. Main DirectAdmin configuration file https://docs.directadmin.com/directadmin/general-usage/configuring-da.html
+- Customizing Admin https://docs.directadmin.com/directadmin/customizing-workflow/customizing-admin.html </br>
+- Customizing Users https://docs.directadmin.com/directadmin/customizing-workflow/customizing-users.html <br/>
+- Customize-everything https://docs.directadmin.com/custombuild/customize-everything.html </br>
+- Pre-defined options installation, also directadmin.conf possible? And other questions https://forum.directadmin.com/threads/pre-defined-options-installation-also-directadmin-conf-possible-and-other-questions.68921/<br/>
+- Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html </br>
+- Main DirectAdmin configuration file https://docs.directadmin.com/directadmin/general-usage/configuring-da.html
 
 Besides of options listed in the directadmin.conf, the panel itself uses some pre-defined defaults. To list all current configuration options:
 ```bash
@@ -80,7 +80,7 @@ _By default, this is disabled and relies on your hostname being set up/resolving
 
 The `msg_sys=Message` System setting in DirectAdmin defines the sender name ("From" display name) used for automated system notification emails.
 
-> Ref: https://docs.directadmin.com/directadmin/general-usage/all-directadmin-conf-values.html
+- Ref: https://docs.directadmin.com/directadmin/general-usage/all-directadmin-conf-values.html
 
 ### How to Change the Setting
 
