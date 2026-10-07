@@ -33,6 +33,7 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 - Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html </br>
 - Main DirectAdmin configuration file https://docs.directadmin.com/directadmin/general-usage/configuring-da.html <br/>
 - How to enable notifications for account creation in DirectAdmin https://www.plothost.com/kb/notifications-account-creation-directadmin/
+- How to block a user from sending emails https://www.plothost.com/kb/block-smtp-user-directadmin/
 
 Besides of options listed in the directadmin.conf, the panel itself uses some pre-defined defaults. To list all current configuration options:
 ```bash
