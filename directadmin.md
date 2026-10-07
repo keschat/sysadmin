@@ -30,8 +30,8 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 - Customizing Users https://docs.directadmin.com/directadmin/customizing-workflow/customizing-users.html
 - Customize-everything https://docs.directadmin.com/custombuild/customize-everything.html
 - Pre-defined options installation, also directadmin.conf possible? And other questions https://forum.directadmin.com/threads/pre-defined-options-installation-also-directadmin-conf-possible-and-other-questions.68921/
-- Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html </br>
-- Main DirectAdmin configuration file https://docs.directadmin.com/directadmin/general-usage/configuring-da.html <br/>
+- Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html
+- Main DirectAdmin configuration file https://docs.directadmin.com/directadmin/general-usage/configuring-da.html
 - How to enable notifications for account creation in DirectAdmin https://www.plothost.com/kb/notifications-account-creation-directadmin/
 - How to block a user from sending emails https://www.plothost.com/kb/block-smtp-user-directadmin/
 
