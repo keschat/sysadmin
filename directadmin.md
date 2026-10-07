@@ -1,6 +1,8 @@
 ## Moving DA and general structure
 
-- Move site and domain of admin to an other account [DA forum](https://forum.directadmin.com/threads/move-site-and-domain-of-admin-to-an-other-account.57228/)
+- Move site and domain of admin to another account [DA forum](https://forum.directadmin.com/threads/move-site-and-domain-of-admin-to-an-other-account.57228/)
+- Move domain/website to another user [DA forum](https://forum.directadmin.com/threads/move-domain-website-to-another-user.62040/)
+- How do I setup proper NS & DNS construction and settings? [DA forum](https://forum.directadmin.com/threads/how-do-i-setup-proper-ns-dns-construction-and-settings.69343/)
 
 ## Securing DirectAdmin
 
