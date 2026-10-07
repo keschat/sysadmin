@@ -113,4 +113,5 @@ service directadmin restart
 
 - https://docs.directadmin.com/other-hosting-services/exim/troubleshooting.html
 - Solving ‘From’ Address Issues in Email Forwarding with DirectAdmin and Exim [directadminhosting.eu](https://directadminhosting.eu/solving-from-address-issues-in-email-forwarding-with-directadmin-and-exim/)
+- Sending outbound email through remote mail server [DA docs](https://docs.directadmin.com/other-hosting-services/exim/smarthost.html)
 
