@@ -24,6 +24,7 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 
 ## Customizing
 
+- All directadmin.conf values https://docs.directadmin.com/directadmin/general-usage/all-directadmin-conf-values.html
 - Directories and locations https://docs.directadmin.com/directadmin/general-usage/directories-and-locations.html
 - Customizing Admin https://docs.directadmin.com/directadmin/customizing-workflow/customizing-admin.html </br>
 - Customizing Users https://docs.directadmin.com/directadmin/customizing-workflow/customizing-users.html <br/>
