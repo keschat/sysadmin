@@ -24,14 +24,15 @@ You can restart DirectAdmin by running `systemctl restart directadmin` or `servi
 
 ## Customizing
 
-- All directadmin.conf values https://docs.directadmin.com/directadmin/general-usage/all-directadmin-conf-values.html
-- Directories and locations https://docs.directadmin.com/directadmin/general-usage/directories-and-locations.html
+- All directadmin.conf values https://docs.directadmin.com/directadmin/general-usage/all-directadmin-conf-values.html <br/>
+- Directories and locations https://docs.directadmin.com/directadmin/general-usage/directories-and-locations.html <br/>
 - Customizing Admin https://docs.directadmin.com/directadmin/customizing-workflow/customizing-admin.html </br>
 - Customizing Users https://docs.directadmin.com/directadmin/customizing-workflow/customizing-users.html <br/>
 - Customize-everything https://docs.directadmin.com/custombuild/customize-everything.html </br>
 - Pre-defined options installation, also directadmin.conf possible? And other questions https://forum.directadmin.com/threads/pre-defined-options-installation-also-directadmin-conf-possible-and-other-questions.68921/<br/>
 - Customizing Nginx+Apache https://docs.directadmin.com/webservices/nginx_apache/customizing-nginx-apache.html </br>
-- Main DirectAdmin configuration file https://docs.directadmin.com/directadmin/general-usage/configuring-da.html
+- Main DirectAdmin configuration file https://docs.directadmin.com/directadmin/general-usage/configuring-da.html <br/>
+- How to enable notifications for account creation in DirectAdmin https://www.plothost.com/kb/notifications-account-creation-directadmin/
 
 Besides of options listed in the directadmin.conf, the panel itself uses some pre-defined defaults. To list all current configuration options:
 ```bash
