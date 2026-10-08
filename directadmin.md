@@ -35,6 +35,8 @@ Then your fine and the DA setup will take over your hostname.
 - How do I setup proper NS & DNS construction and settings? [DA forum](https://forum.directadmin.com/threads/how-do-i-setup-proper-ns-dns-construction-and-settings.69343/)
 - Maintaining domains, users, resellers [DA docs](https://docs.directadmin.com/directadmin/general-usage/domains-users-resellers.html?utm_source=chatgpt.com)
 
+***
+
 ## Securing DirectAdmin
 
 - Securing DirectAdmin https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html <br/>
