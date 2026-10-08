@@ -1,4 +1,6 @@
-da build exim_conf
+- da build exim_conf
+
+- How to Set Up a DirectAdmin Smarthost with Exim [bobcares](https://bobcares.com/blog/directadmin-smarthost/)
 
 ## directadmin exim aliases not working
 
