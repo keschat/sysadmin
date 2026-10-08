@@ -119,13 +119,13 @@ systemctl restart directadmin
 _By default, this is disabled and relies on your hostname being set up/resolving correctly._
 
 ***
-# directadmin set msg_sys=Message System
+## directadmin set msg_sys=Message System
 
 The `msg_sys=Message` System setting in DirectAdmin defines the sender name ("From" display name) used for automated system notification emails.
 
 - Ref: https://docs.directadmin.com/directadmin/general-usage/all-directadmin-conf-values.html
 
-### How to Change the Setting
+**How to Change the Setting**
 
 1. Open the DirectAdmin configuration file via SSH using a text editor:
 ```bash
