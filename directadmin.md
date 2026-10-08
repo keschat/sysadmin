@@ -42,7 +42,7 @@ Then your fine and the DA setup will take over your hostname.
 
 - Securing the system [DA docs](https://docs.directadmin.com/operation-system-level/securing/)
 - Securing DirectAdmin [DA docs](https://docs.directadmin.com/directadmin/general-usage/securing-da-panel.html)
-- https://docs.directadmin.com/webservices/ssl/service-ssls-and-le.html
+- AMCE For Server Hostname [DA docs](https://docs.directadmin.com/webservices/ssl/service-ssls-and-le.html)
 - How can I disable telnet https://forum.directadmin.com/threads/how-can-i-disable-telnet.23632/
 -  What should I change on the DirectAdmin control panel to make my server more secure? [forumweb.hosting](https://forumweb.hosting/23118-what-should-i-change-on-the-directadmin-control-panel-to-make-my-server-more-secure.html)
 
