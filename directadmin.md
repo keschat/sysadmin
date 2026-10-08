@@ -1,6 +1,6 @@
 ## DA Hostname
 
-[How-To] Create or change your server's hostname in Directadmin
+[How-To] Create or change your server's hostname in Directadmin [DA forum](https://forum.directadmin.com/threads/how-to-create-or-change-your-servers-hostname-in-directadmin.70371/)
 
 **Commands before installation of DA:**
 
