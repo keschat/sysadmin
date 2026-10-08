@@ -1,3 +1,33 @@
+## DA Hostname
+
+[How-To] Create or change your server's hostname in Directadmin
+
+**Commands before installation of DA:**
+
+Via SSH as root:
+
+`hostnamectl set-hostname server.mydomain.com`
+
+after that check your /etc/hostname file to see if the hostname is fully in there.
+
+So it should read: server.mydomain.com
+
+After that check your /etc/hosts file. Adjust it if needed. Should look like:
+```txt
+127.0.0.1 localhost.localdomain localhost
+::1     ip6-localhost ip6-loopback
+192.168.0.1 server.mydomain.com server
+```
+Just to be sure reboot your server/vps and issue these commands check if they return the correct hostname.
+`hostname`
+and
+`hostname -f`
+both commands should give the full `server.mydomain.com` hostname as a result.
+
+Then your fine and the DA setup will take over your hostname.
+
+***
+
 ## Moving DA and general structure
 
 - Move site and domain of admin to another account [DA forum](https://forum.directadmin.com/threads/move-site-and-domain-of-admin-to-an-other-account.57228/)
