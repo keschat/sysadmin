@@ -45,6 +45,7 @@ Then your fine and the DA setup will take over your hostname.
 - AMCE For Server Hostname [DA docs](https://docs.directadmin.com/webservices/ssl/service-ssls-and-le.html)
 - How can I disable telnet [DA forum](https://forum.directadmin.com/threads/how-can-i-disable-telnet.23632/)
 -  What should I change on the DirectAdmin control panel to make my server more secure? [forumweb.hosting](https://forumweb.hosting/23118-what-should-i-change-on-the-directadmin-control-panel-to-make-my-server-more-secure.html)
+- How to Enable Hotlink Protection in DirectAdmin [asiagb.com](https://asiagb.com/content/da-hotlink-en.html)
 
 ***
 
