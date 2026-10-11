@@ -148,9 +148,13 @@ service directadmin restart
 
 ***
 
+## Exim setup
+
+- Perfect E-Mail Setup [DA docs](https://docs.directadmin.com/other-hosting-services/email/#e-mail)
+
 ## Troubleshooting Exim
 
 - https://docs.directadmin.com/other-hosting-services/exim/troubleshooting.html
 - Solving ‘From’ Address Issues in Email Forwarding with DirectAdmin and Exim [directadminhosting.eu](https://directadminhosting.eu/solving-from-address-issues-in-email-forwarding-with-directadmin-and-exim/)
 - Sending outbound email through remote mail server [DA docs](https://docs.directadmin.com/other-hosting-services/exim/smarthost.html)
-
+- root emails [DA forums](https://forum.directadmin.com/threads/root-emails.61155/)
