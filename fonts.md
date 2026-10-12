@@ -1,0 +1,4 @@
+- https://www.whatfontis.com/GOOGLE_Comfortaa-300.similar
+- https://www.ffonts.net/Si-Buled.font.download
+- https://www.whatfontis.com/GOOGLE_Comfortaa-700.similar
+- https://bonfx.com/what-fonts-go-with-comfortaa/
