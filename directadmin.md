@@ -2,6 +2,8 @@
 
 [How-To] Create or change your server's hostname in Directadmin [DA forum](https://forum.directadmin.com/threads/how-to-create-or-change-your-servers-hostname-in-directadmin.70371/)
 
+- - Setup domain to host email only [DA forum](https://forum.directadmin.com/threads/setup-domain-to-host-email-only.35673/)
+
 **Commands before installation of DA:**
 
 Via SSH as root:
