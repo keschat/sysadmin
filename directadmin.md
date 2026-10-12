@@ -154,6 +154,7 @@ service directadmin restart
 
 - Perfect E-Mail Setup [DA docs](https://docs.directadmin.com/other-hosting-services/email/#e-mail)
 - Generate new DKIM keys/DNS records [DA forum](https://forum.directadmin.com/threads/generate-new-dkim-keys-dns-records.53039/)
+- Send E-mails from another server? [DA forum](https://forum.directadmin.com/threads/send-e-mails-from-another-server.61721/)
 
 ## Troubleshooting Exim
 
