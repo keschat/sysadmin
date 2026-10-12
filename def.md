@@ -16,3 +16,27 @@ Platform Ops is the team responsible for curating, maintaining, connecting, and 
 _Ref:_
 - https://www.f5.com/glossary/what-is-platform-ops
 - https://www.techtarget.com/it-infrastructure/definition/What-is-IT-operations-IT-ops
+
+***
+
+Role-Based Email Addresses
+
+_Ref_: https://help.salesforce.com/s/articleView?id=mktg.pardot_admin_role_based_email_address.htm&type=5
+<pre>
+	admin@
+	default@
+	email@
+	feedback@
+	info@
+	mail@
+	marketing@
+	news@
+	newsletter@
+	ops@
+	orders@
+	press@
+	pressrelease@
+	sales@
+	security@
+	support@
+</pre>
