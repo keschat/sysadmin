@@ -1,3 +1,6 @@
+What ports do I need to open in my firewall?
+ [DA docs](https://docs.directadmin.com/operation-system-level/securing/firewall.html?utm_source=chatgpt.com)
+
 Named randomly not resolving [DA forum](https://forum.directadmin.com/threads/named-randomly-not-resolving.68356/)
 
 Troubleshooting DNS [DA docs](https://docs.directadmin.com/other-hosting-services/dns/troubleshooting.html)
