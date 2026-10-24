@@ -1,8 +1,8 @@
 ## Useful Postfix Commands
 
-• Check your active running configuration (overruled or non-default values): `sudo postconf -n`
-• Test or inspect a specific parameter: `sudo postconf mydestination`
-• Reload Postfix after editing main.cf: `sudo systemctl reload postfix`
+* Check your active running configuration (overruled or non-default values): `sudo postconf -n`
+* Test or inspect a specific parameter: `sudo postconf mydestination`
+* Reload Postfix after editing main.cf: `sudo systemctl reload postfix`
 
 ***
 
