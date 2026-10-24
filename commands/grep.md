@@ -170,4 +170,6 @@ Grep Show Lines Before and After https://www.warp.dev/terminus/grep-lines-before
 
 Linux Sed Tutorial: Learn Text Editing with Syntax & Examples https://www.cyberciti.biz/faq/linux-sed-command-tutorial-for-text-editing-with-syntax-examples/
 
+Mastering Grep command in Linux/Unix: A Beginner's Tutorial https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix
+
 
