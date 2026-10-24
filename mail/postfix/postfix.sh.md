@@ -1,3 +1,11 @@
+## Useful Postfix Commands
+
+• Check your active running configuration (overruled or non-default values): `sudo postconf -n`
+• Test or inspect a specific parameter: `sudo postconf mydestination`
+• Reload Postfix after editing main.cf: `sudo systemctl reload postfix`
+
+***
+
 ## SMTP Relays
 
 postfix on almalinux default_transport = smtp relay_transport = smtp
