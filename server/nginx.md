@@ -1,3 +1,5 @@
+How to configure nginx to redirect requests to the uploads directory to the production server? [wordpress.stackexchange](https://wordpress.stackexchange.com/questions/210899/how-to-configure-nginx-to-redirect-requests-to-the-uploads-directory-to-the-prod)
+
 > Ref: https://portal.smartertools.com/kb/a3652/configure-an-alternative-linux-web-server-for-smartermail.aspx
 
 **Ubuntu Setting up Nginx**
