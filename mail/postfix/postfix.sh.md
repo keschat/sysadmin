@@ -37,7 +37,7 @@ smtp_tls_security_level = encrypt
 
 ***
 
-Postfix installed and basic setup
+## Postfix install and basic setup
 
 > https://gist.github.com/henriquebastos/9646478
 
