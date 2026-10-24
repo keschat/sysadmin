@@ -1,5 +1,15 @@
 How to configure nginx to redirect requests to the uploads directory to the production server? [wordpress.stackexchange](https://wordpress.stackexchange.com/questions/210899/how-to-configure-nginx-to-redirect-requests-to-the-uploads-directory-to-the-prod)
 
+Serving fresh assets using Nginx location rewrite https://out13.com/posts/serving-fresh-assets-using-nginx-rewrite/
+
+How to Install and Configure NGINX on AlmaLinux 8 https://medium.com/@redswitches/how-to-install-and-configure-nginx-on-almalinux-8-d24ba5ee83ab
+
+Web Server Guides https://www.akamai.com/cloud/guides/web-servers/
+
+How to Enable Userdir with Nginx on AlmaLinux https://www.siberoloji.com/enable-userdir-nginx-almalinux/
+
+***
+
 > Ref: https://portal.smartertools.com/kb/a3652/configure-an-alternative-linux-web-server-for-smartermail.aspx
 
 **Ubuntu Setting up Nginx**
