@@ -1,5 +1,9 @@
 ## Useful Postfix Commands
 
+Ref:
+> Postfix Standard Configuration Examples https://www.postfix.org/STANDARD_CONFIGURATION_README.html
+> How to Set up an Email Server using Postfix and Dovecot https://www.akamai.com/cloud/guides/how-to-setup-an-email-server
+
 * Check your active running configuration (overruled or non-default values): `sudo postconf -n`
 * Test or inspect a specific parameter: `sudo postconf mydestination`
 * Reload Postfix after editing main.cf: `sudo systemctl reload postfix`
