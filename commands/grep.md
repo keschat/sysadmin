@@ -159,3 +159,15 @@ To make the output easier to read visually on your screen, combine it with the -
 ```bash
 grep -n --color "pattern" filename
 ```
+
+***
+
+Using grep to print line numbers https://askubuntu.com/questions/558922/using-grep-to-print-line-numbers
+
+How to show line numbers in grep https://labex.io/tutorials/linux-how-to-show-line-numbers-in-grep-437967
+
+Grep Show Lines Before and After https://www.warp.dev/terminus/grep-lines-before-and-after
+
+Linux Sed Tutorial: Learn Text Editing with Syntax & Examples https://www.cyberciti.biz/faq/linux-sed-command-tutorial-for-text-editing-with-syntax-examples/
+
+
