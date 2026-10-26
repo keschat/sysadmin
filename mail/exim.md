@@ -1,3 +1,7 @@
+How to configure Exim to work with Postbox https://nikolaymatrosov.ru/2026-06-17-Configure-Exim-to-work-with-Postbox/
+
+***
+
 - da build exim_conf
 
 - How to Set Up a DirectAdmin Smarthost with Exim [bobcares](https://bobcares.com/blog/directadmin-smarthost/)
