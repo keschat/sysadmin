@@ -1,3 +1,7 @@
+Fail2ban for Sendmail AUTH https://www.markloveless.net/blog/2025/4/22/fail2ban-for-sendmail-auth
+
+***
+
 ## Fail2ban
 
 ### 🔹 Install Fail2Ban
