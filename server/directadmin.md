@@ -1,3 +1,43 @@
+How to update a DirectAdmin server
+
+https://base64.co.za/how-to-update-a-directadmin-server/
+
+- Updating OS (Centos/Ubuntu)
+- Updating Directadmin
+
+## Update OS
+If you’re running Centos, use the following commands to update the OS:
+
+<pre>
+Redhat
+ yum check-update
+ yum update
+
+Debian/Ubuntu
+ apt update
+ apt upgrade
+</pre>
+
+## Update DirectAdmin
+<pre>
+cd /usr/local/directadmin/custombuild
+./build update
+
+ Check what the current versions of the software are, and what the latest versions are:
+./build versions
+ 
+Install the latest versions of the software:
+./build update_versions
+</pre>
+
+## Update OS and DirectAdmin (one command)
+
+The OS packages and DirectAdmin can be updated with one command in DirectAdmin as follows:
+```
+./build update_full
+```
+***
+
 Unable to use login key with WHMCS https://forum.directadmin.com/threads/unable-to-use-login-key-with-whmcs.66497/
 
 How to enable/disable the Ptrace block?
