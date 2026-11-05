@@ -265,3 +265,115 @@ For further reading and configuration variables, consult the official documentat
 * [Exim Official Specification - Chapter 42: Access Control Lists (Ratelimiting)](https://www.exim.org/exim-html-current/doc/html/spec_html/ch-access_control_lists.html)
 * [Exim Official Specification - Chapter 53: Exim Utilities (exiqgrep and exiqsumm)](https://www.exim.org/exim-html-current/doc/html/spec_html/ch-exim_utilities.html)
 * [DirectAdmin Knowledgebase - Managing the Mail Queue](https://docs.directadmin.com/)
+
+---
+---
+
+```bash
+#!/bin/bash
+
+# ==============================================================================
+# Exim Queue Monitoring & Anomaly Detection Script
+# ==============================================================================
+# Description: Monitors the Exim mail queue for size anomalies, frozen messages,
+#              and high-volume sending accounts. Sends email alerts if triggered.
+# Configuration: Set up as a root cron job (e.g., every 30 minutes).
+# ==============================================================================
+
+# --- CONFIGURATION PROFILE ---
+ALERT_EMAIL="admin@yourdomain.com"
+HOSTNAME=$(hostname -f)
+
+# --- THRESHOLD DEFINITIONS ---
+MAX_QUEUE_SIZE=500        # Alert if total queue exceeds this number
+MAX_FROZEN_COUNT=100      # Alert if total frozen messages exceed this number
+MAX_USER_OUTBOUND=150     # Alert if any single sender has more than this many emails in queue
+
+# --- BINARY PATH CHECK ---
+EXIM_BIN="/usr/sbin/exim"
+EXIQGREP_BIN="/usr/sbin/exiqgrep"
+
+if [ ! -x "$EXIM_BIN" ] || [ ! -x "$EXIQGREP_BIN" ]; then
+    echo "CRITICAL ERROR: Exim binaries not found or execution privileges missing."
+    exit 1
+fi
+
+# --- CORE DICTIONARY / CALCULATIONS ---
+CURRENT_QUEUE_COUNT=$($EXIM_BIN -bpc)
+CURRENT_FROZEN_COUNT=$($EXIQGREP_BIN -z -i | wc -l)
+TOP_SENDER_DATA=$($EXIM_BIN -bpr | grep -E '(<[^>]*>|A=)' | awk '{print $2}' | grep '@' | sort | uniq -c | sort -nr | head -n 1)
+
+TOP_SENDER_COUNT=$(echo "$TOP_SENDER_DATA" | awk '{print $1}')
+TOP_SENDER_ADDRESS=$(echo "$TOP_SENDER_DATA" | awk '{print $2}')
+
+# Initialize status flag
+TRIGGER_ALERT=0
+ALERT_REASON=""
+
+# --- METRIC ASSESSMENT ---
+# Check 1: Absolute Queue Size
+if [ "$CURRENT_QUEUE_COUNT" -gt "$MAX_QUEUE_SIZE" ]; then
+    TRIGGER_ALERT=1
+    ALERT_REASON="$ALERT_REASON\n- Total queue count ($CURRENT_QUEUE_COUNT) exceeds structural threshold ($MAX_QUEUE_SIZE)."
+fi
+
+# Check 2: Frozen Volatility
+if [ "$CURRENT_FROZEN_COUNT" -gt "$MAX_FROZEN_COUNT" ]; then
+    TRIGGER_ALERT=1
+    ALERT_REASON="$ALERT_REASON\n- Total frozen messages ($CURRENT_FROZEN_COUNT) exceed performance threshold ($MAX_FROZEN_COUNT)."
+fi
+
+# Check 3: Individual Outbound Anomalies
+if [ -n "$TOP_SENDER_COUNT" ] && [ "$TOP_SENDER_COUNT" -gt "$MAX_USER_OUTBOUND" ]; then
+    TRIGGER_ALERT=1
+    ALERT_REASON="$ALERT_REASON\n- Top sender ($TOP_SENDER_ADDRESS) has $TOP_SENDER_COUNT queued messages, exceeding account limits ($MAX_USER_OUTBOUND)."
+fi
+
+# --- ROUTING TRANSMISSION ---
+if [ "$TRIGGER_ALERT" -eq 1 ]; then
+    TMP_REPORT=$(mktemp)
+    
+    {
+        echo "Exim Queue Anomaly Detected on Host: $HOSTNAME"
+        echo "Timestamp: $(date)"
+        echo "=========================================================================="
+        echo -e "Violations Triggered:$ALERT_REASON"
+        echo "=========================================================================="
+        echo ""
+        echo "--- GENERAL METRICS ---"
+        echo "Total Queue Size:       $CURRENT_QUEUE_COUNT"
+        echo "Total Frozen Messages:  $CURRENT_FROZEN_COUNT"
+        echo ""
+        echo "--- TOP SENDER BREAKDOWN ---"
+        echo "Highest Volume Source:  $TOP_SENDER_ADDRESS ($TOP_SENDER_COUNT items)"
+        echo ""
+        echo "--- TOP 10 ACTIVE DESTINATION DOMAINS ---"
+        $EXIM_BIN -bp | /usr/sbin/exiqsumm | head -n 15
+        echo ""
+        echo "--- RECENT EXIM LOG FAILURE STRINGS (LAST 20 DEFERRALS/FAILURES) ---"
+        tail -n 200 /var/log/exim_mainlog | grep -E "(==\*\*)" | tail -n 20
+        echo ""
+        echo "=========================================================================="
+        echo "Recommendation: Log into SSH as root and run 'exim -bp' or check your"
+        echo "outbound trackers to look for compromised files or passwords."
+    } > "$TMP_REPORT"
+
+    # Send out the systemic mail alert
+    mail -s "ALERT: Exim Mail Queue Anomaly on $HOSTNAME" "$ALERT_EMAIL" < "$TMP_REPORT"
+    
+    # Secure clean up
+    rm -f "$TMP_REPORT"
+fi
+```
+
+### Script Operational Framework & Setup Steps
+
+1. **Create the Script File:** Save the code block above as a file on your server (e.g., /root/exim_monitor.sh).
+2. **Configure Execution Rights:** Provide executable root permissions via shell command line:
+   ```bash
+   chmod +x /root/exim_monitor.sh
+   ```
+3. Automate running via Cron: Append the script execution string inside your root crontab mapping tool (`crontab -e`) to force validation intervals. For a 30-minute rotation check:
+   ```cron
+   */30 * * * * /root/exim_monitor.sh > /dev/null 2>&1
+   ```
