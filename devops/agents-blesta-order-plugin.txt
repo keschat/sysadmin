@@ -1,0 +1,303 @@
+Build a Theme-Based Plugin View Override System for Blesta 6
+Objective
+
+Develop a standalone Blesta 6 plugin named theme_view_overrides.
+
+The purpose of this plugin is to provide a reusable mechanism for overriding views (.pdt files) belonging to other Blesta plugins, without modifying the original plugin files.
+
+For example, I want to override:
+
+/plugins/order/views/default/forms.pdt
+
+With a custom theme-specific view:
+
+/app/views/client/THEME_NAME/plugins/order/forms.pdt
+
+When Blesta renders the Order plugin's forms.pdt, it should automatically use the theme override if it exists. Otherwise, it should use the original plugin view.
+
+This functionality should work across multiple plugins, not just the Order plugin.
+
+1. First: Investigate Blesta 6 internals
+
+Before writing code, inspect the actual Blesta 6 source code.
+
+Specifically investigate:
+
+components/
+core/
+app/
+components/view/ (if present)
+components/plugins/
+app/app_controller.php
+plugins/order/
+plugins/order/order_controller.php
+plugins/order/controllers/
+plugins/order/views/default/
+
+Identify:
+
+How Blesta instantiates its View component.
+How plugin controllers configure $this->view->view.
+How the view directory is resolved.
+How partial() locates and renders .pdt files.
+How the active client theme is determined.
+How plugin controllers inherit from AppController.
+Whether Blesta provides events, hooks, or extension points capable of intercepting view resolution.
+
+Do not assume undocumented methods or properties exist.
+
+Use the installed Blesta 6 source as the authoritative reference.
+
+2. Desired override directory structure
+
+The override system should support this directory structure:
+
+/app/views/client/THEME_NAME/plugins/PLUGIN_NAME/VIEW_NAME.pdt
+
+Example:
+
+Original: /plugins/order/views/default/forms.pdt
+
+Override: /app/views/client/bootstrap/plugins/order/forms.pdt
+
+The active theme name must be determined dynamically.
+
+Do not hardcode bootstrap.
+
+The system should also support nested view directories:
+
+Original: /plugins/example/views/default/client_main/index.pdt
+
+Override: /app/views/client/bootstrap/plugins/example/client_main/index.pdt
+
+Preserve the original relative directory structure beneath the plugin's views/default/ directory.
+
+3. View resolution logic
+
+Implement the following resolution priority:
+
+Look for the requested view in the active client theme's plugin override directory.
+If it exists and is a valid file, render it.
+If it does not exist, fall back to the original plugin view.
+If neither exists, preserve Blesta's normal missing-view behaviour.
+
+Pseudocode:
+
+php
+$theme = getActiveClientTheme();
+$plugin = getCurrentPlugin();
+$view = getRequestedView();
+
+$override = APPDIR
+    . '/views/client/'
+    . $theme
+    . '/plugins/'
+    . $plugin
+    . '/'
+    . $view
+    . '.pdt';
+
+if (is_file($override) && is_readable($override)) {
+    render($override);
+} else {
+    renderOriginalView();
+}
+
+
+This is conceptual pseudocode, not an assumption about Blesta's actual internal API.
+
+Adapt the implementation to the real Blesta 6 view-loading mechanism.
+
+4. Architecture requirements
+
+The solution must:
+
+Be implemented as a standalone Blesta plugin.
+Work across third-party and first-party plugins.
+Avoid editing individual plugin controllers.
+Avoid editing the Order plugin.
+Avoid modifying core Blesta files.
+Avoid requiring developers to copy entire plugin view directories.
+Work automatically when an override file exists.
+Preserve all existing view variables.
+Preserve existing helpers and view context.
+Preserve partial rendering behaviour.
+Preserve AJAX rendering behaviour.
+Preserve the original plugin's layout and structure behaviour.
+Work with nested partials.
+Work with PHP 8.2, 8.3 and 8.4.
+
+Important: Do not implement this by replacing the entire View class or creating a second independent view renderer unless absolutely necessary.
+
+Prefer a supported extension point or a minimal, maintainable view-resolution extension.
+
+If Blesta 6 does not expose a supported hook for this functionality, explain that limitation clearly before proposing alternatives.
+
+Do not pretend a normal Blesta plugin can intercept another plugin's view loader if the framework does not provide such a capability.
+
+5. Plugin structure
+
+Use the standard Blesta 6 plugin structure.
+
+Suggested structure:
+
+text
+/plugins/theme_view_overrides/
+    config.json
+    theme_view_overrides_plugin.php
+    theme_view_overrides_controller.php
+    controllers/
+        admin_manage_plugin.php
+    models/
+        theme_view_overrides.php
+    views/
+        default/
+            admin_manage_plugin.pdt
+    language/
+        en_us/
+            theme_view_overrides.php
+
+
+Adjust the structure to Blesta 6 conventions.
+
+The plugin should have proper install, upgrade and uninstall methods.
+
+6. Admin configuration
+
+Create a simple management page accessible through Blesta's plugin management interface.
+
+Include:
+
+Enable/disable override functionality.
+Enable/disable debugging.
+Display the active client theme.
+Display the override directory.
+Show whether the override directory exists and is writable.
+Show a list of detected plugin override directories.
+Display which override files are currently being used.
+
+Do not allow the plugin to modify original plugin files.
+
+7. Security
+
+Implement the following protections:
+
+Prevent directory traversal.
+Validate plugin names.
+Validate relative view paths.
+Never allow paths outside the permitted theme override directory.
+Use realpath() where appropriate.
+Check that resolved files are regular readable files.
+Never execute arbitrary PHP files supplied through configuration.
+Do not accept arbitrary filesystem paths from HTTP parameters.
+Do not expose server filesystem paths to ordinary clients.
+
+The override directory must be determined from trusted Blesta configuration and the active theme.
+
+8. Debugging
+
+Add optional debug logging.
+
+For example:
+
+text
+[ThemeViewOverrides] Plugin: order
+[ThemeViewOverrides] View: forms
+[ThemeViewOverrides] Theme: bootstrap
+[ThemeViewOverrides] Override found: YES
+[ThemeViewOverrides] Using: theme override
+
+
+Logging should be disabled by default.
+
+Do not expose debug output to customers.
+
+9. Testing
+
+Create a test plan covering:
+
+Test A: Existing override
+
+Original:
+
+/plugins/order/views/default/forms.pdt
+
+Override:
+
+/app/views/client/bootstrap/plugins/order/forms.pdt
+
+Expected: theme override is rendered.
+
+Test B: Missing override
+
+Delete the custom forms.pdt.
+
+Expected: original Order plugin view is rendered.
+
+Test C: Nested partial
+
+Create an override for a nested view.
+
+Expected: nested view resolves correctly.
+
+Test D: Multiple plugins
+
+Create overrides for:
+
+order
+cms
+support_manager
+
+Expected: all three work without individual plugin modifications.
+
+Test E: Different themes
+
+Switch between two client themes.
+
+Expected: each theme loads its own override files.
+
+Test F: AJAX
+
+Test views rendered through AJAX and partial rendering.
+
+Expected: override resolution works without breaking the response.
+
+Test G: Security
+
+Attempt directory traversal and invalid plugin/view paths.
+
+Expected: all invalid paths are rejected and the normal Blesta fallback is preserved.
+
+Test H: Disabled plugin
+
+Disable the override plugin.
+
+Expected: Blesta returns to its original view-loading behaviour.
+
+10. Deliverables
+
+Provide:
+
+Complete plugin source code.
+Installation instructions.
+Upgrade and uninstall instructions.
+Example Order plugin override.
+Example CMS plugin override.
+Explanation of how the view interception works.
+Compatibility notes for Blesta 6 and PHP 8.2–8.4.
+A test report.
+11. Critical development rules
+
+Do not guess Blesta APIs.
+
+Do not invent event names, hooks, classes or methods.
+
+Do not modify Blesta core files or individual plugin controllers.
+
+Before implementing the solution, report whether a standalone plugin can actually intercept the view-loading process in Blesta 6.
+
+If the framework does not expose a suitable extension point, present the technically viable alternatives and explain their upgrade implications.
+
+Prioritise a reliable, maintainable solution over a workaround that merely appears to work.
+
+The ultimate goal is a reusable theme-level plugin view override system that lets me customise forms.pdt and other plugin views without touching the original plugin files.
